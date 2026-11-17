@@ -1,0 +1,121 @@
+\chapter{Datasets and Preprocessing}
+\thispagestyle{empty}
+
+Two public datasets are used, one per disorder. They are referred to as DS-1 (IDD) and DS-2
+(ADHD). Table~\ref{tab:datasets} summarises them.
+
+\begin{table}[H]
+\caption{The two datasets. Window counts are for 5~s windows with 50\% overlap.}
+\label{tab:datasets}\centering\small
+\begin{tabular}{lp{5.3cm}p{5.3cm}}
+\hline
+ & DS-1 (IDD)~\cite{sareen2020data} & DS-2 (ADHD)~\cite{motie2020} \\
+\hline
+Participants & 7 with IDD, 7 typically developing controls (TDC) & 61 with ADHD, 60 normal controls (NC) \\
+Age & IDD group \R{DSoneIddAgeMin}--\R{DSoneIddAgeMax} years; controls not given in the dataset files & 7--12 years \\
+Device & EMOTIV EPOC+, 14 channels & 19 channels, 10--20 system \\
+Sampling rate & 128~Hz & 128~Hz \\
+Recording & 2~min rest and 2~min listening to music & visual attention task, length depends on the child \\
+Windows & \R{DSoneRestNWin} per condition (\R{DSoneRestWinPerSubjMin} per recording) & \R{DStwoNWin} (\R{DStwoNWinDis} ADHD, \R{DStwoNWinCtrl} NC) \\
+Windows per subject & \R{DSoneRestWinPerSubjMin} & \R{DStwoWinPerSubjMin}--\R{DStwoWinPerSubjMax} \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{DS-1: intellectual and developmental disorder}
+DS-1~\cite{sareen2020data} contains recordings of 14 participants, 7 with IDD and 7 typically
+developing controls, made with a 14-channel EMOTIV EPOC+ headset at 128~Hz. The electrodes are
+AF3, F7, F3, FC5, T7, P7, O1, O2, P8, T8, FC6, F4, F8 and AF4. Each participant was recorded
+for two minutes at rest and for two minutes while listening to music. The dataset provides both
+the raw recordings and cleaned recordings; the cleaned recordings were produced by the dataset
+authors in EEGLAB with a 1--30~Hz band-pass filter, removal of line noise, independent component
+analysis and automatic rejection of artefact components.
+
+The two recording conditions give three classification settings, all with the same
+participants: rest only, music only, and rest and music together. Each recording gives
+\R{DSoneRestWinPerSubjMin} windows, so the rest and music settings have \R{DSoneRestNWin}
+windows each (\R{DSoneRestNWinDis} IDD and \R{DSoneRestNWinCtrl} TDC) and the combined setting
+has \R{DSoneRestMusicNWin}.
+
+\textbf{The participants of DS-1 are adults.} The metadata file distributed with the dataset
+gives the ages of the seven IDD participants as \R{DSoneIddAgeMin}--\R{DSoneIddAgeMax} years; it
+gives no ages for the controls. The IDD results of this project therefore concern adults, and
+only the ADHD results concern children. In this report the terms ``child-level'' and
+``subject-level'' are used interchangeably for quantities computed per person; for DS-1 the
+person is an adult participant.
+
+\section{DS-2: attention-deficit/hyperactivity disorder}
+DS-2~\cite{motie2020} contains recordings of 121 children aged 7--12 years, 61 with ADHD and 60
+controls, boys and girls. According to the dataset description reproduced
+in~\cite{chandela2025}, ADHD was diagnosed by an experienced psychiatrist using DSM-IV criteria,
+and the control children had no history of psychiatric disorders, epilepsy or high-risk
+behaviour. EEG was recorded from 19 electrodes of the 10--20 system (Fp1, Fp2, F3, F4, C3, C4,
+P3, P4, O1, O2, F7, F8, T3, T4, T5, T6, Fz, Cz, Pz) at 128~Hz. T3, T4, T5 and T6 are the older
+names of the positions now called T7, T8, P7 and P8.
+
+The recording protocol was a visual attention task: the child was shown pictures of cartoon
+characters and asked to count them, with between 5 and 16 characters per picture. Each picture
+was shown until the child answered, so the length of a recording depends on the child's
+performance. DS-2 gives \R{DStwoNWin} windows, \R{DStwoNWinDis} from ADHD children and
+\R{DStwoNWinCtrl} from controls, with between \R{DStwoWinPerSubjMin} and \R{DStwoWinPerSubjMax}
+windows per child.
+
+\textbf{Medication.} The children with ADHD had been taking methylphenidate (Ritalin) for up to
+six months; the control children were not medicated. Since stimulant medication changes the
+EEG~\cite{clarke2002}, \emph{every ADHD result in this report is a comparison of medicated
+children with ADHD against unmedicated controls}, and a classifier may detect the effect of the
+drug rather than the disorder. This caveat is repeated wherever ADHD results appear.
+
+\section{Preprocessing}
+\textbf{DS-1.} The cleaned recordings distributed with the dataset are used as they are. The
+original cleaning used MATLAB toolboxes that have no exact Python equivalent, so using the
+distributed cleaned data is the closest match to earlier work on this dataset.
+
+\textbf{DS-2.} The recordings are filtered with a fourth-order Butterworth band-pass filter
+(0.5--60~Hz) and a 50~Hz notch filter, both applied forwards and backwards so that no phase
+shift is introduced. They are then processed with the discrete wavelet transform, using the
+Coiflet-3 wavelet at decomposition level 6, in two steps. The first removes the slowest
+component, where ocular artefacts concentrate. The second shrinks the detail coefficients with
+a threshold chosen by Stein's unbiased risk estimate (SURE)~\cite{donoho1995} and reconstructs
+the signal. At 128~Hz the six detail levels cover 32--64, 16--32, 8--16, 4--8, 2--4 and 1--2~Hz.
+The filter order and the details of the wavelet steps are implementation choices
+(Appendix~A).
+
+\section{Segmentation}
+Every recording is divided into windows of 5~s (640 samples) with 50\% overlap, so consecutive
+windows share half of their samples. Each window is labelled with the diagnosis of the person
+it comes from. Windows are the unit of feature extraction and classification throughout; a
+decision for a person is obtained by combining the decisions for that person's windows
+(Section~\ref{sec:protocol}).
+
+Two consequences of this segmentation are central to the rest of the report. Windows of the
+same person are not independent examples, both because they overlap and because they share
+everything that is specific to that person and that recording. And the number of independent
+units for statistics is the number of people (14 and 121), not the number of windows.
+
+\section{Properties of the data relevant to classification}
+\label{sec:datachecks}
+Before any classifier is discussed, three properties of the raw data are recorded here. They
+were measured with a descriptive script (\texttt{experiments/data\_checks.py}) that trains no
+model; their consequences are discussed in Chapter~7.
+
+\textbf{Group difference in beta power (DS-1).} For each rest recording, the relative power in
+the beta band (13--30~Hz, as a fraction of 1--45~Hz power, averaged over channels) lies in
+\R{DSoneRestRelBetaIdd} for the IDD participants and in \R{DSoneRestRelBetaTdc} for the
+controls. The two ranges do not overlap, so this single number separates the 14 rest recordings
+completely (area under the ROC curve \R{DSoneRestRelBetaAUC}). For the music recordings the
+ranges overlap (\R{DSoneMusicRelBetaIdd} against \R{DSoneMusicRelBetaTdc}, AUC
+\R{DSoneMusicRelBetaAUC}).
+
+\textbf{An outlying recording (DS-1).} The median standard deviation of the
+\R{DSoneNRecordings} cleaned recordings is \R{DSoneMedianSD}~$\mu$V. One control rest recording
+(\R{DSoneOutlierFile}) has \R{DSoneOutlierSD}~$\mu$V, \R{DSoneOutlierTimes} times the median,
+with peaks of \R{DSoneOutlierMax}~$\mu$V and nearly the same value on all 14 channels, which
+indicates a large artefact common to all electrodes that remains in the distributed cleaned
+data. No two recordings are duplicates of each other (\R{DSoneIdenticalPairs} identical pairs;
+the largest correlation between any two recordings is \R{DSoneMaxPairCorr}).
+
+\textbf{Recording length (DS-2).} Because the task continued until the child answered, the
+groups differ in recording length: \R{DStwoLenAdhd} windows on average for children with ADHD
+against \R{DStwoLenCtrl} for controls. Recording length alone predicts the group with an AUC of
+\R{DStwoLenAUC}.

@@ -1,0 +1,18 @@
+{
+  "machine": "laptop CPU, single thread per stage",
+  "n_windows_timed": 50,
+  "per_window_ms": {
+    "smvmd": 53.93140399988624,
+    "covariances_4_modes": 1.765869999944698,
+    "tangent_space_plus_lightgbm": 0.1805463999917265,
+    "total": 55.87782039982267
+  },
+  "window_length_s": 5.0,
+  "train_seconds_one_model": 19.606933200004278,
+  "train_windows": 5962,
+  "n_features": 760,
+  "n_trees": 300,
+  "n_leaves_total": 4122,
+  "pickled_model_kb": 555.6865234375,
+  "note": "SMVMD dominates; it was parallelised over windows for the experiments."
+}

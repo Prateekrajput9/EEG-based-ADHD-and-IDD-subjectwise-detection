@@ -1,0 +1,65 @@
+{
+ "DS1_Rest": {
+  "window_auc": 0.3764418811002662,
+  "window_auc_ci": [
+   0.18027540411249568,
+   0.602915830793565
+  ],
+  "child_auc": 0.3469387755102041,
+  "child_auc_ci": [
+   0.061224489795918366,
+   0.694387755102038
+  ],
+  "mean_log_tbr_disorder": -0.07879899401761238,
+  "mean_log_tbr_control": 0.027569028721455703,
+  "note": "no training; AUC of the channel-mean log TBR as a disorder score (direction fixed a priori: higher TBR = disorder). Accuracy from a median split is NOT reported because the threshold would use all children."
+ },
+ "DS1_Music": {
+  "window_auc": 0.3732494888314494,
+  "window_auc_ci": [
+   0.1680833108290575,
+   0.6106277246248216
+  ],
+  "child_auc": 0.30612244897959184,
+  "child_auc_ci": [
+   0.04030612244897962,
+   0.6530612244897959
+  ],
+  "mean_log_tbr_disorder": -0.06670808140889985,
+  "mean_log_tbr_control": 0.061163055995937465,
+  "note": "no training; AUC of the channel-mean log TBR as a disorder score (direction fixed a priori: higher TBR = disorder). Accuracy from a median split is NOT reported because the threshold would use all children."
+ },
+ "DS1_RestMusic": {
+  "window_auc": 0.3740114193125265,
+  "window_auc_ci": [
+   0.1813006346205779,
+   0.6027828546352377
+  ],
+  "child_auc": 0.32653061224489793,
+  "child_auc_ci": [
+   0.061224489795918366,
+   0.6938775510204082
+  ],
+  "mean_log_tbr_disorder": -0.07275353771325611,
+  "mean_log_tbr_control": 0.044366042358696574,
+  "note": "no training; AUC of the channel-mean log TBR as a disorder score (direction fixed a priori: higher TBR = disorder). Accuracy from a median split is NOT reported because the threshold would use all children."
+ },
+ "DS2": {
+  "window_auc": 0.4206289060163866,
+  "window_auc_ci": [
+   0.3564199004007005,
+   0.48751724620391107
+  ],
+  "child_auc": 0.3549180327868853,
+  "child_auc_ci": [
+   0.2633606557377049,
+   0.4538592896174861
+  ],
+  "mean_log_tbr_disorder": 0.6586165000371399,
+  "mean_log_tbr_control": 0.794929402170151,
+  "note": "no training; AUC of the channel-mean log TBR as a disorder score (direction fixed a priori: higher TBR = disorder). Accuracy from a median split is NOT reported because the threshold would use all children."
+ },
+ "_notes": [
+  "DS-2 confound: the ADHD children were taking methylphenidate and the controls were not, so ADHD cannot be separated from its treatment."
+ ]
+}

@@ -1,0 +1,225 @@
+\chapter{Results and Discussion}
+\thispagestyle{empty}
+
+All results in this chapter are obtained on people not seen during training, with the protocol of
+Chapter~4: leave-one-subject-out for DS-1 (14 folds) and stratified grouped 10-fold
+cross-validation for DS-2, with nested tuning on the training subjects. Balanced accuracy is per
+window; ``subjects'' or ``children'' counts the people
+classified correctly by majority vote.
+
+\section{Main results}
+Table~\ref{tab:main} gives the results of the proposed pipeline (SMVMD common modes, Riemannian
+tangent space and LightGBM, with the mode set chosen by the inner cross-validation).
+
+\begin{table}[H]
+\caption{The proposed pipeline on unseen people. Window-level balanced accuracy with 95\% CI over
+subjects, AUC, sensitivity and specificity (\%), and people classified correctly by majority
+vote.}
+\label{tab:main}\centering
+\gentable{tab_main}\\[2pt]
+{\footnotesize \dstwonote}
+\end{table}
+
+\textbf{ADHD (DS-2).} The pipeline reaches \R{MainDStwoBal}\% balanced accuracy (95\% CI
+\R{MainDStwoBalCI}\%) and an AUC of \R{MainDStwoAUC} on the windows of unseen children, and
+classifies \R{MainDStwoSubj} children correctly (\R{MainDStwoSubjAcc}\%). Sensitivity (\R{MainDStwoSens}\%) is
+higher than specificity (\R{MainDStwoSpec}\%): control windows are misclassified more often than
+ADHD windows. In every outer fold the inner cross-validation chose all four common modes
+together (\R{MainDStwoChosen}).
+
+\textbf{IDD (DS-1).} All 14 participants are classified correctly in all three settings, with
+balanced window accuracies of \R{MainDSoneRestBal}\% (rest), \R{MainDSoneMusicBal}\% (music) and
+\R{MainDSoneRestMusicBal}\% (rest and music). Here the inner
+cross-validation mostly chose the $\alpha$ mode alone (Table~\ref{tab:chosen}): the two
+disorders are detected from different frequency ranges by the same pipeline. Because the two DS-1
+groups are also separated by a single property of the rest recordings, their relative beta power
+(AUC \R{DSoneRestRelBetaAUC}, Section~\ref{sec:datachecks}), and have only seven adults each,
+the DS-1 result shows that the pipeline transfers to a second disorder, not that it has found an
+EEG marker of IDD.
+
+\begin{table}[H]
+\caption{Common-mode set chosen by the inner cross-validation in the outer folds.}
+\label{tab:chosen}\centering
+\gentable{tab_chosen}
+\end{table}
+
+\section{Choice of classifier}
+Table~\ref{tab:classifiers} and Fig.~\ref{fig:classifiers} compare four classifiers on the same
+tangent-space features of DS-2, for the SMVMD common modes and, for reference, for the broadband
+covariance of the undecomposed window (the representation of Step~7).
+
+\begin{table}[H]
+\caption{DS-2: classifier comparison on tangent-space features. Balanced window accuracy (\%),
+AUC, and children correct.}
+\label{tab:classifiers}\centering
+\gentable{tab_classifiers}\\[2pt]
+{\footnotesize \dstwonote}
+\end{table}
+
+\begin{figure}[H]\centering
+\genfig[0.9\textwidth]{classifier_comparison}
+\caption{DS-2: balanced accuracy of the four classifiers on three tangent-space representations.
+Error bars: 95\% CI over children; dashed line: chance.}
+\label{fig:classifiers}
+\end{figure}
+
+Gradient boosting improves on the linear and kernel classifiers for the SMVMD common modes: with
+the mode set chosen in the training folds, logistic regression reaches \R{AblSelectLrBal}\%, the
+SVM \R{AblSelectSvmBal}\%, XGBoost \R{AblSelectXgbBal}\% and LightGBM \R{AblSelectLgbmBal}\%, and
+LightGBM classifies the most children correctly (\R{AblSelectLgbmSubj}). On the broadband
+covariance, LightGBM also gives the highest score (\R{AblRawLgbmBal}\%, \R{AblRawLgbmSubj}
+children), while XGBoost is there slightly below the SVM. All these differences are small, a few
+points at most; the classifiers should be regarded as close to equivalent, with LightGBM the
+highest on both representations.
+
+\section{Contribution of the modes and of the decomposition}
+Table~\ref{tab:modes} and Fig.~\ref{fig:modes} show, for DS-2, the result of each common mode on
+its own, of all four, and of the sum of all modes, and compare the SMVMD common modes with
+zero-phase Butterworth band-pass filters with the same band edges, under an otherwise identical
+pipeline (LR and SVM, which were run for every variant).
+
+\begin{table}[H]
+\caption{DS-2: balanced window accuracy (\%) of single and combined components, SMVMD common
+modes against Butterworth bands with the same edges.}
+\label{tab:modes}\centering
+\gentable{tab_modes}\\[2pt]
+{\footnotesize \dstwonote}
+\end{table}
+
+\begin{figure}[H]\centering
+\genfig[0.85\textwidth]{mode_comparison}
+\caption{DS-2, SVM: balanced accuracy of each SMVMD common mode and Butterworth band, and of all
+four together. Grey line: undecomposed broadband covariance (Step~7). Error bars: 95\% CI.}
+\label{fig:modes}
+\end{figure}
+
+Three observations follow. First, the slow modes carry most of the information about ADHD: the
+$\delta$ mode alone reaches \R{ModeDeltaSVMBal}\% with the SVM, the $\theta$ mode
+\R{ModeThetaSVMBal}\%, while the $\alpha$ (\R{ModeAlphaSVMBal}\%) and $\beta$
+(\R{ModeBetaSVMBal}\%) modes are weaker, in line with the many DS-2 windows in which SMVMD finds
+no mode in these bands (Table~\ref{tab:commonmodes}). Second, the SMVMD reconstruction gives the
+same result as the undecomposed window (\R{ModeReconSVMBal}\%), because the reconstruction
+contains almost all of the signal and therefore has nearly the same covariance. Third, fixed
+Butterworth bands perform at least as well as the SMVMD common modes overall: the SMVMD
+$\delta$ mode is better than the Butterworth $\delta$ band, but in the $\alpha$ and $\beta$
+bands, where SMVMD often finds no mode, the filters are better, and with all four components
+together the filter bank is slightly ahead. \emph{The adaptive decomposition therefore makes the frequency-specific covariance
+representation possible, but it does not by itself add accuracy}; this agrees with the
+preliminary finding that features of the raw signal do as well as features of the SMVMD modes
+(Chapter~5). Its value in the pipeline lies in a data-driven, interpretable split of the signal
+into the oscillations actually present in each window, at an accuracy only one to two points
+below the best fixed representations.
+
+\section{Effect of window-level splitting on the proposed pipeline}
+To show how the pipeline would be reported under the window-level protocol common in the
+literature, the same configuration (all four modes, LightGBM of depth 4) was evaluated with
+10-fold cross-validation over windows (Table~\ref{tab:gapmain}). On DS-2 the window-level
+protocol reports \R{GapDStwoLeaky}\% against \R{GapDStwoSubj}\% on unseen children, an inflation
+of \R{GapDStwoPoints} percentage points. The figures in the 95--100\% range in the literature
+(Table~\ref{tab:lit}) are therefore not comparable with subject-wise results, and the proposed
+pipeline would itself appear above 90\% if it were evaluated in the same way. On DS-1 the
+inflation is small (\R{GapDSoneRestPoints} points) only because the subject-wise result is
+already close to 100\%.
+
+\begin{table}[H]
+\caption{The proposed pipeline (fixed configuration) under window-wise and subject-wise
+cross-validation: balanced window accuracy (\%).}
+\label{tab:gapmain}\centering
+\gentable{tab_gap_main}\\[2pt]
+{\footnotesize \dstwonote}
+\end{table}
+
+\section{What the pipeline relies on}
+Fig.~\ref{fig:importance} shows the LightGBM importance (total gain, averaged over the 10 outer
+DS-2 models) summed per common mode and per electrode, and Table~\ref{tab:topfeat} the ten most
+important tangent-space features.
+
+\begin{figure}[H]\centering
+\genfig[0.95\textwidth]{importance_main}
+\caption{DS-2: share of LightGBM gain per common mode (left) and per electrode (right; the gain
+of a channel pair is divided equally between its two electrodes).}
+\label{fig:importance}
+\end{figure}
+
+\begin{table}[H]
+\caption{DS-2: the ten most important tangent-space features of the proposed pipeline. A
+``variance'' feature is a diagonal element (power of one channel in the mode), a ``covariance''
+feature an off-diagonal element (co-variation of two channels).}
+\label{tab:topfeat}\centering
+\gentable{tab_top_features}
+\end{table}
+
+For ADHD the $\delta$ mode receives \R{ImpDStwoDelta}\% of the importance and the $\theta$ mode
+\R{ImpDStwoTheta}\%, against \R{ImpDStwoAlpha}\% and \R{ImpDStwoBeta}\% for the $\alpha$ and $\beta$
+modes, in agreement with the single-mode results. Off-diagonal (covariance) features account for
+\R{ImpDStwoCovShare}\% of the total importance and diagonal (power) features for
+\R{ImpDStwoVarShare}\%. Since the off-diagonal elements are 90\% of the features (171 of 190 per
+mode), a single power feature is on average more important than a single channel pair; but most
+of the information the classifier uses comes from the co-variation of channels, which per-channel
+features cannot capture, consistent with the advantage of connectivity and Riemannian features in
+the preliminary study. The most important electrodes are \R{ImpDStwoTopChannels}. Slow activity at frontal electrodes such as Fp2
+is also where residual eye-movement artefacts appear, and stimulant medication, which only the
+ADHD group received, changes the EEG in the theta band among others~\cite{clarke2002}; the
+importance pattern is therefore compatible with both a neural and a non-neural explanation and
+should not be read as a biomarker.
+
+\section{Comparison with published results}
+Table~\ref{tab:litcomp} places the proposed pipeline beside the published subject-wise results
+on the same ADHD dataset (Chapter~2).
+
+\begin{table}[H]
+\caption{ADHD dataset: subject-wise results. Published values as reported (accuracy); this work:
+balanced accuracy and plain window accuracy.}
+\label{tab:litcomp}\centering\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{5.6cm}p{3.6cm}p{2.0cm}r}
+\hline
+Method & Evaluation & Model type & Accuracy (\%) \\
+\hline
+SVM on spectral features~\cite{geethapriya2026} & subject-wise 10-fold & shallow & 65.6 \\
+LSTM~\cite{geethapriya2026} & subject-wise 10-fold & deep (recurrent) & 61.6 \\
+CNN--BiLSTM~\cite{geethapriya2026} & subject-wise 10-fold & deep & 65.7 \\
+CNN~\cite{geethapriya2026} & subject-wise 10-fold & deep & 72.7 \\
+\hline
+Starting method, this work (Step~1) & subject-wise 10-fold & shallow & \R{StepADStwoBal} (bal.) \\
+\textbf{Proposed pipeline (this work)} & subject-wise 10-fold & \textbf{shallow, CPU} & \textbf{\R{MainDStwoBal}} (bal.) \\
+ & & & \R{MainDStwoWinAccPlain} (acc.) \\
+\hline
+\end{tabular}
+\end{adjustbox}\\[2pt]
+{\footnotesize \dstwonote}
+\end{table}
+
+The proposed pipeline scores higher than the recurrent and hybrid deep networks and the spectral
+SVM evaluated subject-wise on the same data, and it is comparable with the best published
+subject-wise result, a convolutional network trained end to end, from which it differs by about
+one point. The comparison is approximate, since the window length
+(5~s with overlap against 4~s without), the folds and the measure (balanced against plain
+accuracy) differ. The advantages of the proposed pipeline are of a different kind: it needs no
+GPU and no deep network, processes a window in about \R{RtTotal}~ms on one CPU core, trains in
+about \R{RtTrain}~s, applies unchanged to a second disorder, and its decisions can be traced to
+frequency modes and electrode pairs.
+
+\section{Discussion}
+\textbf{Medication and other confounds (DS-2).} The children with ADHD were taking
+methylphenidate and the controls were not. Stimulants change the EEG, mainly in the theta and
+beta bands~\cite{clarke2002}, and the $\theta$ mode is the second most important mode of the
+pipeline. In addition, recordings of children with ADHD are longer (\R{DStwoLenAdhd} against
+\R{DStwoLenCtrl} windows on average) because the task lasted until the child answered, and
+recording length alone predicts the group with an AUC of \R{DStwoLenAUC}; anything in the signal
+that reflects how long or how hard the task was for a child is therefore also a cue. The result
+is the detection of medicated ADHD against unmedicated controls, and could partly reflect the
+medication or task performance.
+
+\textbf{Uncertainty and selection.} The confidence interval of the main DS-2 result,
+\R{MainDStwoBalCI}\%, is about ten points wide, so differences of one or two points between
+pipelines are not meaningful. The pipeline's configuration was fixed before its final result was
+seen, and its mode set was chosen in the training folds; the per-mode and per-classifier rows of
+the ablations are analyses, and the best of them is slightly optimistic. The undecomposed
+Riemannian pipeline with LightGBM (\R{AblRawLgbmBal}\%) is numerically the highest single result
+of the study, but it is not distinguishable from the proposed pipeline.
+
+\textbf{Diagnostic value.} About three in four unseen children are classified correctly. This is
+a substantial and honest improvement over the starting method and comparable with the best
+published subject-wise result, but it is far from the accuracy needed for diagnosis, and the
+pipeline is a research result, not a clinical tool.

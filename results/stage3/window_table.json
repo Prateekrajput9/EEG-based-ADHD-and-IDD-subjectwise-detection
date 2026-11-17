@@ -1,0 +1,587 @@
+[
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6739130434782609,
+  "window_acc_ci": [
+   0.4829192546583851,
+   0.8540372670807453
+  ],
+  "window_bal_acc": 0.673913043478261,
+  "window_bal_acc_ci": [
+   0.48291925465838514,
+   0.8540372670807453
+  ],
+  "window_auc": 0.6518459935959261,
+  "window_auc_ci": [
+   0.39806551637668297,
+   0.888950079086455
+  ],
+  "window_f1": 0.6634615384615385,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.6938775510204082,
+  "child_auc_ci": [
+   0.3673469387755102,
+   0.9591836734693877
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 2.3,
+  "source": "results/stage3/window/DS1_Rest/spectral_lr_win5s_ovl50__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6632653061224489,
+  "window_acc_ci": [
+   0.47798273155416016,
+   0.8430337519623232
+  ],
+  "window_bal_acc": 0.6632653061224489,
+  "window_bal_acc_ci": [
+   0.47798273155416016,
+   0.8430337519623233
+  ],
+  "window_auc": 0.6316327762840434,
+  "window_auc_ci": [
+   0.38090699388075483,
+   0.8738685064655012
+  ],
+  "window_f1": 0.6526315789473685,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.6938775510204082,
+  "child_auc_ci": [
+   0.3673469387755102,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 3.1,
+  "source": "results/stage3/window/DS1_Rest/spectral_lr_win5s_ovl75__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6623376623376623,
+  "window_acc_ci": [
+   0.474025974025974,
+   0.8344155844155844
+  ],
+  "window_bal_acc": 0.6623376623376623,
+  "window_bal_acc_ci": [
+   0.474025974025974,
+   0.8344155844155844
+  ],
+  "window_auc": 0.6438269522685107,
+  "window_auc_ci": [
+   0.3717321639399561,
+   0.9309179456906728
+  ],
+  "window_f1": 0.6486486486486486,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.6938775510204082,
+  "child_auc_ci": [
+   0.3877551020408163,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 1,
+  "runtime_sec": 1.3,
+  "source": "results/stage3/window/DS1_Rest/spectral_lr_win10s_ovl50__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6175115207373272,
+  "window_acc_ci": [
+   0.44928955453149,
+   0.7841781874039938
+  ],
+  "window_bal_acc": 0.6175115207373272,
+  "window_bal_acc_ci": [
+   0.44928955453149,
+   0.7841781874039938
+  ],
+  "window_auc": 0.6535378632896099,
+  "window_auc_ci": [
+   0.42826043355254,
+   0.8485100908209277
+  ],
+  "window_f1": 0.6009615384615384,
+  "child_acc": 0.6428571428571429,
+  "child_acc_ci": [
+   0.42857142857142855,
+   0.8571428571428571
+  ],
+  "child_bal_acc": 0.6428571428571428,
+  "child_auc": 0.673469387755102,
+  "child_auc_ci": [
+   0.3673469387755102,
+   0.9591836734693877
+  ],
+  "child_correct": 9,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 7.9,
+  "source": "results/stage3/window/DS1_Rest/spectral_lr_win2.5s_ovl50__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6086956521739131,
+  "window_acc_ci": [
+   0.4254658385093168,
+   0.7919254658385093
+  ],
+  "window_bal_acc": 0.6086956521739131,
+  "window_bal_acc_ci": [
+   0.42546583850931674,
+   0.7919254658385093
+  ],
+  "window_auc": 0.6100459087226573,
+  "window_auc_ci": [
+   0.3578498128930211,
+   0.8431522703599398
+  ],
+  "window_f1": 0.5882352941176471,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.6326530612244898,
+  "child_auc_ci": [
+   0.32653061224489793,
+   0.9183673469387755
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 1.7,
+  "source": "results/stage3/window/DS1_Rest/spectral_lr_win5s_ovl0__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7119815668202765,
+  "window_acc_ci": [
+   0.5629416282642089,
+   0.857910906298003
+  ],
+  "window_bal_acc": 0.7119815668202765,
+  "window_bal_acc_ci": [
+   0.5629416282642089,
+   0.857910906298003
+  ],
+  "window_auc": 0.7326292292844991,
+  "window_auc_ci": [
+   0.49495240690795916,
+   0.9294338616473298
+  ],
+  "window_f1": 0.6797608881298035,
+  "child_acc": 0.8571428571428571,
+  "child_acc_ci": [
+   0.7142857142857143,
+   1.0
+  ],
+  "child_bal_acc": 0.8571428571428572,
+  "child_auc": 0.8367346938775511,
+  "child_auc_ci": [
+   0.5510204081632653,
+   1.0
+  ],
+  "child_correct": 12,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 2.8,
+  "source": "results/stage3/window/DS1_Music/spectral_lr_win2.5s_ovl50__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6978021978021978,
+  "window_acc_ci": [
+   0.523528257456829,
+   0.8657770800627943
+  ],
+  "window_bal_acc": 0.6978021978021978,
+  "window_bal_acc_ci": [
+   0.523528257456829,
+   0.8657770800627944
+  ],
+  "window_auc": 0.7690508639151833,
+  "window_auc_ci": [
+   0.5441382905051889,
+   0.9432837402561555
+  ],
+  "window_f1": 0.6751054852320675,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857142,
+  "child_auc": 0.7959183673469388,
+  "child_auc_ci": [
+   0.5102040816326531,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 2.9,
+  "source": "results/stage3/window/DS1_Music/spectral_lr_win5s_ovl75__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6894409937888198,
+  "window_acc_ci": [
+   0.5031055900621118,
+   0.8696428571428567
+  ],
+  "window_bal_acc": 0.6894409937888198,
+  "window_bal_acc_ci": [
+   0.5031055900621118,
+   0.8696428571428568
+  ],
+  "window_auc": 0.7408279001581729,
+  "window_auc_ci": [
+   0.4971577099648933,
+   0.9384823116392114
+  ],
+  "window_f1": 0.673202614379085,
+  "child_acc": 0.6428571428571429,
+  "child_acc_ci": [
+   0.35714285714285715,
+   0.8589285714285616
+  ],
+  "child_bal_acc": 0.6428571428571428,
+  "child_auc": 0.8163265306122449,
+  "child_auc_ci": [
+   0.5510204081632653,
+   1.0
+  ],
+  "child_correct": 9,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 1.8,
+  "source": "results/stage3/window/DS1_Music/spectral_lr_win5s_ovl0__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6753246753246753,
+  "window_acc_ci": [
+   0.4707792207792208,
+   0.8668831168831169
+  ],
+  "window_bal_acc": 0.6753246753246753,
+  "window_bal_acc_ci": [
+   0.4707792207792208,
+   0.8668831168831168
+  ],
+  "window_auc": 0.713821892393321,
+  "window_auc_ci": [
+   0.46414867599932536,
+   0.9230920053972003
+  ],
+  "window_f1": 0.673202614379085,
+  "child_acc": 0.6428571428571429,
+  "child_acc_ci": [
+   0.42857142857142855,
+   0.8571428571428571
+  ],
+  "child_bal_acc": 0.6428571428571428,
+  "child_auc": 0.7551020408163265,
+  "child_auc_ci": [
+   0.4489795918367347,
+   0.9591836734693877
+  ],
+  "child_correct": 9,
+  "n_children": 14,
+  "vote_ties": 1,
+  "runtime_sec": 1.9,
+  "source": "results/stage3/window/DS1_Music/spectral_lr_win10s_ovl50__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6692546583850931,
+  "window_acc_ci": [
+   0.4797360248447205,
+   0.8571428571428571
+  ],
+  "window_bal_acc": 0.6692546583850931,
+  "window_bal_acc_ci": [
+   0.4797360248447205,
+   0.8571428571428571
+  ],
+  "window_auc": 0.7322634157632807,
+  "window_auc_ci": [
+   0.4804393638362717,
+   0.9388449519694455
+  ],
+  "window_f1": 0.6602870813397129,
+  "child_acc": 0.5714285714285714,
+  "child_acc_ci": [
+   0.2857142857142857,
+   0.8571428571428571
+  ],
+  "child_bal_acc": 0.5714285714285714,
+  "child_auc": 0.7755102040816326,
+  "child_auc_ci": [
+   0.4897959183673469,
+   1.0
+  ],
+  "child_correct": 8,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 2.0,
+  "source": "results/stage3/window/DS1_Music/spectral_lr_win5s_ovl50__subject_loso.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6391752577319587,
+  "window_acc_ci": [
+   0.5824894629750745,
+   0.6946243188441903
+  ],
+  "window_bal_acc": 0.637777504775341,
+  "window_bal_acc_ci": [
+   0.5791412971988585,
+   0.6921089193085638
+  ],
+  "window_auc": 0.6803002322282019,
+  "window_auc_ci": [
+   0.6062363910838326,
+   0.74770078696921
+  ],
+  "window_f1": 0.668769716088328,
+  "child_acc": 0.6859504132231405,
+  "child_acc_ci": [
+   0.5950413223140496,
+   0.768595041322314
+  ],
+  "child_bal_acc": 0.6856557377049181,
+  "child_auc": 0.7265027322404372,
+  "child_auc_ci": [
+   0.6267759562841531,
+   0.8161338797814207
+  ],
+  "child_correct": 83,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 16.1,
+  "source": "results/stage3/window/DS2/spectral_lr_win10s_ovl50__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6267308850090307,
+  "window_acc_ci": [
+   0.5718502408761654,
+   0.6782322231710788
+  ],
+  "window_bal_acc": 0.6274397584272038,
+  "window_bal_acc_ci": [
+   0.5720247050114177,
+   0.678074706154484
+  ],
+  "window_auc": 0.6783178123179336,
+  "window_auc_ci": [
+   0.6080746843286402,
+   0.7429111403111522
+  ],
+  "window_f1": 0.6505073280721534,
+  "child_acc": 0.6776859504132231,
+  "child_acc_ci": [
+   0.5948347107438017,
+   0.7520661157024794
+  ],
+  "child_bal_acc": 0.6777322404371584,
+  "child_auc": 0.7491803278688525,
+  "child_auc_ci": [
+   0.6543579234972677,
+   0.8322677595628414
+  ],
+  "child_correct": 82,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 16.1,
+  "source": "results/stage3/window/DS2/spectral_lr_win5s_ovl0__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6232544019429266,
+  "window_acc_ci": [
+   0.5675803444191513,
+   0.6764160392440411
+  ],
+  "window_bal_acc": 0.6226980668022247,
+  "window_bal_acc_ci": [
+   0.566763237960502,
+   0.6754785834630205
+  ],
+  "window_auc": 0.6721579525746068,
+  "window_auc_ci": [
+   0.5975963769966467,
+   0.7395804352311878
+  ],
+  "window_f1": 0.6504225352112676,
+  "child_acc": 0.6694214876033058,
+  "child_acc_ci": [
+   0.5867768595041323,
+   0.7520661157024794
+  ],
+  "child_bal_acc": 0.6691256830601093,
+  "child_auc": 0.7319672131147541,
+  "child_auc_ci": [
+   0.6360382513661202,
+   0.8188524590163935
+  ],
+  "child_correct": 81,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 26.8,
+  "source": "results/stage3/window/DS2/spectral_lr_win5s_ovl50__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6176943699731904,
+  "window_acc_ci": [
+   0.5632233522268486,
+   0.6707460552164958
+  ],
+  "window_bal_acc": 0.6168965048093159,
+  "window_bal_acc_ci": [
+   0.562040657330738,
+   0.6704763368556562
+  ],
+  "window_auc": 0.6632586060652973,
+  "window_auc_ci": [
+   0.5889102572431786,
+   0.7319796004946924
+  ],
+  "window_f1": 0.645902802412203,
+  "child_acc": 0.6694214876033058,
+  "child_acc_ci": [
+   0.5867768595041323,
+   0.7520661157024794
+  ],
+  "child_bal_acc": 0.6688524590163935,
+  "child_auc": 0.7199453551912568,
+  "child_auc_ci": [
+   0.6218442622950819,
+   0.8073907103825135
+  ],
+  "child_correct": 81,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 66.9,
+  "source": "results/stage3/window/DS2/spectral_lr_win5s_ovl75__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral",
+  "model": "Logistic regression (nested C)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6155523802361434,
+  "window_acc_ci": [
+   0.5685086013931782,
+   0.6619618269565747
+  ],
+  "window_bal_acc": 0.6167572884118433,
+  "window_bal_acc_ci": [
+   0.5683671943278144,
+   0.6634249552266367
+  ],
+  "window_auc": 0.6639394221813999,
+  "window_auc_ci": [
+   0.5988295436046027,
+   0.7258350958334009
+  ],
+  "window_f1": 0.6377551020408163,
+  "child_acc": 0.6859504132231405,
+  "child_acc_ci": [
+   0.6033057851239669,
+   0.7603305785123967
+  ],
+  "child_bal_acc": 0.6857923497267759,
+  "child_auc": 0.7486338797814208,
+  "child_auc_ci": [
+   0.6557308743169399,
+   0.8341598360655738
+  ],
+  "child_correct": 83,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 48.4,
+  "source": "results/stage3/window/DS2/spectral_lr_win2.5s_ovl50__subject_sgkf.json"
+ }
+]

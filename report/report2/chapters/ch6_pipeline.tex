@@ -1,0 +1,255 @@
+\chapter{Proposed Pipeline: SMVMD Common Modes, Riemannian Geometry and Gradient Boosting}
+\thispagestyle{empty}
+\label{ch:pipeline}
+
+\section{Overview}
+The proposed pipeline processes every 5-second window $\mathbf{X}\in\mathbb{R}^{C\times T}$
+($C$ channels, $T=640$ samples) in five stages (Fig.~\ref{fig:pipeline}):
+\begin{enumerate}
+\item \textbf{SMVMD} splits the window into a window-specific number $K$ of multivariate modes,
+      each concentrated around one centre frequency shared by all channels;
+\item \textbf{common modes}: the modes are grouped by centre frequency into four fixed bands
+      ($\delta$, $\theta$, $\alpha$, $\beta$) and summed within each band, so that every window
+      is described by the same four components;
+\item \textbf{covariance}: each common mode is summarised by its $C\times C$ channel covariance
+      matrix;
+\item \textbf{Riemannian tangent space}: the covariance matrices are mapped to vectors in the
+      tangent space at their Riemannian mean, computed on the training windows;
+\item \textbf{gradient-boosted trees} (LightGBM, or XGBoost) classify the concatenated tangent
+      vectors; the windows of a person are combined by majority vote.
+\end{enumerate}
+Stages 1--3 operate on one window at a time and use no labels and no other windows, so they
+cannot leak information between people. Everything that is learned from data (the reference
+point of the tangent space, the standardisation, the classifier, its depth and the set of modes
+used) is fitted on the training subjects of each fold only.
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[node distance=4mm and 4mm, font=\footnotesize,
+  box/.style={draw, rounded corners=2pt, align=center, minimum height=10mm, text width=21mm,
+              fill=gray!6},
+  arr/.style={-{Stealth[length=2mm]}, thick}]
+\node[box] (x) {EEG window\\$C\times 640$};
+\node[box, right=of x] (s) {SMVMD\\$K$ modes,\\centre freq.\ $f_k$};
+\node[box, right=of s] (c) {common modes\\$\delta,\theta,\alpha,\beta$\\by $f_k$};
+\node[box, right=of c] (v) {covariance\\per mode\\(OAS)};
+\node[box, below=9mm of v] (t) {Riemannian\\tangent space\\(train mean)};
+\node[box, left=of t] (g) {LightGBM /\\XGBoost};
+\node[box, left=of g] (m) {majority vote\\per person};
+\node[box, left=of m, fill=white] (d) {IDD / ADHD\\or control};
+\draw[arr] (x) -- (s); \draw[arr] (s) -- (c); \draw[arr] (c) -- (v); \draw[arr] (v) -- (t);
+\draw[arr] (t) -- (g); \draw[arr] (g) -- (m); \draw[arr] (m) -- (d);
+\end{tikzpicture}
+\caption{The proposed pipeline. The upper row is computed independently for each window and uses
+no labels; the lower row is learned from the training subjects of each fold.}
+\label{fig:pipeline}
+\end{figure}
+
+\section{Successive multivariate variational mode decomposition}
+\textbf{Variational mode decomposition.} VMD~\cite{dragomiretskiy2014} represents a signal $x(t)$
+as a sum of $K$ modes $u_k(t)$, each compact around a centre frequency $\omega_k$, by solving
+\begin{equation}
+\min_{\{u_k\},\{\omega_k\}} \sum_{k=1}^{K}
+\left\| \partial_t\!\left[\left(\delta(t)+\frac{j}{\pi t}\right) * u_k(t)\right] e^{-j\omega_k t}
+\right\|_2^2
+\quad\text{s.t.}\quad \sum_{k} u_k(t) = x(t).
+\end{equation}
+The term in brackets is the analytic signal of the mode; shifting it by $e^{-j\omega_k t}$ to
+baseband and penalising the energy of its derivative measures the bandwidth of the mode. In the
+Fourier domain the solution for a mode is a Wiener-type filter of the signal centred at
+$\omega_k$, and the centre frequency is the power-weighted mean frequency of the mode.
+
+\textbf{Multivariate extension.} For a $C$-channel signal, MVMD~\cite{rehman2019} looks for
+multivariate modes $\mathbf{u}_k(t)\in\mathbb{R}^C$ whose channels share one centre frequency
+$\omega_k$. This alignment is essential here: the $c$-th channel of mode $k$ describes the same
+oscillation at every electrode, so the covariance between channels within one mode is meaningful.
+
+\textbf{Successive extraction.} VMD and MVMD need $K$ in advance. SMVMD~\cite{liu2022} extracts
+the modes one at a time from the residual: the first mode is extracted from the window, then the
+next from what remains, and so on, until the residual energy falls below 1\% of the window
+energy or 20 modes have been extracted. In the implementation used here (the same as for the
+starting method), mode $k$ is obtained from the residual spectrum $\hat{r}_c(\nu)$ of each
+channel $c$, with $\nu\in[0,\tfrac12]$ the normalised frequency in cycles per sample, by
+iterating
+\begin{equation}
+\hat{u}_{k,c}(\nu) = \frac{\hat{r}_c(\nu)}{1 + 2\alpha(\nu-\nu_k)^2},
+\qquad
+\nu_k = \frac{\sum_c \sum_{\nu} \nu\, |\hat{u}_{k,c}(\nu)|^2}
+             {\sum_c \sum_{\nu} |\hat{u}_{k,c}(\nu)|^2},
+\label{eq:smvmd}
+\end{equation}
+for at most 500 iterations or until $\nu_k$ changes by less than $10^{-10}$, after which the mode
+is subtracted from the residual. The common centre frequency $\nu_k$, shared by all channels, is
+what makes the modes multivariate. The parameter $\alpha$ sets the bandwidth of the modes ($\alpha=2000$ for DS-1 and
+$1000$ for DS-2, as for the starting method~\cite{chandela2025}), and the dual-ascent step is set
+to zero, so the modes do not have to reconstruct the noisy signal exactly. Because the number of
+modes adapts to the signal, it differs between windows: on average \R{CmDSoneRestMusicModesMean}
+modes per DS-1 window (range \R{CmDSoneRestMusicModesMin}--\R{CmDSoneRestMusicModesMax}) and
+\R{CmDStwoModesMean} per DS-2 window (range \R{CmDStwoModesMin}--\R{CmDStwoModesMax}).
+
+\section{Common modes}
+A classifier needs the same features for every window, but SMVMD gives each window its own
+number of modes at its own frequencies (Fig.~\ref{fig:centrefreq}). The starting method solved
+this by averaging the features of all modes with energy weights, which discards the frequency
+information. The proposed pipeline instead assigns every mode to a fixed frequency band by its
+centre frequency in hertz, $f_k=\nu_k f_s$ with $f_s=128$~Hz, and sums the modes within each
+band:
+\begin{equation}
+\mathbf{U}_b = \sum_{k:\; f_k\in B_b} \mathbf{u}_k,\qquad
+B_\delta=[0,4),\; B_\theta=[4,8),\; B_\alpha=[8,13),\; B_\beta=[13,30)\ \text{Hz}.
+\label{eq:common}
+\end{equation}
+The four components $\mathbf{U}_\delta,\mathbf{U}_\theta,\mathbf{U}_\alpha,\mathbf{U}_\beta \in
+\mathbb{R}^{C\times T}$ are the \emph{common modes} of the window. Unlike the outputs of fixed
+band-pass filters, they are built from the window's own oscillatory components: a common mode
+contains the modes that SMVMD found in that band, with the bandwidth and centre that fit the
+window, and nothing where SMVMD found no oscillation. The band edges are the conventional EEG
+bands, chosen before any result was seen. Modes at 30~Hz and above are not used: DS-1 was
+band-limited to 1--30~Hz by its authors, and in DS-2 such modes carry on average only
+\R{CmDStwoShareAbove}\% of the mode energy. A fifth component, the sum of all modes (the SMVMD
+reconstruction), is used only in the ablation.
+
+\begin{figure}[H]\centering
+\genfig[0.95\textwidth]{centre_frequencies}
+\caption{Centre frequencies of all SMVMD modes of all windows. Dashed lines: the edges of the
+common modes (4, 8, 13 and 30~Hz).}
+\label{fig:centrefreq}
+\end{figure}
+
+Table~\ref{tab:commonmodes} summarises the common modes. In DS-1 the energy is shared between the
+$\delta$ and $\alpha$ modes, consistent with relaxed wakefulness during the rest and music
+recordings. In DS-2 nearly all energy lies in the $\delta$ mode, and many windows contain no mode
+in the $\alpha$ (\R{CmDStwoEmptyAlpha}\% of windows) or $\beta$ (\R{CmDStwoEmptyBeta}\%) band.
+
+\begin{table}[H]
+\caption{Common modes: modes per window (mean and range), and per band the mean share of mode
+energy (\%) / the percentage of windows without any mode in that band.}
+\label{tab:commonmodes}\centering
+\gentable{tab_common_modes}
+\end{table}
+
+\section{Covariance estimation}
+Each common mode is summarised by its spatial covariance matrix. With
+$\mathbf{S}_b=\frac{1}{T}\mathbf{U}_b\mathbf{U}_b^{\top}$ the sample covariance (the modes have
+zero mean), the oracle approximating shrinkage (OAS) estimator~\cite{chen2010}
+\begin{equation}
+\boldsymbol{\Sigma}_b = (1-\rho)\,\mathbf{S}_b + \rho\,\frac{\operatorname{tr}(\mathbf{S}_b)}{C}\,\mathbf{I}
+\end{equation}
+shrinks it towards a scaled identity, with the weight $\rho$ computed in closed form from
+$\mathbf{S}_b$. Shrinkage keeps the matrix well conditioned, which matters for DS-1, whose
+cleaned recordings are rank-deficient after the removal of independent components. When a window
+has no mode in a band, $\mathbf{U}_b=\mathbf{0}$; to keep every matrix positive definite, a floor
+$\epsilon\,\bar{p}\,\mathbf{I}$ is added to all matrices, where $\bar{p}$ is the mean channel power
+of the whole window and $\epsilon=10^{-4}$. The covariance of a window depends only on that
+window, so these matrices are computed once, before cross-validation.
+
+The covariance matrix captures two kinds of information: the diagonal holds the power of each
+channel in the band, and the off-diagonal entries hold the co-variation of pairs of channels,
+that is, the spatial structure of the oscillation. Per-channel features such as band powers
+contain only the first kind.
+
+\section{Riemannian geometry of covariance matrices}
+\textbf{The SPD manifold.} Covariance matrices are symmetric positive definite (SPD). They do not
+form a vector space: the difference of two SPD matrices need not be SPD, and the Euclidean mean
+of SPD matrices is inflated (the ``swelling effect''). The set of SPD matrices is a Riemannian
+manifold, and the natural distance on it, the affine-invariant Riemannian distance,
+\begin{equation}
+\delta_R(\boldsymbol{\Sigma}_1,\boldsymbol{\Sigma}_2) =
+\left\| \log\!\left(\boldsymbol{\Sigma}_1^{-1/2}\boldsymbol{\Sigma}_2\boldsymbol{\Sigma}_1^{-1/2}\right)\right\|_F
+= \Big(\sum_{i=1}^{C} \log^2 \lambda_i\Big)^{1/2},
+\end{equation}
+where $\lambda_i$ are the eigenvalues of $\boldsymbol{\Sigma}_1^{-1}\boldsymbol{\Sigma}_2$, is
+invariant to any invertible linear transformation of the channels:
+$\delta_R(\mathbf{A}\boldsymbol{\Sigma}_1\mathbf{A}^\top, \mathbf{A}\boldsymbol{\Sigma}_2\mathbf{A}^\top)
+=\delta_R(\boldsymbol{\Sigma}_1,\boldsymbol{\Sigma}_2)$~\cite{barachant2012, congedo2017}. Since
+the scalp EEG is a linear mixture of cortical sources, this invariance makes the geometry well
+suited to EEG.
+
+\textbf{Riemannian mean.} The mean of a set of matrices $\{\boldsymbol{\Sigma}_i\}$ is the point
+$\mathbf{M}$ that minimises $\sum_i \delta_R^2(\mathbf{M},\boldsymbol{\Sigma}_i)$. It has no closed
+form and is computed by a fixed-point iteration that alternately maps the matrices to the tangent
+space at the current estimate, averages them there and maps the average back to the manifold.
+
+\textbf{Tangent-space mapping.} Near a reference point $\mathbf{M}$, the manifold is approximated
+by its tangent space, which is a vector space. Each matrix is mapped to a vector by
+\begin{equation}
+\mathbf{s} = \operatorname{upper}\!\left(\log\!\left(\mathbf{M}^{-1/2}\boldsymbol{\Sigma}\,\mathbf{M}^{-1/2}\right)\right),
+\label{eq:ts}
+\end{equation}
+where $\operatorname{upper}(\cdot)$ keeps the $C(C+1)/2$ entries of the upper triangle and
+multiplies the off-diagonal entries by $\sqrt{2}$, so that the Euclidean norm of $\mathbf{s}$
+equals the Riemannian distance between $\boldsymbol{\Sigma}$ and $\mathbf{M}$. The reference
+$\mathbf{M}$ is the Riemannian mean of the \emph{training} windows of the fold, computed
+separately for each common mode. The four tangent vectors are concatenated into one feature
+vector of length $4\cdot C(C+1)/2$: \R{RtFeatures} features for DS-2 ($C=19$) and 420 for DS-1
+($C=14$).
+
+\section{Gradient-boosted decision trees}
+The tangent vectors are classified with gradient-boosted decision trees~\cite{chen2016, ke2017}.
+The model is an additive ensemble $F(\mathbf{s})=\sum_{m=1}^{M} \eta\, f_m(\mathbf{s})$ of $M$
+regression trees, and the probability of the disorder is $\sigma(F(\mathbf{s}))$. Trees are
+added one at a time; tree $f_m$ is fitted to the gradient (and, in XGBoost and LightGBM, the
+curvature) of the logistic loss of the current ensemble, so that each tree corrects the errors of
+the previous ones. Gradient boosting was chosen over the logistic regression and SVM used in the
+preliminary study for three reasons: trees model interactions between features, here between
+channel pairs and between modes, without a kernel choice; they are insensitive to the scale and
+to outlying values of individual features, such as the floored covariances of empty modes; and
+they train in seconds and give a feature importance that can be traced back to modes and
+electrodes.
+
+\textbf{LightGBM}~\cite{ke2017} grows trees leaf-wise on histogram-binned features, and
+\textbf{XGBoost}~\cite{chen2016} grows them level-wise with a regularised objective. Both are
+used with the same budget, fixed in advance: $M=300$ trees, learning rate $\eta=0.05$, a random
+80\% of the windows and 50\% of the features per tree, and class weights inversely proportional
+to the class frequencies of the training windows. The tree depth is chosen from $\{2, 4\}$ by the
+inner cross-validation (for LightGBM the number of leaves is $2^{\text{depth}}-1$). The features
+are standardised with the mean and standard deviation of the training windows.
+
+\section{Choice of the common modes}
+Which common modes should be used may differ between disorders, so the mode set is part of the
+model and is chosen by the inner cross-validation, together with the tree depth. The candidates
+are each single mode and all four together, giving $5\times 2=10$ grid points. In each outer
+fold, an inner stratified grouped 4-fold cross-validation over the training subjects evaluates
+every grid point, the point with the highest pooled balanced accuracy is selected, and the model
+is refitted on the whole outer training set. The test subjects of the outer fold play no part in
+this choice.
+
+\section{Decision per person}
+The pipeline classifies every window. A person is assigned the class of the majority of their
+windows, with ties broken by the mean predicted probability.
+
+\section{What is fitted where}
+\begin{table}[H]
+\caption{Where each part of the pipeline is computed. ``Per window'' parts use one window and no
+labels; ``training subjects'' parts are refitted in every outer fold.}
+\label{tab:fitted}\centering\small
+\begin{tabular}{lll}
+\hline
+Stage & Computed from & Leakage possible? \\
+\hline
+SMVMD, common modes & each window alone & no \\
+OAS covariance and floor & each window alone & no \\
+Riemannian mean (tangent-space reference) & training subjects of the fold & no \\
+Standardisation & training subjects of the fold & no \\
+Mode set and tree depth & inner CV on training subjects & no \\
+Gradient-boosted trees & training subjects of the fold & no \\
+Majority vote & the test person's own predictions & no \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Computational cost}
+\label{sec:cost}
+On the laptop CPU used for this work (one core per stage), processing one 5-second window takes
+about \R{RtSmvmd}~ms for SMVMD, \R{RtCov}~ms for the four covariance matrices and \R{RtPred}~ms for
+the tangent-space mapping and LightGBM prediction, \R{RtTotal}~ms in total, about
+\R{RtRealtime} times faster than real time. Training one model on \R{RtTrainWin} DS-2 windows
+takes about \R{RtTrain}~s; the trained model has \R{RtTrees} trees with \R{RtLeaves} leaves in
+total and occupies about \R{RtModelKB}~kB. No GPU is needed at any stage. SMVMD dominates the
+cost; in the experiments it was run in parallel over windows.
+
+\section{Implementation}
+The pipeline is implemented in Python with NumPy and SciPy (SMVMD, filters), pyRiemann (OAS
+covariance, Riemannian mean, tangent space), scikit-learn~\cite{pedregosa2011} (standardisation,
+logistic regression, SVM, cross-validation), XGBoost and LightGBM. The experiments are in
+\texttt{experiments/stage2c\_smvmd\_riemann.py} and \texttt{experiments/stage2d\_main\_pipeline.py}
+(Appendix~B).

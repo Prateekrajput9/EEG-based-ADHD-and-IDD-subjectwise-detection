@@ -1,0 +1,138 @@
+% B.Tech. project report (Report 2): EEG-based multi-neurodevelopmental disorder detection with
+% SMVMD common modes and Riemannian geometry.
+% Built on the IIT Indore BTP template. Every number comes from generated/r2_numbers.tex and
+% generated/final_numbers.tex (and generated/tab_*.tex), written by report/build_report2.py and
+% report/build_final.py from results/. Do not type numbers here.
+%
+%   python report/build_final.py ; python report/build_report2.py      (from the repo root)
+%   cd report/report2 && pdflatex BTP_report2 && pdflatex BTP_report2
+%
+\documentclass[12pt, a4paper, oneside]{report}
+% ---- FILL IN THESE SIX LINES; they are used on the title page, declaration,
+% ---- preface, certificate and acknowledgements.
+\newcommand{\StudentName}{[Student Name]}
+\newcommand{\RollNo}{[Roll No.]}
+\newcommand{\SupervisorName}{[Prof.\ Supervisor Name]}
+\newcommand{\SupervisorDetails}{[designation, Department of Electrical Engineering]}
+\newcommand{\SubmissionMonth}{[Month]}
+\newcommand{\SubmissionYear}{2026}
+\usepackage{fancyhdr}
+\linespread{1.5}
+\usepackage{cite}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[hidelinks]{hyperref}
+\geometry{verbose,a4paper,tmargin=15mm,bmargin=22mm,lmargin=30mm,rmargin=20mm}
+\renewcommand\bibname{References}
+\DeclareGraphicsExtensions{.pdf,.png,.jpeg}
+\graphicspath{{figures/}}
+
+% ---- generated numbers: \R{Name} prints the value, or ?? if it is not yet computed
+\InputIfFileExists{generated/final_numbers.tex}{}{\typeout{*** run report/build_final.py first ***}}
+\InputIfFileExists{generated/r2_numbers.tex}{}{\typeout{*** run report/build_report2.py first ***}}
+\newcommand{\R}[1]{\ifcsname #1\endcsname\csname #1\endcsname\else\textbf{??}\fi}
+\newcommand{\gentable}[1]{\IfFileExists{generated/#1.tex}{\begin{adjustbox}{max width=\textwidth}\input{generated/#1.tex}\end{adjustbox}}{\textbf{[#1 not yet generated]}}}
+\newcommand{\genfig}[2][0.9\textwidth]{%
+  \IfFileExists{figures/#2.pdf}{\includegraphics[width=#1]{#2}}{\fbox{\parbox{0.8\textwidth}{\centering figure #2 not yet generated}}}}
+\newcommand{\dstwonote}{$^\ast$DS-2: the ADHD children were on methylphenidate (Ritalin) and controls were not, so any ADHD-vs-control difference may reflect medication rather than ADHD.}
+
+\begin{document}
+\begin{titlepage}
+\setstretch{1.15}
+\begin{center}
+\vspace*{10pt}
+{\LARGE \bf EEG-Based Multi-Neurodevelopmental\\[4pt] Disorder Detection using\\[4pt]
+ SMVMD Common Modes and Riemannian Geometry} \\
+\vspace{20pt}
+{\large \bf B.Tech.\ Project }\\
+\vspace{20pt}
+\emph{Submitted in partial fulfillment of the requirements \\of the degree of}\\[4pt]
+{\large \bf Bachelor of Technology} \\
+{\large in}\\
+{\large \bf Electrical Engineering}\\
+\vspace{20pt}
+By \\[4pt]
+{\large \bf \StudentName} \\
+(Roll No.\ \RollNo)\\
+\vspace{14pt}
+Under the guidance of\\[4pt]
+{\large \bf \SupervisorName}\\
+\vspace{20pt}
+\includegraphics[height=4.0cm]{IITI.png}\\
+\vspace{16pt}
+{\Large \bf Department of Electrical Engineering \\[2pt]
+ Indian Institute of Technology Indore \\[2pt]
+ \SubmissionMonth\ \SubmissionYear}
+\end{center}
+\end{titlepage}
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\input{chapters/frontmatter}
+
+\tableofcontents
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+
+\chapter*{List of Abbreviations}
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\begin{tabbing}
+xxxxxxxxxxxx \= \kill
+ADHD \> Attention-deficit/hyperactivity disorder\\
+ADMM \> Alternating direction method of multipliers\\
+AUC \> Area under the ROC curve\\
+CI \> Confidence interval (95\%, percentile bootstrap over subjects)\\
+CNN \> Convolutional neural network\\
+CV \> Cross-validation\\
+EEG \> Electroencephalography\\
+GBDT \> Gradient-boosted decision trees\\
+IDD \> Intellectual and developmental disorder\\
+KNN \> $k$-nearest neighbours\\
+LOSO \> Leave-one-subject-out cross-validation\\
+LR \> Logistic regression\\
+LSTM \> Long short-term memory network\\
+mRMR \> Minimum redundancy maximum relevance\\
+NC \> Normal controls (DS-2)\\
+OAS \> Oracle approximating shrinkage (covariance estimator)\\
+ROC \> Receiver operating characteristic\\
+SPD \> Symmetric positive definite (matrix)\\
+(S)(M)VMD \> (Successive) (multivariate) variational mode decomposition\\
+SVM \> Support vector machine\\
+TDC \> Typically developing controls (DS-1)\\
+\end{tabbing}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{chapters/ch1_introduction}
+\input{chapters/ch2_literature}
+\input{chapters/ch3_data}
+\input{chapters/ch4_protocol}
+\input{chapters/ch5_development}
+\input{chapters/ch6_pipeline}
+\input{chapters/ch7_results}
+\input{chapters/ch8_conclusions}
+
+\newpage
+\addcontentsline{toc}{chapter}{References}
+\input{chapters/references}
+
+\appendix
+\input{chapters/appendix}
+
+\end{document}

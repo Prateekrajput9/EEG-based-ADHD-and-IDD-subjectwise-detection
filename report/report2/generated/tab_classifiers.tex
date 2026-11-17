@@ -1,0 +1,22 @@
+\small
+\begin{tabular}{lccc}
+\hline
+Classifier & Bal.\ acc.\ (\%) & AUC & Children \\
+\hline
+\multicolumn{4}{l}{\textit{SMVMD common modes, mode set chosen in training folds}} \\
+\quad LR & 67.4 & 0.741 & 89/121 \\
+\quad SVM & 70.4 & 0.772 & 90/121 \\
+\quad XGBoost & 70.9 & 0.781 & 91/121 \\
+\quad LightGBM & 71.3 & 0.786 & 93/121 \\
+\multicolumn{4}{l}{\textit{SMVMD common modes, all four}} \\
+\quad LR & 68.0 & 0.750 & 87/121 \\
+\quad SVM & 70.4 & 0.772 & 90/121 \\
+\quad XGBoost & 71.4 & 0.785 & 91/121 \\
+\quad LightGBM & 71.3 & 0.786 & 93/121 \\
+\multicolumn{4}{l}{\textit{No decomposition (broadband covariance, Step 7 input)}} \\
+\quad LR & 71.1 & 0.786 & 94/121 \\
+\quad SVM & 72.6 & 0.803 & 92/121 \\
+\quad XGBoost & 72.2 & 0.803 & 91/121 \\
+\quad LightGBM & 73.1 & 0.815 & 92/121 \\
+\hline
+\end{tabular}

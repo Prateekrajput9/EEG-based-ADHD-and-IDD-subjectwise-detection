@@ -1,0 +1,1398 @@
+{
+ "channel_map": {
+  "shared_1020": [
+   "F7",
+   "F3",
+   "F4",
+   "F8",
+   "T7",
+   "T8",
+   "P7",
+   "P8",
+   "O1",
+   "O2"
+  ],
+  "ds1_index": [
+   1,
+   2,
+   11,
+   12,
+   4,
+   9,
+   5,
+   8,
+   6,
+   7
+  ],
+  "ds2_index": [
+   10,
+   2,
+   3,
+   11,
+   12,
+   13,
+   14,
+   15,
+   8,
+   9
+  ],
+  "ds2_original_names": [
+   "F7",
+   "F3",
+   "F4",
+   "F8",
+   "T3",
+   "T4",
+   "T5",
+   "T6",
+   "O1",
+   "O2"
+  ],
+  "ds1_only": [
+   "AF3",
+   "FC5",
+   "FC6",
+   "AF4"
+  ],
+  "ds2_only": [
+   "Fp1",
+   "Fp2",
+   "C3",
+   "C4",
+   "P3",
+   "P4",
+   "Fz",
+   "Cz",
+   "Pz"
+  ]
+ },
+ "features": [
+  "rel_delta",
+  "rel_theta",
+  "rel_alpha",
+  "rel_beta",
+  "log_theta_beta",
+  "spectral_entropy",
+  "hjorth_mobility",
+  "hjorth_complexity",
+  "sample_entropy",
+  "permutation_entropy"
+ ],
+ "classifier": "LR C=0.1, balanced",
+ "note": "Different disorders (IDD vs ADHD), devices (EPOC+ vs 19-ch clinical), tasks (rest/music vs visual attention): this is domain-shift analysis, not disorder transfer.",
+ "notes": [
+  "DS-2 confound: the ADHD children were taking methylphenidate and the controls were not, so ADHD cannot be separated from its treatment."
+ ],
+ "results": {
+  "train_DS1_Rest|test_DS2|train_stats": {
+   "window": {
+    "accuracy": 0.5154826958105647,
+    "balanced_accuracy": 0.5133537168829615,
+    "sensitivity": 0.5315217391304348,
+    "specificity": 0.4951856946354883,
+    "f1": 0.5506756756756757,
+    "f1_macro": 0.5124919880354663,
+    "confusion_matrix": [
+     [
+      1440,
+      1468
+     ],
+     [
+      1724,
+      1956
+     ]
+    ],
+    "roc_auc": 0.5185120880928175,
+    "n": 6588
+   },
+   "child": {
+    "accuracy": 0.5041322314049587,
+    "balanced_accuracy": 0.5040983606557377,
+    "sensitivity": 0.5081967213114754,
+    "specificity": 0.5,
+    "f1": 0.5081967213114754,
+    "f1_macro": 0.5040983606557377,
+    "confusion_matrix": [
+     [
+      30,
+      30
+     ],
+     [
+      30,
+      31
+     ]
+    ],
+    "roc_auc": 0.5445355191256831,
+    "n": 121,
+    "n_correct": 61,
+    "n_vote_ties": 2
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.47145965008757423,
+      0.5601034327757486
+     ],
+     "balanced_accuracy": [
+      0.47080851324177436,
+      0.5575021467612765
+     ],
+     "f1": [
+      0.4987078376333924,
+      0.6002568586209023
+     ],
+     "roc_auc": [
+      0.4601065414118375,
+      0.5805656865429465
+     ],
+     "sensitivity": [
+      0.4674349051749022,
+      0.5962544069115209
+     ],
+     "specificity": [
+      0.43547707374981454,
+      0.555723330807443
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.4132231404958678,
+      0.5950413223140496
+     ],
+     "balanced_accuracy": [
+      0.4133879781420765,
+      0.5945389344262295
+     ],
+     "f1": [
+      0.41070283882783887,
+      0.6016260162601627
+     ],
+     "roc_auc": [
+      0.4447950819672131,
+      0.6467418032786884
+     ],
+     "sensitivity": [
+      0.39344262295081966,
+      0.639344262295082
+     ],
+     "specificity": [
+      0.36666666666666664,
+      0.6170833333333311
+     ]
+    }
+   },
+   "transductive": false
+  },
+  "train_DS1_Rest|test_DS2|own_stats": {
+   "window": {
+    "accuracy": 0.5255009107468124,
+    "balanced_accuracy": 0.5243410232641589,
+    "sensitivity": 0.5342391304347827,
+    "specificity": 0.5144429160935351,
+    "f1": 0.5570983281382829,
+    "f1_macro": 0.5230735184333127,
+    "confusion_matrix": [
+     [
+      1496,
+      1412
+     ],
+     [
+      1714,
+      1966
+     ]
+    ],
+    "roc_auc": 0.5360869191435919,
+    "n": 6588
+   },
+   "child": {
+    "accuracy": 0.5206611570247934,
+    "balanced_accuracy": 0.5207650273224044,
+    "sensitivity": 0.5081967213114754,
+    "specificity": 0.5333333333333333,
+    "f1": 0.5166666666666667,
+    "f1_macro": 0.5206284153005465,
+    "confusion_matrix": [
+     [
+      32,
+      28
+     ],
+     [
+      30,
+      31
+     ]
+    ],
+    "roc_auc": 0.5562841530054645,
+    "n": 121,
+    "n_correct": 63,
+    "n_vote_ties": 5
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.48446196668761704,
+      0.5688180194308173
+     ],
+     "balanced_accuracy": [
+      0.4838892745775843,
+      0.5667487032776483
+     ],
+     "f1": [
+      0.5053540715531957,
+      0.6081821483654059
+     ],
+     "roc_auc": [
+      0.4804516834184966,
+      0.5954110538315442
+     ],
+     "sensitivity": [
+      0.47013886801907556,
+      0.6002900986047193
+     ],
+     "specificity": [
+      0.4594106148013311,
+      0.5711798795438445
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.4380165289256198,
+      0.6115702479338843
+     ],
+     "balanced_accuracy": [
+      0.4381113387978142,
+      0.6109357923497267
+     ],
+     "f1": [
+      0.4173731884057971,
+      0.6115702479338844
+     ],
+     "roc_auc": [
+      0.45299180327868854,
+      0.6579713114754095
+     ],
+     "sensitivity": [
+      0.39344262295081966,
+      0.6229508196721312
+     ],
+     "specificity": [
+      0.4,
+      0.65
+     ]
+    }
+   },
+   "transductive": true
+  },
+  "train_DS1_Music|test_DS2|train_stats": {
+   "window": {
+    "accuracy": 0.5434122647237402,
+    "balanced_accuracy": 0.5205351803121823,
+    "sensitivity": 0.7157608695652173,
+    "specificity": 0.3253094910591472,
+    "f1": 0.6365393910101498,
+    "f1_macro": 0.5113309199948708,
+    "confusion_matrix": [
+     [
+      946,
+      1962
+     ],
+     [
+      1046,
+      2634
+     ]
+    ],
+    "roc_auc": 0.5479951296274146,
+    "n": 6588
+   },
+   "child": {
+    "accuracy": 0.5289256198347108,
+    "balanced_accuracy": 0.5266393442622951,
+    "sensitivity": 0.8032786885245902,
+    "specificity": 0.25,
+    "f1": 0.6322580645161291,
+    "f1_macro": 0.48854282536151283,
+    "confusion_matrix": [
+     [
+      15,
+      45
+     ],
+     [
+      12,
+      49
+     ]
+    ],
+    "roc_auc": 0.5614754098360656,
+    "n": 121,
+    "n_correct": 64,
+    "n_vote_ties": 1
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.5005780134690075,
+      0.585243462575225
+     ],
+     "balanced_accuracy": [
+      0.480870730004845,
+      0.5605779412981885
+     ],
+     "f1": [
+      0.5943790780156918,
+      0.6778043728314598
+     ],
+     "roc_auc": [
+      0.48578828066294377,
+      0.6085152581301343
+     ],
+     "sensitivity": [
+      0.6566607977605736,
+      0.7742408678750227
+     ],
+     "specificity": [
+      0.2695561659227816,
+      0.3839092655049653
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.45454545454545453,
+      0.6033057851239669
+     ],
+     "balanced_accuracy": [
+      0.45259562841530054,
+      0.6009596994535519
+     ],
+     "f1": [
+      0.5694444444444444,
+      0.6879084291504672
+     ],
+     "roc_auc": [
+      0.464207650273224,
+      0.6595765027322403
+     ],
+     "sensitivity": [
+      0.7049180327868853,
+      0.9016393442622951
+     ],
+     "specificity": [
+      0.15,
+      0.36666666666666664
+     ]
+    }
+   },
+   "transductive": false
+  },
+  "train_DS1_Music|test_DS2|own_stats": {
+   "window": {
+    "accuracy": 0.5517607771706132,
+    "balanced_accuracy": 0.546728290772083,
+    "sensitivity": 0.5896739130434783,
+    "specificity": 0.5037826685006878,
+    "f1": 0.5950911833264775,
+    "f1_macro": 0.5465681991764123,
+    "confusion_matrix": [
+     [
+      1465,
+      1443
+     ],
+     [
+      1510,
+      2170
+     ]
+    ],
+    "roc_auc": 0.5711623856228695,
+    "n": 6588
+   },
+   "child": {
+    "accuracy": 0.5454545454545454,
+    "balanced_accuracy": 0.5450819672131147,
+    "sensitivity": 0.5901639344262295,
+    "specificity": 0.5,
+    "f1": 0.5669291338582677,
+    "f1_macro": 0.5443341321465252,
+    "confusion_matrix": [
+     [
+      30,
+      30
+     ],
+     [
+      25,
+      36
+     ]
+    ],
+    "roc_auc": 0.6057377049180328,
+    "n": 121,
+    "n_correct": 66,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.5105090253018847,
+      0.593378910270853
+     ],
+     "balanced_accuracy": [
+      0.5069134540887007,
+      0.5878965516750653
+     ],
+     "f1": [
+      0.5472306879273926,
+      0.6413298894383722
+     ],
+     "roc_auc": [
+      0.5147525558883883,
+      0.6276454334880395
+     ],
+     "sensitivity": [
+      0.5297976144547325,
+      0.6466846119491462
+     ],
+     "specificity": [
+      0.4461764086807482,
+      0.5645780990007252
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.4628099173553719,
+      0.628099173553719
+     ],
+     "balanced_accuracy": [
+      0.46215846994535525,
+      0.6281420765027322
+     ],
+     "f1": [
+      0.4715208034433286,
+      0.6511627906976745
+     ],
+     "roc_auc": [
+      0.5073633879781421,
+      0.7041120218579234
+     ],
+     "sensitivity": [
+      0.45901639344262296,
+      0.7049180327868853
+     ],
+     "specificity": [
+      0.38333333333333336,
+      0.6333333333333333
+     ]
+    }
+   },
+   "transductive": true
+  },
+  "train_DS2|test_DS1_Rest|train_stats": {
+   "window": {
+    "accuracy": 0.7763975155279503,
+    "balanced_accuracy": 0.7763975155279503,
+    "sensitivity": 0.7608695652173914,
+    "specificity": 0.7919254658385093,
+    "f1": 0.7728706624605679,
+    "f1_macro": 0.7763435881110179,
+    "confusion_matrix": [
+     [
+      255,
+      67
+     ],
+     [
+      77,
+      245
+     ]
+    ],
+    "roc_auc": 0.8504108637784036,
+    "n": 644
+   },
+   "child": {
+    "accuracy": 0.8571428571428571,
+    "balanced_accuracy": 0.8571428571428571,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.8571428571428571,
+    "f1": 0.8571428571428571,
+    "f1_macro": 0.8571428571428571,
+    "confusion_matrix": [
+     [
+      6,
+      1
+     ],
+     [
+      1,
+      6
+     ]
+    ],
+    "roc_auc": 0.9387755102040817,
+    "n": 14,
+    "n_correct": 12,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.6444099378881988,
+      0.8866847826086954
+     ],
+     "balanced_accuracy": [
+      0.6444099378881988,
+      0.8866847826086954
+     ],
+     "f1": [
+      0.6376766304347826,
+      0.8846749448594372
+     ],
+     "roc_auc": [
+      0.709588750434011,
+      0.9517770340650437
+     ],
+     "sensitivity": [
+      0.5930900621118012,
+      0.906832298136646
+     ],
+     "specificity": [
+      0.5899844720496894,
+      0.9503105590062112
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.6428571428571429,
+      1.0
+     ],
+     "balanced_accuracy": [
+      0.6428571428571428,
+      1.0
+     ],
+     "f1": [
+      0.6250000000000001,
+      1.0
+     ],
+     "roc_auc": [
+      0.775,
+      1.0
+     ],
+     "sensitivity": [
+      0.5714285714285714,
+      1.0
+     ],
+     "specificity": [
+      0.5714285714285714,
+      1.0
+     ]
+    }
+   },
+   "transductive": false
+  },
+  "train_DS2|test_DS1_Rest|own_stats": {
+   "window": {
+    "accuracy": 0.7080745341614907,
+    "balanced_accuracy": 0.7080745341614907,
+    "sensitivity": 0.7981366459627329,
+    "specificity": 0.6180124223602484,
+    "f1": 0.7321937321937322,
+    "f1_macro": 0.7056873097828729,
+    "confusion_matrix": [
+     [
+      199,
+      123
+     ],
+     [
+      65,
+      257
+     ]
+    ],
+    "roc_auc": 0.804994020292427,
+    "n": 644
+   },
+   "child": {
+    "accuracy": 0.7857142857142857,
+    "balanced_accuracy": 0.7857142857142857,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.7142857142857143,
+    "f1": 0.7999999999999999,
+    "f1_macro": 0.7846153846153845,
+    "confusion_matrix": [
+     [
+      5,
+      2
+     ],
+     [
+      1,
+      6
+     ]
+    ],
+    "roc_auc": 0.9183673469387755,
+    "n": 14,
+    "n_correct": 11,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.5962732919254659,
+      0.812111801242236
+     ],
+     "balanced_accuracy": [
+      0.5962732919254659,
+      0.812111801242236
+     ],
+     "f1": [
+      0.6284915175678227,
+      0.8206674894902045
+     ],
+     "roc_auc": [
+      0.67043203387215,
+      0.9089644978974576
+     ],
+     "sensitivity": [
+      0.6614906832298136,
+      0.8975155279503105
+     ],
+     "specificity": [
+      0.453416149068323,
+      0.7950310559006211
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.5714285714285714,
+      1.0
+     ],
+     "balanced_accuracy": [
+      0.5714285714285714,
+      1.0
+     ],
+     "f1": [
+      0.5714285714285714,
+      1.0
+     ],
+     "roc_auc": [
+      0.6938775510204082,
+      1.0
+     ],
+     "sensitivity": [
+      0.5714285714285714,
+      1.0
+     ],
+     "specificity": [
+      0.42857142857142855,
+      1.0
+     ]
+    }
+   },
+   "transductive": true
+  },
+  "train_DS2|test_DS1_Music|train_stats": {
+   "window": {
+    "accuracy": 0.7717391304347826,
+    "balanced_accuracy": 0.7717391304347826,
+    "sensitivity": 0.7763975155279503,
+    "specificity": 0.7670807453416149,
+    "f1": 0.7727975270479136,
+    "f1_macro": 0.7717341769404935,
+    "confusion_matrix": [
+     [
+      247,
+      75
+     ],
+     [
+      72,
+      250
+     ]
+    ],
+    "roc_auc": 0.8636047991975618,
+    "n": 644
+   },
+   "child": {
+    "accuracy": 0.7857142857142857,
+    "balanced_accuracy": 0.7857142857142857,
+    "sensitivity": 0.7142857142857143,
+    "specificity": 0.8571428571428571,
+    "f1": 0.7692307692307692,
+    "f1_macro": 0.7846153846153845,
+    "confusion_matrix": [
+     [
+      6,
+      1
+     ],
+     [
+      2,
+      5
+     ]
+    ],
+    "roc_auc": 0.9591836734693877,
+    "n": 14,
+    "n_correct": 11,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.6583850931677019,
+      0.8788819875776398
+     ],
+     "balanced_accuracy": [
+      0.6583850931677018,
+      0.8788819875776397
+     ],
+     "f1": [
+      0.639839559970746,
+      0.8832354124837475
+     ],
+     "roc_auc": [
+      0.7327977315689981,
+      0.9650975560356467
+     ],
+     "sensitivity": [
+      0.593167701863354,
+      0.9347826086956522
+     ],
+     "specificity": [
+      0.6086180124223602,
+      0.8913043478260869
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.5714285714285714,
+      1.0
+     ],
+     "balanced_accuracy": [
+      0.5714285714285714,
+      1.0
+     ],
+     "f1": [
+      0.4444444444444445,
+      1.0
+     ],
+     "roc_auc": [
+      0.8163265306122449,
+      1.0
+     ],
+     "sensitivity": [
+      0.2857142857142857,
+      1.0
+     ],
+     "specificity": [
+      0.5714285714285714,
+      1.0
+     ]
+    }
+   },
+   "transductive": false
+  },
+  "train_DS2|test_DS1_Music|own_stats": {
+   "window": {
+    "accuracy": 0.7391304347826086,
+    "balanced_accuracy": 0.7391304347826086,
+    "sensitivity": 0.782608695652174,
+    "specificity": 0.6956521739130435,
+    "f1": 0.7499999999999999,
+    "f1_macro": 0.7386363636363635,
+    "confusion_matrix": [
+     [
+      224,
+      98
+     ],
+     [
+      70,
+      252
+     ]
+    ],
+    "roc_auc": 0.8286138652058177,
+    "n": 644
+   },
+   "child": {
+    "accuracy": 0.8571428571428571,
+    "balanced_accuracy": 0.8571428571428571,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.8571428571428571,
+    "f1": 0.8571428571428571,
+    "f1_macro": 0.8571428571428571,
+    "confusion_matrix": [
+     [
+      6,
+      1
+     ],
+     [
+      1,
+      6
+     ]
+    ],
+    "roc_auc": 0.9591836734693877,
+    "n": 14,
+    "n_correct": 12,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.6444099378881988,
+      0.8276785714285712
+     ],
+     "balanced_accuracy": [
+      0.6444099378881988,
+      0.8276785714285712
+     ],
+     "f1": [
+      0.6523720108375545,
+      0.8346199100818206
+     ],
+     "roc_auc": [
+      0.7142833031133058,
+      0.9188153427722695
+     ],
+     "sensitivity": [
+      0.6458850931677018,
+      0.9038043478260865
+     ],
+     "specificity": [
+      0.5683229813664596,
+      0.8291925465838509
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.6428571428571429,
+      1.0
+     ],
+     "balanced_accuracy": [
+      0.6428571428571428,
+      1.0
+     ],
+     "f1": [
+      0.6666666666666666,
+      1.0
+     ],
+     "roc_auc": [
+      0.8163265306122449,
+      1.0
+     ],
+     "sensitivity": [
+      0.5714285714285714,
+      1.0
+     ],
+     "specificity": [
+      0.5714285714285714,
+      1.0
+     ]
+    }
+   },
+   "transductive": true
+  },
+  "within_DS1_Rest|subject_loso": {
+   "window": {
+    "accuracy": 0.7329192546583851,
+    "balanced_accuracy": 0.7329192546583851,
+    "sensitivity": 0.7142857142857143,
+    "specificity": 0.7515527950310559,
+    "f1": 0.7278481012658229,
+    "f1_macro": 0.7328264896573017,
+    "confusion_matrix": [
+     [
+      242,
+      80
+     ],
+     [
+      92,
+      230
+     ]
+    ],
+    "roc_auc": 0.7753173102889549,
+    "n": 644
+   },
+   "child": {
+    "accuracy": 0.8571428571428571,
+    "balanced_accuracy": 0.8571428571428571,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.8571428571428571,
+    "f1": 0.8571428571428571,
+    "f1_macro": 0.8571428571428571,
+    "confusion_matrix": [
+     [
+      6,
+      1
+     ],
+     [
+      1,
+      6
+     ]
+    ],
+    "roc_auc": 0.8367346938775511,
+    "n": 14,
+    "n_correct": 12,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.5822593167701864,
+      0.8540760869565215
+     ],
+     "balanced_accuracy": [
+      0.5822593167701864,
+      0.8540760869565215
+     ],
+     "f1": [
+      0.5786414061569447,
+      0.8492512836294723
+     ],
+     "roc_auc": [
+      0.5761342155009452,
+      0.9299752131476409
+     ],
+     "sensitivity": [
+      0.5279503105590062,
+      0.860248447204969
+     ],
+     "specificity": [
+      0.5031055900621118,
+      0.9254658385093167
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.6428571428571429,
+      1.0
+     ],
+     "balanced_accuracy": [
+      0.6428571428571428,
+      1.0
+     ],
+     "f1": [
+      0.6153846153846153,
+      1.0
+     ],
+     "roc_auc": [
+      0.5709183673469388,
+      1.0
+     ],
+     "sensitivity": [
+      0.5714285714285714,
+      1.0
+     ],
+     "specificity": [
+      0.5714285714285714,
+      1.0
+     ]
+    }
+   }
+  },
+  "within_DS1_Music|subject_loso": {
+   "window": {
+    "accuracy": 0.6428571428571429,
+    "balanced_accuracy": 0.6428571428571428,
+    "sensitivity": 0.7204968944099379,
+    "specificity": 0.5652173913043478,
+    "f1": 0.6685878962536024,
+    "f1_macro": 0.6406912545241076,
+    "confusion_matrix": [
+     [
+      182,
+      140
+     ],
+     [
+      90,
+      232
+     ]
+    ],
+    "roc_auc": 0.7074379846456541,
+    "n": 644
+   },
+   "child": {
+    "accuracy": 0.6428571428571429,
+    "balanced_accuracy": 0.6428571428571428,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.42857142857142855,
+    "f1": 0.7058823529411764,
+    "f1_macro": 0.6256684491978609,
+    "confusion_matrix": [
+     [
+      3,
+      4
+     ],
+     [
+      1,
+      6
+     ]
+    ],
+    "roc_auc": 0.6326530612244898,
+    "n": 14,
+    "n_correct": 9,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.4860248447204969,
+      0.8012810559006208
+     ],
+     "balanced_accuracy": [
+      0.4860248447204969,
+      0.8012810559006209
+     ],
+     "f1": [
+      0.5484336076844896,
+      0.800547779388994
+     ],
+     "roc_auc": [
+      0.4933070676285637,
+      0.8937061166621657
+     ],
+     "sensitivity": [
+      0.5745341614906833,
+      0.8633540372670807
+     ],
+     "specificity": [
+      0.30403726708074535,
+      0.8788819875776398
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.42857142857142855,
+      0.8571428571428571
+     ],
+     "balanced_accuracy": [
+      0.42857142857142855,
+      0.8571428571428572
+     ],
+     "f1": [
+      0.5,
+      0.8750000000000001
+     ],
+     "roc_auc": [
+      0.2857142857142857,
+      0.8979591836734694
+     ],
+     "sensitivity": [
+      0.5714285714285714,
+      1.0
+     ],
+     "specificity": [
+      0.14285714285714285,
+      0.8571428571428571
+     ]
+    }
+   }
+  },
+  "within_DS2|subject_sgkf": {
+   "window": {
+    "accuracy": 0.5506982392228293,
+    "balanced_accuracy": 0.5527386968482746,
+    "sensitivity": 0.5353260869565217,
+    "specificity": 0.5701513067400276,
+    "f1": 0.5710144927536231,
+    "f1_macro": 0.5496882533876465,
+    "confusion_matrix": [
+     [
+      1658,
+      1250
+     ],
+     [
+      1710,
+      1970
+     ]
+    ],
+    "roc_auc": 0.5770071130614197,
+    "n": 6588
+   },
+   "child": {
+    "accuracy": 0.6198347107438017,
+    "balanced_accuracy": 0.6200819672131148,
+    "sensitivity": 0.5901639344262295,
+    "specificity": 0.65,
+    "f1": 0.6101694915254237,
+    "f1_macro": 0.61960087479497,
+    "confusion_matrix": [
+     [
+      39,
+      21
+     ],
+     [
+      25,
+      36
+     ]
+    ],
+    "roc_auc": 0.6095628415300547,
+    "n": 121,
+    "n_correct": 75,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.5066685451609519,
+      0.5968943403834429
+     ],
+     "balanced_accuracy": [
+      0.5066703710500063,
+      0.5996613315382907
+     ],
+     "f1": [
+      0.5198465372422132,
+      0.6196885025970033
+     ],
+     "roc_auc": [
+      0.5110791380728679,
+      0.6415976577018305
+     ],
+     "sensitivity": [
+      0.47622672327835164,
+      0.5931026730445335
+     ],
+     "specificity": [
+      0.49611299640323214,
+      0.6452526897605338
+     ]
+    },
+    "child": {
+     "accuracy": [
+      0.5371900826446281,
+      0.7107438016528925
+     ],
+     "balanced_accuracy": [
+      0.5364719945355191,
+      0.7105225409836066
+     ],
+     "f1": [
+      0.5084745762711864,
+      0.7049180327868853
+     ],
+     "roc_auc": [
+      0.5089890710382514,
+      0.7076707650273223
+     ],
+     "sensitivity": [
+      0.45901639344262296,
+      0.7049180327868853
+     ],
+     "specificity": [
+      0.5166666666666667,
+      0.7666666666666667
+     ]
+    }
+   }
+  },
+  "dataset_id|DS1_Rest_vs_DS2": {
+   "window": {
+    "accuracy": 0.9994469026548672,
+    "balanced_accuracy": 0.9975949118857173,
+    "sensitivity": 0.9998482088646024,
+    "specificity": 0.9953416149068323,
+    "f1": 0.9996964638033087,
+    "f1_macro": 0.9982930219483106,
+    "confusion_matrix": [
+     [
+      641,
+      3
+     ],
+     [
+      1,
+      6587
+     ]
+    ],
+    "roc_auc": 0.9998128537864818,
+    "n": 7232
+   },
+   "child": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "f1": 1.0,
+    "f1_macro": 1.0,
+    "confusion_matrix": [
+     [
+      14,
+      0
+     ],
+     [
+      0,
+      121
+     ]
+    ],
+    "roc_auc": 1.0,
+    "n": 135,
+    "n_correct": 135,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 500 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.9983405188808242,
+      1.0
+     ],
+     "balanced_accuracy": [
+      0.9927807963992445,
+      1.0
+     ],
+     "f1": [
+      0.99908575390289,
+      1.0
+     ],
+     "roc_auc": [
+      0.9992828221290757,
+      1.0
+     ],
+     "sensitivity": [
+      0.9995357329000244,
+      1.0
+     ],
+     "specificity": [
+      0.9860248447204969,
+      1.0
+     ]
+    },
+    "child": {
+     "accuracy": [
+      1.0,
+      1.0
+     ],
+     "balanced_accuracy": [
+      1.0,
+      1.0
+     ],
+     "f1": [
+      1.0,
+      1.0
+     ],
+     "roc_auc": [
+      1.0,
+      1.0
+     ],
+     "sensitivity": [
+      1.0,
+      1.0
+     ],
+     "specificity": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "protocol": "StratifiedGroupKFold(5) over children of both datasets; label = dataset"
+  },
+  "dataset_id|DS1_Music_vs_DS2": {
+   "window": {
+    "accuracy": 0.9983407079646017,
+    "balanced_accuracy": 0.9906832298136645,
+    "sensitivity": 1.0,
+    "specificity": 0.9813664596273292,
+    "f1": 0.9990900818926297,
+    "f1_macro": 0.9948428465889481,
+    "confusion_matrix": [
+     [
+      632,
+      12
+     ],
+     [
+      0,
+      6588
+     ]
+    ],
+    "roc_auc": 0.9999882149739598,
+    "n": 7232
+   },
+   "child": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "f1": 1.0,
+    "f1_macro": 1.0,
+    "confusion_matrix": [
+     [
+      14,
+      0
+     ],
+     [
+      0,
+      121
+     ]
+    ],
+    "roc_auc": 1.0,
+    "n": 135,
+    "n_correct": 135,
+    "n_vote_ties": 0
+   },
+   "ci95": {
+    "method": "percentile bootstrap over children, stratified by class, 500 resamples, seed 42",
+    "level": 0.95,
+    "window": {
+     "accuracy": [
+      0.9947806223791658,
+      1.0
+     ],
+     "balanced_accuracy": [
+      0.9720496894409938,
+      1.0
+     ],
+     "f1": [
+      0.9971298155742342,
+      1.0
+     ],
+     "roc_auc": [
+      0.9999490304429565,
+      1.0
+     ],
+     "sensitivity": [
+      1.0,
+      1.0
+     ],
+     "specificity": [
+      0.9440993788819876,
+      1.0
+     ]
+    },
+    "child": {
+     "accuracy": [
+      1.0,
+      1.0
+     ],
+     "balanced_accuracy": [
+      1.0,
+      1.0
+     ],
+     "f1": [
+      1.0,
+      1.0
+     ],
+     "roc_auc": [
+      1.0,
+      1.0
+     ],
+     "sensitivity": [
+      1.0,
+      1.0
+     ],
+     "specificity": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "protocol": "StratifiedGroupKFold(5) over children of both datasets; label = dataset"
+  }
+ }
+}

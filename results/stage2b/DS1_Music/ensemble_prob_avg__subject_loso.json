@@ -1,0 +1,315 @@
+{
+ "schema_version": 1,
+ "name": "ensemble_prob_avg__subject_loso",
+ "created_at": "2026-11-06T10:44:26",
+ "seed": 42,
+ "config": {
+  "dataset": "DS1",
+  "experiment": "DS1_Music",
+  "model": {
+   "name": "Ensemble (mean probability)",
+   "features": "members fixed in advance",
+   "members": [
+    "results/stage1_eval/knn_tuned",
+    "results/stage2/spectral_lr",
+    "results/stage2/spectral_xgb",
+    "results/stage2/raw_eegnet",
+    "results/stage2b/riemann_ts_lr"
+   ]
+  },
+  "protocol": {
+   "name": "subject_loso",
+   "split": "loso",
+   "leaky": false,
+   "seed": 42,
+   "nested": "members individually nested or untuned"
+  }
+ },
+ "config_hash": "bc24781672d4",
+ "git": {
+  "commit": "01b23707ddcadd6f4b1d2d4ec56b9d8bf0d4a464",
+  "src_or_experiments_dirty": true
+ },
+ "environment": {
+  "python": "3.13.3",
+  "numpy": "2.4.5",
+  "platform": "Windows-11-10.0.26300-SP0"
+ },
+ "experiment": "DS1_Music",
+ "model": {
+  "name": "Ensemble (mean probability)",
+  "features": "members fixed in advance",
+  "members": [
+   "results/stage1_eval/knn_tuned",
+   "results/stage2/spectral_lr",
+   "results/stage2/spectral_xgb",
+   "results/stage2/raw_eegnet",
+   "results/stage2b/riemann_ts_lr"
+  ]
+ },
+ "protocol": {
+  "name": "subject_loso",
+  "split": "loso",
+  "leaky": false,
+  "seed": 42,
+  "nested": "members individually nested or untuned"
+ },
+ "n_folds": 14,
+ "runtime_sec": 0.0,
+ "metrics": {
+  "window": {
+   "accuracy": 0.8695652173913043,
+   "balanced_accuracy": 0.8695652173913044,
+   "sensitivity": 0.7763975155279503,
+   "specificity": 0.9627329192546584,
+   "f1": 0.8561643835616437,
+   "f1_macro": 0.8684231008717309,
+   "confusion_matrix": [
+    [
+     310,
+     12
+    ],
+    [
+     72,
+     250
+    ]
+   ],
+   "roc_auc": 0.9610258091894602,
+   "n": 644
+  },
+  "child": {
+   "accuracy": 0.9285714285714286,
+   "balanced_accuracy": 0.9285714285714286,
+   "sensitivity": 0.8571428571428571,
+   "specificity": 1.0,
+   "f1": 0.923076923076923,
+   "f1_macro": 0.9282051282051282,
+   "confusion_matrix": [
+    [
+     7,
+     0
+    ],
+    [
+     1,
+     6
+    ]
+   ],
+   "roc_auc": 0.9795918367346939,
+   "n": 14,
+   "n_correct": 13,
+   "n_vote_ties": 0
+  }
+ },
+ "ci95": {
+  "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+  "level": 0.95,
+  "window": {
+   "accuracy": [
+    0.7375776397515528,
+    0.9720496894409938
+   ],
+   "balanced_accuracy": [
+    0.7375776397515528,
+    0.9720496894409938
+   ],
+   "f1": [
+    0.6666666666666667,
+    0.971608832807571
+   ],
+   "roc_auc": [
+    0.8801483353265692,
+    0.9984763801550866
+   ],
+   "sensitivity": [
+    0.518555900621118,
+    0.9720496894409938
+   ],
+   "specificity": [
+    0.9006211180124224,
+    1.0
+   ]
+  },
+  "child": {
+   "accuracy": [
+    0.7857142857142857,
+    1.0
+   ],
+   "balanced_accuracy": [
+    0.7857142857142857,
+    1.0
+   ],
+   "f1": [
+    0.7272727272727273,
+    1.0
+   ],
+   "roc_auc": [
+    0.8775510204081632,
+    1.0
+   ],
+   "sensitivity": [
+    0.5714285714285714,
+    1.0
+   ],
+   "specificity": [
+    1.0,
+    1.0
+   ]
+  }
+ },
+ "per_child": [
+  {
+   "subject": "IDD_001",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.7391304347826086,
+   "fraction_predicted_disorder": 0.7391304347826086,
+   "mean_score": 0.5995998705106843,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_002",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.906989394995167,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_003",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.875739184338424,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_004",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.7985173464331592,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_005",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.06521739130434782,
+   "fraction_predicted_disorder": 0.06521739130434782,
+   "mean_score": 0.420873255083248,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "IDD_006",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.9347826086956522,
+   "fraction_predicted_disorder": 0.9347826086956522,
+   "mean_score": 0.7590545208285826,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_007",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.6956521739130435,
+   "fraction_predicted_disorder": 0.6956521739130435,
+   "mean_score": 0.612791498300326,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_001",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 0.9565217391304348,
+   "fraction_predicted_disorder": 0.043478260869565216,
+   "mean_score": 0.3437409371445228,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_002",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 0.782608695652174,
+   "fraction_predicted_disorder": 0.21739130434782608,
+   "mean_score": 0.44363888183814704,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_003",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.03950115574442212,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_004",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.09314998419924124,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_005",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.06303505974583853,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_006",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.3107098836348088,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_007",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.24232405555107206,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  }
+ ]
+}

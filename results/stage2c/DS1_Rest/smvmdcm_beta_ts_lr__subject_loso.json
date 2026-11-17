@@ -1,0 +1,503 @@
+{
+ "schema_version": 1,
+ "name": "smvmdcm_beta_ts_lr__subject_loso",
+ "created_at": "2026-11-17T14:16:57",
+ "seed": 42,
+ "config": {
+  "dataset": "DS1",
+  "experiment": "DS1_Rest",
+  "data": {
+   "cache": "results\\cache\\smvmd_riemann\\DS1_Rest_2c8f023acaeb_eps0.0001.npz",
+   "eps_floor": 0.0001,
+   "bands_hz": {
+    "delta": [
+     0.0,
+     4.0
+    ],
+    "theta": [
+     4.0,
+     8.0
+    ],
+    "alpha": [
+     8.0,
+     13.0
+    ],
+    "beta": [
+     13.0,
+     30.0
+    ]
+   }
+  },
+  "model": {
+   "name": "Tangent space + LR",
+   "features": "SMVMD common mode (beta)"
+  },
+  "protocol": {
+   "name": "subject_loso",
+   "split": "loso",
+   "n_splits": "n_subjects",
+   "leaky": false,
+   "seed": 42,
+   "nested": true
+  },
+  "n_boot": 2000,
+  "grid": {
+   "clf__C": [
+    0.01,
+    0.1,
+    1.0
+   ]
+  }
+ },
+ "config_hash": "2a21fe5e187a",
+ "git": {
+  "commit": "af227b8730767bbdb48e85cc57bccc5e644279c4",
+  "src_or_experiments_dirty": true
+ },
+ "environment": {
+  "python": "3.13.3",
+  "numpy": "2.4.5",
+  "platform": "Windows-11-10.0.26300-SP0"
+ },
+ "experiment": "DS1_Rest",
+ "model": {
+  "name": "Tangent space + LR",
+  "features": "SMVMD common mode (beta)"
+ },
+ "protocol": {
+  "name": "subject_loso",
+  "split": "loso",
+  "n_splits": "n_subjects",
+  "leaky": false,
+  "seed": 42,
+  "nested": true
+ },
+ "n_folds": 14,
+ "runtime_sec": 22.3,
+ "metrics": {
+  "window": {
+   "accuracy": 1.0,
+   "balanced_accuracy": 1.0,
+   "sensitivity": 1.0,
+   "specificity": 1.0,
+   "f1": 1.0,
+   "f1_macro": 1.0,
+   "confusion_matrix": [
+    [
+     322,
+     0
+    ],
+    [
+     0,
+     322
+    ]
+   ],
+   "roc_auc": 1.0,
+   "n": 644
+  },
+  "child": {
+   "accuracy": 1.0,
+   "balanced_accuracy": 1.0,
+   "sensitivity": 1.0,
+   "specificity": 1.0,
+   "f1": 1.0,
+   "f1_macro": 1.0,
+   "confusion_matrix": [
+    [
+     7,
+     0
+    ],
+    [
+     0,
+     7
+    ]
+   ],
+   "roc_auc": 1.0,
+   "n": 14,
+   "n_correct": 14,
+   "n_vote_ties": 0
+  }
+ },
+ "ci95": {
+  "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+  "level": 0.95,
+  "window": {
+   "accuracy": [
+    1.0,
+    1.0
+   ],
+   "balanced_accuracy": [
+    1.0,
+    1.0
+   ],
+   "f1": [
+    1.0,
+    1.0
+   ],
+   "roc_auc": [
+    1.0,
+    1.0
+   ],
+   "sensitivity": [
+    1.0,
+    1.0
+   ],
+   "specificity": [
+    1.0,
+    1.0
+   ]
+  },
+  "child": {
+   "accuracy": [
+    1.0,
+    1.0
+   ],
+   "balanced_accuracy": [
+    1.0,
+    1.0
+   ],
+   "f1": [
+    1.0,
+    1.0
+   ],
+   "roc_auc": [
+    1.0,
+    1.0
+   ],
+   "sensitivity": [
+    1.0,
+    1.0
+   ],
+   "specificity": [
+    1.0,
+    1.0
+   ]
+  }
+ },
+ "per_child": [
+  {
+   "subject": "IDD_001",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.9246376270936623,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_002",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.8873472302332707,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_003",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.9734703736433765,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_004",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.9379868644801256,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_005",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.8727207217675037,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_006",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.9674235519806692,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_007",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.6162892875586766,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_001",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.08894027693214296,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_002",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.032600514823829314,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_003",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.027493941949000837,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_004",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.04761343266781208,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_005",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.04953412015874435,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_006",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.0705971829396511,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_007",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.2194209156702755,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  }
+ ],
+ "folds": [
+  {
+   "fold": 0,
+   "test_subjects": [
+    "IDD_001"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.9981884057971014,
+   "runtime_sec": 8.9
+  },
+  {
+   "fold": 1,
+   "test_subjects": [
+    "IDD_002"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 9.0
+  },
+  {
+   "fold": 2,
+   "test_subjects": [
+    "IDD_003"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.9873188405797102,
+   "runtime_sec": 15.4
+  },
+  {
+   "fold": 3,
+   "test_subjects": [
+    "IDD_004"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 10.2
+  },
+  {
+   "fold": 4,
+   "test_subjects": [
+    "IDD_005"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.9963768115942029,
+   "runtime_sec": 9.2
+  },
+  {
+   "fold": 5,
+   "test_subjects": [
+    "IDD_006"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.9311594202898551,
+   "runtime_sec": 10.3
+  },
+  {
+   "fold": 6,
+   "test_subjects": [
+    "IDD_007"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 5.2
+  },
+  {
+   "fold": 7,
+   "test_subjects": [
+    "TDC_001"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 10.5
+  },
+  {
+   "fold": 8,
+   "test_subjects": [
+    "TDC_002"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 5.3
+  },
+  {
+   "fold": 9,
+   "test_subjects": [
+    "TDC_003"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 9.6
+  },
+  {
+   "fold": 10,
+   "test_subjects": [
+    "TDC_004"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 5.6
+  },
+  {
+   "fold": 11,
+   "test_subjects": [
+    "TDC_005"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 5.1
+  },
+  {
+   "fold": 12,
+   "test_subjects": [
+    "TDC_006"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 5.1
+  },
+  {
+   "fold": 13,
+   "test_subjects": [
+    "TDC_007"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 1.0,
+   "runtime_sec": 4.8
+  }
+ ],
+ "grid": {
+  "clf__C": [
+   0.01,
+   0.1,
+   1.0
+  ]
+ },
+ "grid_size": 3,
+ "inner": {
+  "scheme": "sgkf",
+  "n_splits": 4,
+  "seed": 42
+ },
+ "criterion": "balanced_accuracy"
+}

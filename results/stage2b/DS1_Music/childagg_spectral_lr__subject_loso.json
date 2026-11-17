@@ -1,0 +1,484 @@
+{
+ "schema_version": 1,
+ "name": "childagg_spectral_lr__subject_loso",
+ "created_at": "2026-11-05T20:35:38",
+ "seed": 42,
+ "config": {
+  "dataset": "DS1",
+  "experiment": "DS1_Music",
+  "data": {},
+  "model": {
+   "name": "Logistic regression (child level)",
+   "features": "spectral mean+SD per child",
+   "unit": "child (window metrics equal child metrics)"
+  },
+  "protocol": {
+   "name": "subject_loso",
+   "split": "loso",
+   "n_splits": "n_subjects",
+   "leaky": false,
+   "seed": 42,
+   "nested": true
+  },
+  "n_boot": 2000,
+  "grid": {
+   "clf__C": [
+    0.01,
+    0.1,
+    1.0
+   ]
+  }
+ },
+ "config_hash": "e003e2c71efa",
+ "git": {
+  "commit": "49572dd178cf56fd41d6757bf4d82eb90b80f6f6",
+  "src_or_experiments_dirty": true
+ },
+ "environment": {
+  "python": "3.13.3",
+  "numpy": "2.4.5",
+  "platform": "Windows-11-10.0.26300-SP0"
+ },
+ "experiment": "DS1_Music",
+ "model": {
+  "name": "Logistic regression (child level)",
+  "features": "spectral mean+SD per child",
+  "unit": "child (window metrics equal child metrics)"
+ },
+ "protocol": {
+  "name": "subject_loso",
+  "split": "loso",
+  "n_splits": "n_subjects",
+  "leaky": false,
+  "seed": 42,
+  "nested": true
+ },
+ "n_folds": 14,
+ "runtime_sec": 10.4,
+ "metrics": {
+  "window": {
+   "accuracy": 0.7142857142857143,
+   "balanced_accuracy": 0.7142857142857143,
+   "sensitivity": 0.7142857142857143,
+   "specificity": 0.7142857142857143,
+   "f1": 0.7142857142857143,
+   "f1_macro": 0.7142857142857143,
+   "confusion_matrix": [
+    [
+     5,
+     2
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "roc_auc": 0.7959183673469388,
+   "n": 14
+  },
+  "child": {
+   "accuracy": 0.7142857142857143,
+   "balanced_accuracy": 0.7142857142857143,
+   "sensitivity": 0.7142857142857143,
+   "specificity": 0.7142857142857143,
+   "f1": 0.7142857142857143,
+   "f1_macro": 0.7142857142857143,
+   "confusion_matrix": [
+    [
+     5,
+     2
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "roc_auc": 0.7959183673469388,
+   "n": 14,
+   "n_correct": 10,
+   "n_vote_ties": 0
+  }
+ },
+ "ci95": {
+  "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+  "level": 0.95,
+  "window": {
+   "accuracy": [
+    0.5,
+    0.9285714285714286
+   ],
+   "balanced_accuracy": [
+    0.5,
+    0.9285714285714286
+   ],
+   "f1": [
+    0.42857142857142855,
+    0.9333333333333333
+   ],
+   "roc_auc": [
+    0.5102040816326531,
+    1.0
+   ],
+   "sensitivity": [
+    0.42857142857142855,
+    1.0
+   ],
+   "specificity": [
+    0.42857142857142855,
+    1.0
+   ]
+  },
+  "child": {
+   "accuracy": [
+    0.5,
+    0.9285714285714286
+   ],
+   "balanced_accuracy": [
+    0.5,
+    0.9285714285714286
+   ],
+   "f1": [
+    0.42857142857142855,
+    0.9333333333333333
+   ],
+   "roc_auc": [
+    0.5102040816326531,
+    1.0
+   ],
+   "sensitivity": [
+    0.42857142857142855,
+    1.0
+   ],
+   "specificity": [
+    0.42857142857142855,
+    1.0
+   ]
+  }
+ },
+ "per_child": [
+  {
+   "subject": "IDD_001",
+   "label": 1,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.850770544500823,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_002",
+   "label": 1,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.8840178834959915,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_003",
+   "label": 1,
+   "n_windows": 1,
+   "window_accuracy": 0.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.3663951824282442,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "IDD_004",
+   "label": 1,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.995817463337633,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_005",
+   "label": 1,
+   "n_windows": 1,
+   "window_accuracy": 0.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.2464572711152265,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "IDD_006",
+   "label": 1,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.525480835127667,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_007",
+   "label": 1,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.7266817735362352,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_001",
+   "label": 0,
+   "n_windows": 1,
+   "window_accuracy": 0.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.6929484741870919,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "TDC_002",
+   "label": 0,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.4118335933669529,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_003",
+   "label": 0,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.308326791248479,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_004",
+   "label": 0,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.22394330558840733,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_005",
+   "label": 0,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.18196616843513425,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_006",
+   "label": 0,
+   "n_windows": 1,
+   "window_accuracy": 0.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 0.6117467518946675,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "TDC_007",
+   "label": 0,
+   "n_windows": 1,
+   "window_accuracy": 1.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.3193985004382185,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  }
+ ],
+ "folds": [
+  {
+   "fold": 0,
+   "test_subjects": [
+    "IDD_001"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.9166666666666667,
+   "runtime_sec": 4.4
+  },
+  {
+   "fold": 1,
+   "test_subjects": [
+    "IDD_002"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.9166666666666667,
+   "runtime_sec": 4.7
+  },
+  {
+   "fold": 2,
+   "test_subjects": [
+    "IDD_003"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.8333333333333333,
+   "runtime_sec": 6.3
+  },
+  {
+   "fold": 3,
+   "test_subjects": [
+    "IDD_004"
+   ],
+   "chosen_params": {
+    "clf__C": 1.0
+   },
+   "inner_score": 0.7619047619047619,
+   "runtime_sec": 5.1
+  },
+  {
+   "fold": 4,
+   "test_subjects": [
+    "IDD_005"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.8452380952380952,
+   "runtime_sec": 5.0
+  },
+  {
+   "fold": 5,
+   "test_subjects": [
+    "IDD_006"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.6904761904761905,
+   "runtime_sec": 5.0
+  },
+  {
+   "fold": 6,
+   "test_subjects": [
+    "IDD_007"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.6904761904761905,
+   "runtime_sec": 5.0
+  },
+  {
+   "fold": 7,
+   "test_subjects": [
+    "TDC_001"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.8452380952380952,
+   "runtime_sec": 5.9
+  },
+  {
+   "fold": 8,
+   "test_subjects": [
+    "TDC_002"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.6904761904761905,
+   "runtime_sec": 3.4
+  },
+  {
+   "fold": 9,
+   "test_subjects": [
+    "TDC_003"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.6904761904761905,
+   "runtime_sec": 4.9
+  },
+  {
+   "fold": 10,
+   "test_subjects": [
+    "TDC_004"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.6071428571428572,
+   "runtime_sec": 4.8
+  },
+  {
+   "fold": 11,
+   "test_subjects": [
+    "TDC_005"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.6071428571428572,
+   "runtime_sec": 3.5
+  },
+  {
+   "fold": 12,
+   "test_subjects": [
+    "TDC_006"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.7619047619047619,
+   "runtime_sec": 2.4
+  },
+  {
+   "fold": 13,
+   "test_subjects": [
+    "TDC_007"
+   ],
+   "chosen_params": {
+    "clf__C": 0.01
+   },
+   "inner_score": 0.6785714285714286,
+   "runtime_sec": 1.6
+  }
+ ],
+ "grid": {
+  "clf__C": [
+   0.01,
+   0.1,
+   1.0
+  ]
+ },
+ "grid_size": 3,
+ "inner": {
+  "scheme": "sgkf",
+  "n_splits": 3,
+  "seed": 42
+ },
+ "criterion": "balanced_accuracy"
+}

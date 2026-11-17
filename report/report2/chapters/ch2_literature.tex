@@ -1,0 +1,126 @@
+\chapter{Literature Review}
+\thispagestyle{empty}
+
+\section{EEG and its frequency bands}
+The EEG is the potential difference between scalp electrodes produced by the summed synchronous
+activity of large groups of cortical neurons, with amplitudes of tens of microvolts. Electrodes
+are placed according to the international 10--20 system: the letter gives the region (F frontal,
+C central, T temporal, P parietal, O occipital), odd numbers lie over the left hemisphere, even
+numbers over the right and ``z'' on the midline. Activity is conventionally described in the
+delta (1--4~Hz), theta (4--8~Hz), alpha (8--13~Hz), beta (13--30~Hz) and gamma ($>$30~Hz) bands.
+The recorded signal also contains non-cerebral contributions: eye movements produce large slow
+deflections at frontal electrodes, muscle activity produces broadband activity in the beta and
+gamma range, and mains interference appears at 50~Hz. A classifier uses any consistent
+difference between groups, whatever its origin, so these contributions matter for detection.
+
+\section{EEG findings in ADHD and IDD}
+The most studied EEG finding in ADHD is increased theta and decreased beta power, summarised as
+a raised theta/beta ratio~\cite{snyder2006}. A later meta-analysis found that the effect has
+become smaller in more recent studies and cannot serve as a reliable diagnostic
+measure~\cite{arns2013}. Stimulant medication shifts the EEG of children with ADHD towards that
+of controls, mainly in the theta and beta bands~\cite{clarke2002}, so medication status must be
+considered whenever ADHD and control groups are compared. EEG studies of intellectual disability
+are fewer and the available recordings are small; the dataset used here~\cite{sareen2020data} was
+published to support such work.
+
+\section{Methods used for EEG classification}
+\textbf{Adaptive decomposition.} EEG is non-stationary and contains several oscillatory
+components at once. Empirical mode decomposition~\cite{huang1998} splits a signal into intrinsic
+mode functions by an iterative algorithm; variational mode decomposition (VMD)~\cite{dragomiretskiy2014}
+replaces the algorithm by an optimisation problem that finds $K$ band-limited modes; multivariate
+VMD (MVMD)~\cite{rehman2019} extends it to several channels with centre frequencies shared by all
+channels; and successive MVMD (SMVMD)~\cite{liu2022} extracts the modes one after another, so
+that their number adapts to each signal.
+
+\textbf{Hand-crafted features} include band powers from the power spectral
+density~\cite{welch1967}, Hjorth parameters~\cite{hjorth1970}, entropies~\cite{richman2000,
+bandt2002} and connectivity measures between channels such as the weighted phase-lag
+index~\cite{vinck2011}. They are classified with $k$-nearest neighbours, support vector
+machines~\cite{cortes1995}, random forests~\cite{breiman2001} or gradient-boosted
+trees~\cite{chen2016, ke2017}.
+
+\textbf{Riemannian methods} represent a window by the covariance matrix of its channels. These
+matrices are symmetric positive definite and lie on a curved manifold; projecting them onto the
+tangent space at their mean gives vectors that standard classifiers can
+use~\cite{barachant2012, congedo2017}. Riemannian methods were developed for brain--computer
+interfaces~\cite{congedo2017}; none of the studies on the two datasets reviewed below uses them.
+
+\textbf{Deep learning} learns features from the raw signal, with compact convolutional networks
+such as EEGNet~\cite{lawhern2018} and ShallowConvNet~\cite{schirrmeister2017}, recurrent networks
+(LSTM) or hybrids of both~\cite{roy2019}.
+
+\section{Published results on the two datasets}
+Table~\ref{tab:lit} lists representative published results on the two datasets used in this
+work, with the evaluation protocol \emph{as described by the authors}. Chandela
+\emph{et al.}~\cite{chandela2025} detect both disorders with one method: SMVMD of each window,
+nine statistical features per mode integrated with an energy weighting, mRMR feature
+selection~\cite{peng2005} and $k$-nearest neighbours, with 10-fold cross-validation over windows.
+Their accuracies of \R{PaperDSoneAcc}\% (IDD) and \R{PaperDStwoAcc}\% (ADHD) are the highest
+reported for a single method covering both datasets, and this method is the starting point of the
+present work. Several other ADHD studies on the same dataset report 99\% or more with channel
+selection and $k$-NN~\cite{maheshwari2025}, a residual network with attention~\cite{bansal2025} or
+CatBoost on a selected feature subset~\cite{mao2025}.
+
+\begin{table}[H]
+\caption{Published results on the two datasets, with the evaluation protocol as described in
+each paper. ``Window-level'' means that the folds or the train/test split are formed from
+windows or samples, so that data of the same person can appear in training and test; a
+``not reported'' entry means that the paper does not state that subjects were kept apart.}
+\label{tab:lit}\centering\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{3.3cm}p{1.2cm}p{4.4cm}p{3.9cm}r}
+\hline
+Study & Data & Method & Evaluation (as described) & Accuracy (\%) \\
+\hline
+Chandela \emph{et al.} 2025~\cite{chandela2025} & IDD & SMVMD features, mRMR, KNN & 10-fold over windows & \R{PaperDSoneAcc} \\
+Chandela \emph{et al.} 2025~\cite{chandela2025} & ADHD & SMVMD features, mRMR, KNN & 10-fold over windows & \R{PaperDStwoAcc} \\
+Maheshwari \emph{et al.} 2025~\cite{maheshwari2025} & ADHD & entropy-based channel selection, KNN & 10-fold / 70:30 split; subject separation not reported & 99.29 \\
+Bansal \emph{et al.} 2025~\cite{bansal2025} & ADHD & autoencoder + ResNet with attention & 80:20 split of samples & 99.42 \\
+Mao \emph{et al.} 2025~\cite{mao2025} & ADHD & CatBoost, 206 selected features & random 10-fold; subject separation not reported & 99.58 \\
+\hline
+Geethapriya and Pattabiraman 2026~\cite{geethapriya2026} & ADHD & SVM on spectral features & 10-fold over windows & 90.0 \\
+ & & SVM on spectral features & \textbf{subject-wise} 10-fold & 65.6 \\
+ & & LSTM & subject-wise 10-fold & 61.6 \\
+ & & CNN--BiLSTM & subject-wise 10-fold & 65.7 \\
+ & & CNN (their best) & subject-wise 10-fold & 72.7 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\section{Limitations of published evaluations}
+\label{sec:leakage}
+\textbf{Window-level splitting.} A recording is cut into many short, overlapping windows, and
+the windows of one person share everything that is specific to that person and that recording:
+head shape, electrode contact, artefacts and individual rhythms. If the folds are formed from
+windows, the test windows of a person have near-identical neighbours in the training set, and a
+classifier can score highly by recognising the person rather than the disorder. Saeb
+\emph{et al.}~\cite{saeb2017} showed for clinical machine learning in general that such
+record-wise evaluation overestimates the accuracy on new people, and Brookshire
+\emph{et al.}~\cite{brookshire2024} found that most published deep-learning studies of
+translational EEG are affected. For the ADHD dataset used here, Geethapriya and
+Pattabiraman~\cite{geethapriya2026} measured the effect directly: the same SVM on spectral
+features reaches 90.0\% with window-level folds and 65.6\% with subject-wise folds
+(Table~\ref{tab:lit}). This project found the same for the starting method (Chapter~4): its
+accuracy on ADHD windows falls from \R{DStwoSegWinAcc}\% to \R{DStwoSubjWinAcc}\% when the
+children in the test set are new.
+
+\textbf{Small samples.} With 14 participants (IDD) or 121 children (ADHD), cross-validation
+estimates are uncertain by several percentage points~\cite{varoquaux2018}, so small differences
+between methods are not meaningful.
+
+\textbf{Heavy models.} The best subject-wise ADHD result found in the literature, 72.7\%, was
+obtained with a convolutional network trained end to end~\cite{geethapriya2026}, and several of
+the other studies use deep or recurrent networks. Such models are usually trained on a GPU and
+are hard to interpret, which matters for a clinical aid and for deployment on simple hardware.
+
+\textbf{Confounds.} In the ADHD dataset the children with ADHD were taking methylphenidate and
+the controls were not (Chapter~3); published studies rarely discuss this, although stimulants
+change the EEG~\cite{clarke2002}.
+
+\section{Research gap}
+None of the studies on these datasets reviewed here combines (i) a strict subject-wise
+evaluation, (ii) one pipeline for both disorders, and (iii) a lightweight, interpretable model, and no subject-wise result on the IDD dataset was found. This project addresses
+these points: it evaluates every method on unseen people, and proposes a pipeline built from
+an adaptive decomposition, the Riemannian geometry of channel covariances and gradient-boosted
+trees, which runs on a laptop CPU.

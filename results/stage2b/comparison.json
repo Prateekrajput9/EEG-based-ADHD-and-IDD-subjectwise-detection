@@ -1,0 +1,3785 @@
+[
+ {
+  "experiment": "DS1_Rest",
+  "features": "MiniRocket 10k kernels (sktime)",
+  "model": "MiniRocket + ridge",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9984472049689441,
+  "window_acc_ci": [
+   0.9953416149068323,
+   1.0
+  ],
+  "window_bal_acc": 0.9984472049689441,
+  "window_bal_acc_ci": [
+   0.9953416149068324,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9984496124031007,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 108.3,
+  "source": "results/stage2b/DS1_Rest/minirocket_ridge__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "raw windows",
+  "model": "ShallowConvNet",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9906832298136646,
+  "window_acc_ci": [
+   0.9751552795031055,
+   1.0
+  ],
+  "window_bal_acc": 0.9906832298136645,
+  "window_bal_acc_ci": [
+   0.9751552795031055,
+   1.0
+  ],
+  "window_auc": 0.9997588827591528,
+  "window_auc_ci": [
+   0.9985532965549169,
+   1.0
+  ],
+  "window_f1": 0.9906542056074766,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 461.5,
+  "source": "results/stage2/DS1_Rest/raw_shallow__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Riemannian tangent space (OAS covariance)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9798136645962733,
+  "window_acc_ci": [
+   0.9394409937888198,
+   1.0
+  ],
+  "window_bal_acc": 0.9798136645962733,
+  "window_bal_acc_ci": [
+   0.93944099378882,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.980213089802131,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 1134.8,
+  "source": "results/stage2b/DS1_Rest/riemann_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Riemannian tangent space (OAS covariance)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9239130434782609,
+  "window_acc_ci": [
+   0.781055900621118,
+   1.0
+  ],
+  "window_bal_acc": 0.9239130434782609,
+  "window_bal_acc_ci": [
+   0.781055900621118,
+   1.0
+  ],
+  "window_auc": 0.9950812082867173,
+  "window_auc_ci": [
+   0.9796882836310328,
+   1.0
+  ],
+  "window_f1": 0.9292929292929293,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 69.0,
+  "source": "results/stage2b/DS1_Rest/riemann_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "connectivity",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8866459627329193,
+  "window_acc_ci": [
+   0.7686335403726708,
+   0.9704968944099379
+  ],
+  "window_bal_acc": 0.8866459627329193,
+  "window_bal_acc_ci": [
+   0.7686335403726708,
+   0.9704968944099379
+  ],
+  "window_auc": 0.9659831796612784,
+  "window_auc_ci": [
+   0.9083812352918482,
+   0.9979177115080436
+  ],
+  "window_f1": 0.8816855753646679,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 9.8,
+  "source": "results/stage2/DS1_Rest/connectivity_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "connectivity",
+  "model": "Random forest",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8524844720496895,
+  "window_acc_ci": [
+   0.6847437888198759,
+   0.9736024844720497
+  ],
+  "window_bal_acc": 0.8524844720496894,
+  "window_bal_acc_ci": [
+   0.6847437888198757,
+   0.9736024844720497
+  ],
+  "window_auc": 0.9283496007098492,
+  "window_auc_ci": [
+   0.7831944899888121,
+   0.9989687415608965
+  ],
+  "window_f1": 0.8429752066115702,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 0.9591836734693877,
+  "child_auc_ci": [
+   0.8163265306122449,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 229.0,
+  "source": "results/stage2/DS1_Rest/connectivity_rf__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "connectivity",
+  "model": "XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8493788819875776,
+  "window_acc_ci": [
+   0.6785714285714286,
+   0.968944099378882
+  ],
+  "window_bal_acc": 0.8493788819875776,
+  "window_bal_acc_ci": [
+   0.6785714285714286,
+   0.968944099378882
+  ],
+  "window_auc": 0.9125708884688091,
+  "window_auc_ci": [
+   0.7500564214343582,
+   0.9967133308900119
+  ],
+  "window_f1": 0.8401976935749589,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 0.8979591836734694,
+  "child_auc_ci": [
+   0.6326530612244898,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 275.5,
+  "source": "results/stage2/DS1_Rest/connectivity_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "connectivity",
+  "model": "SVM (RBF)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8478260869565217,
+  "window_acc_ci": [
+   0.7142857142857143,
+   0.9503493788819873
+  ],
+  "window_bal_acc": 0.8478260869565217,
+  "window_bal_acc_ci": [
+   0.7142857142857143,
+   0.9503493788819873
+  ],
+  "window_auc": 0.9313490991859882,
+  "window_auc_ci": [
+   0.8127565487442614,
+   0.993309719918213
+  ],
+  "window_f1": 0.8487654320987655,
+  "child_acc": 0.8571428571428571,
+  "child_acc_ci": [
+   0.6428571428571429,
+   1.0
+  ],
+  "child_bal_acc": 0.8571428571428571,
+  "child_auc": 0.9591836734693877,
+  "child_auc_ci": [
+   0.8163265306122449,
+   1.0
+  ],
+  "child_correct": 12,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 16.7,
+  "source": "results/stage2/DS1_Rest/connectivity_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Euclidean-aligned raw windows",
+  "model": "EEGNet-8,2",
+  "protocol": "subject_loso",
+  "transductive": true,
+  "window_acc": 0.7888198757763976,
+  "window_acc_ci": [
+   0.6987577639751553,
+   0.8726708074534162
+  ],
+  "window_bal_acc": 0.7888198757763976,
+  "window_bal_acc_ci": [
+   0.6987577639751552,
+   0.8726708074534162
+  ],
+  "window_auc": 0.8467169476486247,
+  "window_auc_ci": [
+   0.7473438524748274,
+   0.9271478723814667
+  ],
+  "window_f1": 0.7630662020905923,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 463.5,
+  "source": "results/stage2b/DS1_Rest/raw_eegnet_ea__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral",
+  "model": "XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7872670807453416,
+  "window_acc_ci": [
+   0.656832298136646,
+   0.8975155279503105
+  ],
+  "window_bal_acc": 0.7872670807453417,
+  "window_bal_acc_ci": [
+   0.6568322981366459,
+   0.8975155279503105
+  ],
+  "window_auc": 0.8456174530303615,
+  "window_auc_ci": [
+   0.6857897554106709,
+   0.9552628660159715
+  ],
+  "window_f1": 0.7875968992248062,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 0.9183673469387755,
+  "child_auc_ci": [
+   0.6938775510204082,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 192.6,
+  "source": "results/stage2/DS1_Rest/spectral_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "members fixed in advance",
+  "model": "Ensemble (mean probability)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7624223602484472,
+  "window_acc_ci": [
+   0.6024844720496895,
+   0.90527950310559
+  ],
+  "window_bal_acc": 0.7624223602484472,
+  "window_bal_acc_ci": [
+   0.6024844720496895,
+   0.90527950310559
+  ],
+  "window_auc": 0.8934647583040778,
+  "window_auc_ci": [
+   0.7489894776436093,
+   0.9976949191775009
+  ],
+  "window_f1": 0.7504078303425775,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.9183673469387755,
+  "child_auc_ci": [
+   0.7551020408163265,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 0.0,
+  "source": "results/stage2b/DS1_Rest/ensemble_prob_avg__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral",
+  "model": "Random forest",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.717391304347826,
+  "window_acc_ci": [
+   0.5714285714285714,
+   0.8555900621118012
+  ],
+  "window_bal_acc": 0.717391304347826,
+  "window_bal_acc_ci": [
+   0.5714285714285714,
+   0.8555900621118012
+  ],
+  "window_auc": 0.7166004397978473,
+  "window_auc_ci": [
+   0.46852961884186567,
+   0.9189272211720224
+  ],
+  "window_f1": 0.7323529411764705,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.7755102040816326,
+  "child_auc_ci": [
+   0.4892857142857143,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 206.8,
+  "source": "results/stage2/DS1_Rest/spectral_rf__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral mean+SD per child",
+  "model": "Logistic regression (child level)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7142857142857143,
+  "window_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "window_bal_acc": 0.7142857142857143,
+  "window_bal_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "window_auc": 0.6938775510204082,
+  "window_auc_ci": [
+   0.3673469387755102,
+   1.0
+  ],
+  "window_f1": 0.7142857142857143,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.6938775510204082,
+  "child_auc_ci": [
+   0.3673469387755102,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 13.9,
+  "source": "results/stage2b/DS1_Rest/childagg_spectral_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "wpt",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6956521739130435,
+  "window_acc_ci": [
+   0.5170807453416149,
+   0.8602872670807451
+  ],
+  "window_bal_acc": 0.6956521739130435,
+  "window_bal_acc_ci": [
+   0.5170807453416149,
+   0.8602872670807451
+  ],
+  "window_auc": 0.7889163226727364,
+  "window_auc_ci": [
+   0.555614173835886,
+   0.9476855156051077
+  ],
+  "window_f1": 0.6797385620915033,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.8163265306122449,
+  "child_auc_ci": [
+   0.5306122448979592,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 5.0,
+  "source": "results/stage2b/DS1_Rest/wpt_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Euclidean-aligned covariance, tangent space",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": true,
+  "window_acc": 0.6909937888198758,
+  "window_acc_ci": [
+   0.4720496894409938,
+   0.8835791925465836
+  ],
+  "window_bal_acc": 0.6909937888198758,
+  "window_bal_acc_ci": [
+   0.4720496894409938,
+   0.8835791925465837
+  ],
+  "window_auc": 0.6761506114733228,
+  "window_auc_ci": [
+   0.37498914972416186,
+   0.941970072528066
+  ],
+  "window_f1": 0.6924265842349304,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.6938775510204082,
+  "child_auc_ci": [
+   0.3673469387755102,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 62.1,
+  "source": "results/stage2b/DS1_Rest/ea_riemann_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "raw windows",
+  "model": "EEGNet-8,2",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6894409937888198,
+  "window_acc_ci": [
+   0.5263975155279503,
+   0.8540760869565215
+  ],
+  "window_bal_acc": 0.6894409937888198,
+  "window_bal_acc_ci": [
+   0.5263975155279503,
+   0.8540760869565215
+  ],
+  "window_auc": 0.8106940318660546,
+  "window_auc_ci": [
+   0.5650298020909686,
+   0.9793837525558426
+  ],
+  "window_f1": 0.5901639344262295,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5714285714285714,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.7959183673469388,
+  "child_auc_ci": [
+   0.5102040816326531,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 1236.3,
+  "source": "results/stage2/DS1_Rest/raw_eegnet__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "fb_logvar",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6832298136645962,
+  "window_acc_ci": [
+   0.4968944099378882,
+   0.8493788819875776
+  ],
+  "window_bal_acc": 0.6832298136645962,
+  "window_bal_acc_ci": [
+   0.4968944099378882,
+   0.8493788819875776
+  ],
+  "window_auc": 0.7589695613595154,
+  "window_auc_ci": [
+   0.5238016473129895,
+   0.9371004687319162
+  ],
+  "window_f1": 0.6470588235294118,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857142,
+  "child_auc": 0.8163265306122449,
+  "child_auc_ci": [
+   0.5306122448979592,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 1,
+  "runtime_sec": 3.9,
+  "source": "results/stage2b/DS1_Rest/fb_logvar_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6739130434782609,
+  "window_acc_ci": [
+   0.4829192546583851,
+   0.8540372670807453
+  ],
+  "window_bal_acc": 0.673913043478261,
+  "window_bal_acc_ci": [
+   0.48291925465838514,
+   0.8540372670807453
+  ],
+  "window_auc": 0.6518459935959261,
+  "window_auc_ci": [
+   0.39806551637668297,
+   0.888950079086455
+  ],
+  "window_f1": 0.6634615384615385,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.6938775510204082,
+  "child_auc_ci": [
+   0.3673469387755102,
+   0.9591836734693877
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 72.4,
+  "source": "results/stage2/DS1_Rest/spectral_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "aperiodic",
+  "model": "XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6444099378881988,
+  "window_acc_ci": [
+   0.4735248447204969,
+   0.8090062111801242
+  ],
+  "window_bal_acc": 0.6444099378881988,
+  "window_bal_acc_ci": [
+   0.4735248447204969,
+   0.8090062111801242
+  ],
+  "window_auc": 0.6489043632575904,
+  "window_auc_ci": [
+   0.412754137571853,
+   0.8818390494193895
+  ],
+  "window_f1": 0.6393700787401575,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.6938775510204082,
+  "child_auc_ci": [
+   0.3877551020408163,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 1,
+  "runtime_sec": 242.7,
+  "source": "results/stage2b/DS1_Rest/aperiodic_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "aperiodic",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.639751552795031,
+  "window_acc_ci": [
+   0.45958850931677014,
+   0.8136645962732919
+  ],
+  "window_bal_acc": 0.639751552795031,
+  "window_bal_acc_ci": [
+   0.45958850931677014,
+   0.8136645962732919
+  ],
+  "window_auc": 0.6477855792600594,
+  "window_auc_ci": [
+   0.42118383742911153,
+   0.8624848096138266
+  ],
+  "window_f1": 0.6158940397350993,
+  "child_acc": 0.5714285714285714,
+  "child_acc_ci": [
+   0.35714285714285715,
+   0.8571428571428571
+  ],
+  "child_bal_acc": 0.5714285714285714,
+  "child_auc": 0.7551020408163265,
+  "child_auc_ci": [
+   0.42857142857142855,
+   1.0
+  ],
+  "child_correct": 8,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 3.5,
+  "source": "results/stage2b/DS1_Rest/aperiodic_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD",
+  "model": "SMVMD+mRMR+KNN (paper Table II)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6273291925465838,
+  "window_acc_ci": [
+   0.44095496894409936,
+   0.7966226708074532
+  ],
+  "window_bal_acc": 0.6273291925465838,
+  "window_bal_acc_ci": [
+   0.44095496894409936,
+   0.7966226708074532
+  ],
+  "window_auc": 0.6180461787739671,
+  "window_auc_ci": [
+   0.40884610933220167,
+   0.809858319509278
+  ],
+  "window_f1": 0.5437262357414449,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857142,
+  "child_auc": 0.6020408163265306,
+  "child_auc_ci": [
+   0.2653061224489796,
+   0.8877551020408163
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 255.19,
+  "source": "results/stage1_eval/DS1_Rest/knn_tableII__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral",
+  "model": "SVM (RBF)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.5745341614906833,
+  "window_acc_ci": [
+   0.37876552795031054,
+   0.7795419254658382
+  ],
+  "window_bal_acc": 0.5745341614906831,
+  "window_bal_acc_ci": [
+   0.37876552795031054,
+   0.7795419254658382
+  ],
+  "window_auc": 0.5287893985571545,
+  "window_auc_ci": [
+   0.2520830118436789,
+   0.813743441611049
+  ],
+  "window_f1": 0.6162464985994397,
+  "child_acc": 0.5714285714285714,
+  "child_acc_ci": [
+   0.35714285714285715,
+   0.7857142857142857
+  ],
+  "child_bal_acc": 0.5714285714285714,
+  "child_auc": 0.5306122448979592,
+  "child_auc_ci": [
+   0.20408163265306123,
+   0.8571428571428571
+  ],
+  "child_correct": 8,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 10.8,
+  "source": "results/stage2/DS1_Rest/spectral_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "spectral, z-scored within each child",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": true,
+  "window_acc": 0.5,
+  "window_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_bal_acc": 0.5,
+  "window_bal_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_auc": 0.5,
+  "window_auc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_f1": 0.0,
+  "child_acc": 0.5,
+  "child_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "child_bal_acc": 0.5,
+  "child_auc": 0.5,
+  "child_auc_ci": [
+   0.5,
+   0.5
+  ],
+  "child_correct": 7,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 164.1,
+  "source": "results/stage2b/DS1_Rest/persubj_spectral_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD",
+  "model": "SMVMD+mRMR+KNN (nested-tuned)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.43788819875776397,
+  "window_acc_ci": [
+   0.3027950310559006,
+   0.5885481366459625
+  ],
+  "window_bal_acc": 0.43788819875776397,
+  "window_bal_acc_ci": [
+   0.3027950310559006,
+   0.5885481366459625
+  ],
+  "window_auc": 0.43304174221673547,
+  "window_auc_ci": [
+   0.23143300798580302,
+   0.6292430606458083
+  ],
+  "window_f1": 0.34181818181818185,
+  "child_acc": 0.5,
+  "child_acc_ci": [
+   0.2857142857142857,
+   0.7142857142857143
+  ],
+  "child_bal_acc": 0.5,
+  "child_auc": 0.3673469387755102,
+  "child_auc_ci": [
+   0.04081632653061224,
+   0.6938775510204082
+  ],
+  "child_correct": 7,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 1740.52,
+  "source": "results/stage1_eval/DS1_Rest/knn_tuned__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "MiniRocket 10k kernels (sktime)",
+  "model": "MiniRocket + ridge",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 94.8,
+  "source": "results/stage2b/DS1_Music/minirocket_ridge__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Riemannian tangent space (OAS covariance)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 252.8,
+  "source": "results/stage2b/DS1_Music/riemann_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "raw windows",
+  "model": "ShallowConvNet",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9968847352024921,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 304.3,
+  "source": "results/stage2/DS1_Music/raw_shallow__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Riemannian tangent space (OAS covariance)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9953416149068323,
+  "window_acc_ci": [
+   0.9860248447204969,
+   1.0
+  ],
+  "window_bal_acc": 0.9953416149068324,
+  "window_bal_acc_ci": [
+   0.9860248447204969,
+   1.0
+  ],
+  "window_auc": 0.9992573588981907,
+  "window_auc_ci": [
+   0.9959492303537673,
+   1.0
+  ],
+  "window_f1": 0.9953632148377125,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 373.7,
+  "source": "results/stage2b/DS1_Music/riemann_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "raw windows",
+  "model": "EEGNet-8,2",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9316770186335404,
+  "window_acc_ci": [
+   0.8680124223602484,
+   0.9860248447204969
+  ],
+  "window_bal_acc": 0.9316770186335404,
+  "window_bal_acc_ci": [
+   0.8680124223602484,
+   0.9860248447204969
+  ],
+  "window_auc": 0.9802862543883338,
+  "window_auc_ci": [
+   0.9364506577678331,
+   1.0
+  ],
+  "window_f1": 0.9310344827586208,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 292.8,
+  "source": "results/stage2/DS1_Music/raw_eegnet__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "connectivity",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8804347826086957,
+  "window_acc_ci": [
+   0.7266692546583852,
+   0.9782608695652174
+  ],
+  "window_bal_acc": 0.8804347826086957,
+  "window_bal_acc_ci": [
+   0.726669254658385,
+   0.9782608695652174
+  ],
+  "window_auc": 0.9446298368118514,
+  "window_auc_ci": [
+   0.8036145885575402,
+   0.9997309131592145
+  ],
+  "window_f1": 0.8752025931928686,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 0.9387755102040817,
+  "child_auc_ci": [
+   0.7551020408163265,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 10.6,
+  "source": "results/stage2/DS1_Music/connectivity_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "members fixed in advance",
+  "model": "Ensemble (mean probability)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8695652173913043,
+  "window_acc_ci": [
+   0.7375776397515528,
+   0.9720496894409938
+  ],
+  "window_bal_acc": 0.8695652173913044,
+  "window_bal_acc_ci": [
+   0.7375776397515528,
+   0.9720496894409938
+  ],
+  "window_auc": 0.9610258091894602,
+  "window_auc_ci": [
+   0.8801483353265692,
+   0.9984763801550866
+  ],
+  "window_f1": 0.8561643835616437,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 0.9795918367346939,
+  "child_auc_ci": [
+   0.8775510204081632,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 0.0,
+  "source": "results/stage2b/DS1_Music/ensemble_prob_avg__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "connectivity",
+  "model": "SVM (RBF)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.860248447204969,
+  "window_acc_ci": [
+   0.6987577639751553,
+   0.967391304347826
+  ],
+  "window_bal_acc": 0.860248447204969,
+  "window_bal_acc_ci": [
+   0.6987577639751552,
+   0.967391304347826
+  ],
+  "window_auc": 0.9274912233324332,
+  "window_auc_ci": [
+   0.7690673102889549,
+   0.9970492072065121
+  ],
+  "window_f1": 0.8557692307692308,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 0.9387755102040817,
+  "child_auc_ci": [
+   0.7551020408163265,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 17.7,
+  "source": "results/stage2/DS1_Music/connectivity_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "fb_logvar",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.812111801242236,
+  "window_acc_ci": [
+   0.6506211180124224,
+   0.9596273291925466
+  ],
+  "window_bal_acc": 0.812111801242236,
+  "window_bal_acc_ci": [
+   0.6506211180124224,
+   0.9596273291925466
+  ],
+  "window_auc": 0.8503626403302341,
+  "window_auc_ci": [
+   0.6012412715558814,
+   0.996500183249103
+  ],
+  "window_f1": 0.7835420393559929,
+  "child_acc": 0.8571428571428571,
+  "child_acc_ci": [
+   0.7142857142857143,
+   1.0
+  ],
+  "child_bal_acc": 0.8571428571428572,
+  "child_auc": 0.8571428571428571,
+  "child_auc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_correct": 12,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 7.7,
+  "source": "results/stage2b/DS1_Music/fb_logvar_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "connectivity",
+  "model": "Random forest",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8012422360248447,
+  "window_acc_ci": [
+   0.6149068322981367,
+   0.9503105590062112
+  ],
+  "window_bal_acc": 0.8012422360248448,
+  "window_bal_acc_ci": [
+   0.6149068322981366,
+   0.9503105590062112
+  ],
+  "window_auc": 0.8926449596851973,
+  "window_auc_ci": [
+   0.7083397631264227,
+   0.9870630955595848
+  ],
+  "window_f1": 0.808955223880597,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.9183673469387755,
+  "child_auc_ci": [
+   0.6938775510204082,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 240.7,
+  "source": "results/stage2/DS1_Music/connectivity_rf__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "connectivity",
+  "model": "XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7593167701863354,
+  "window_acc_ci": [
+   0.5574534161490683,
+   0.9254658385093167
+  ],
+  "window_bal_acc": 0.7593167701863355,
+  "window_bal_acc_ci": [
+   0.5574534161490683,
+   0.9254658385093169
+  ],
+  "window_auc": 0.8106361637282512,
+  "window_auc_ci": [
+   0.5718669225724317,
+   0.9678096427606957
+  ],
+  "window_f1": 0.7696879643387817,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.8775510204081632,
+  "child_auc_ci": [
+   0.6326530612244898,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 254.9,
+  "source": "results/stage2/DS1_Music/connectivity_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Euclidean-aligned raw windows",
+  "model": "EEGNet-8,2",
+  "protocol": "subject_loso",
+  "transductive": true,
+  "window_acc": 0.7593167701863354,
+  "window_acc_ci": [
+   0.5652173913043478,
+   0.9192934782608693
+  ],
+  "window_bal_acc": 0.7593167701863355,
+  "window_bal_acc_ci": [
+   0.5652173913043478,
+   0.9192934782608693
+  ],
+  "window_auc": 0.8190945565371707,
+  "window_auc_ci": [
+   0.5748490606072297,
+   0.9772132151537364
+  ],
+  "window_f1": 0.7662141779788839,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.8367346938775511,
+  "child_auc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 435.7,
+  "source": "results/stage2b/DS1_Music/raw_eegnet_ea__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "wpt",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7375776397515528,
+  "window_acc_ci": [
+   0.5434782608695652,
+   0.9161878881987575
+  ],
+  "window_bal_acc": 0.7375776397515528,
+  "window_bal_acc_ci": [
+   0.5434782608695652,
+   0.9161878881987575
+  ],
+  "window_auc": 0.8229813664596274,
+  "window_auc_ci": [
+   0.5936412561243779,
+   0.9975606168743489
+  ],
+  "window_f1": 0.7243066884176182,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.42857142857142855,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.8775510204081632,
+  "child_auc_ci": [
+   0.6530612244897959,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 23.1,
+  "source": "results/stage2b/DS1_Music/wpt_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral mean+SD per child",
+  "model": "Logistic regression (child level)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7142857142857143,
+  "window_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "window_bal_acc": 0.7142857142857143,
+  "window_bal_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "window_auc": 0.7959183673469388,
+  "window_auc_ci": [
+   0.5102040816326531,
+   1.0
+  ],
+  "window_f1": 0.7142857142857143,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.7959183673469388,
+  "child_auc_ci": [
+   0.5102040816326531,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 10.4,
+  "source": "results/stage2b/DS1_Music/childagg_spectral_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral",
+  "model": "XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7049689440993789,
+  "window_acc_ci": [
+   0.5480201863354037,
+   0.8649068322981367
+  ],
+  "window_bal_acc": 0.7049689440993789,
+  "window_bal_acc_ci": [
+   0.5480201863354036,
+   0.8649068322981366
+  ],
+  "window_auc": 0.7905944986690329,
+  "window_auc_ci": [
+   0.5883075016395973,
+   0.9505731356814937
+  ],
+  "window_f1": 0.6885245901639344,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857142,
+  "child_auc": 0.8367346938775511,
+  "child_auc_ci": [
+   0.5918367346938775,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 178.6,
+  "source": "results/stage2/DS1_Music/spectral_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "aperiodic",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6832298136645962,
+  "window_acc_ci": [
+   0.5201863354037267,
+   0.8291925465838509
+  ],
+  "window_bal_acc": 0.6832298136645962,
+  "window_bal_acc_ci": [
+   0.5201863354037267,
+   0.829192546583851
+  ],
+  "window_auc": 0.7727904016048763,
+  "window_auc_ci": [
+   0.5737514949268933,
+   0.9169158211488754
+  ],
+  "window_f1": 0.6611295681063123,
+  "child_acc": 0.8571428571428571,
+  "child_acc_ci": [
+   0.6428571428571429,
+   1.0
+  ],
+  "child_bal_acc": 0.8571428571428571,
+  "child_auc": 0.8571428571428571,
+  "child_auc_ci": [
+   0.5918367346938775,
+   1.0
+  ],
+  "child_correct": 12,
+  "n_children": 14,
+  "vote_ties": 1,
+  "runtime_sec": 27.3,
+  "source": "results/stage2b/DS1_Music/aperiodic_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral",
+  "model": "Random forest",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6801242236024845,
+  "window_acc_ci": [
+   0.4968555900621118,
+   0.8478649068322979
+  ],
+  "window_bal_acc": 0.6801242236024845,
+  "window_bal_acc_ci": [
+   0.4968555900621118,
+   0.8478649068322979
+  ],
+  "window_auc": 0.7107171791211759,
+  "window_auc_ci": [
+   0.46745315092010337,
+   0.9133347478878129
+  ],
+  "window_f1": 0.6666666666666666,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.7755102040816326,
+  "child_auc_ci": [
+   0.4892857142857143,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 204.9,
+  "source": "results/stage2/DS1_Music/spectral_rf__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6692546583850931,
+  "window_acc_ci": [
+   0.4797360248447205,
+   0.8571428571428571
+  ],
+  "window_bal_acc": 0.6692546583850931,
+  "window_bal_acc_ci": [
+   0.4797360248447205,
+   0.8571428571428571
+  ],
+  "window_auc": 0.7322634157632807,
+  "window_auc_ci": [
+   0.4804393638362717,
+   0.9388449519694455
+  ],
+  "window_f1": 0.6602870813397129,
+  "child_acc": 0.5714285714285714,
+  "child_acc_ci": [
+   0.2857142857142857,
+   0.8571428571428571
+  ],
+  "child_bal_acc": 0.5714285714285714,
+  "child_auc": 0.7755102040816326,
+  "child_auc_ci": [
+   0.4897959183673469,
+   1.0
+  ],
+  "child_correct": 8,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 8.4,
+  "source": "results/stage2/DS1_Music/spectral_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD",
+  "model": "SMVMD+mRMR+KNN (nested-tuned)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6381987577639752,
+  "window_acc_ci": [
+   0.47360248447204967,
+   0.7904114906832296
+  ],
+  "window_bal_acc": 0.6381987577639752,
+  "window_bal_acc_ci": [
+   0.47360248447204967,
+   0.7904114906832296
+  ],
+  "window_auc": 0.6396792176227769,
+  "window_auc_ci": [
+   0.4020444330851433,
+   0.8695171145017553
+  ],
+  "window_f1": 0.6044142614601019,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.7142857142857143,
+  "child_auc_ci": [
+   0.40816326530612246,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 1348.65,
+  "source": "results/stage1_eval/DS1_Music/knn_tuned__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral",
+  "model": "SVM (RBF)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6366459627329193,
+  "window_acc_ci": [
+   0.4720496894409938,
+   0.7981754658385091
+  ],
+  "window_bal_acc": 0.6366459627329193,
+  "window_bal_acc_ci": [
+   0.4720496894409938,
+   0.7981754658385091
+  ],
+  "window_auc": 0.6986130936306469,
+  "window_auc_ci": [
+   0.45831758034026465,
+   0.9027921376490105
+  ],
+  "window_f1": 0.6309148264984227,
+  "child_acc": 0.6428571428571429,
+  "child_acc_ci": [
+   0.42857142857142855,
+   0.8571428571428571
+  ],
+  "child_bal_acc": 0.6428571428571428,
+  "child_auc": 0.7346938775510204,
+  "child_auc_ci": [
+   0.4489795918367347,
+   0.9591836734693877
+  ],
+  "child_correct": 9,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 9.8,
+  "source": "results/stage2/DS1_Music/spectral_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "aperiodic",
+  "model": "XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6366459627329193,
+  "window_acc_ci": [
+   0.4673913043478261,
+   0.8043478260869565
+  ],
+  "window_bal_acc": 0.6366459627329193,
+  "window_bal_acc_ci": [
+   0.46739130434782605,
+   0.8043478260869565
+  ],
+  "window_auc": 0.6716851201728329,
+  "window_auc_ci": [
+   0.45093432930828287,
+   0.8702454091277342
+  ],
+  "window_f1": 0.6528189910979227,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.5,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857142,
+  "child_auc": 0.6938775510204082,
+  "child_auc_ci": [
+   0.3673469387755102,
+   0.9591836734693877
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 340.7,
+  "source": "results/stage2b/DS1_Music/aperiodic_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Euclidean-aligned covariance, tangent space",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": true,
+  "window_acc": 0.5248447204968945,
+  "window_acc_ci": [
+   0.3338121118012422,
+   0.7081133540372668
+  ],
+  "window_bal_acc": 0.5248447204968945,
+  "window_bal_acc_ci": [
+   0.3338121118012422,
+   0.7081133540372668
+  ],
+  "window_auc": 0.5531904633308901,
+  "window_auc_ci": [
+   0.26769197754716256,
+   0.808766540642722
+  ],
+  "window_f1": 0.49337748344370863,
+  "child_acc": 0.5714285714285714,
+  "child_acc_ci": [
+   0.2857142857142857,
+   0.7857142857142857
+  ],
+  "child_bal_acc": 0.5714285714285714,
+  "child_auc": 0.5714285714285714,
+  "child_auc_ci": [
+   0.24489795918367346,
+   0.8775510204081632
+  ],
+  "child_correct": 8,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 231.1,
+  "source": "results/stage2b/DS1_Music/ea_riemann_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "spectral, z-scored within each child",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": true,
+  "window_acc": 0.5,
+  "window_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_bal_acc": 0.5,
+  "window_bal_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_auc": 0.5,
+  "window_auc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_f1": 0.0,
+  "child_acc": 0.5,
+  "child_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "child_bal_acc": 0.5,
+  "child_auc": 0.5,
+  "child_auc_ci": [
+   0.5,
+   0.5
+  ],
+  "child_correct": 7,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 10.8,
+  "source": "results/stage2b/DS1_Music/persubj_spectral_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD",
+  "model": "SMVMD+mRMR+KNN (paper Table II)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.4301242236024845,
+  "window_acc_ci": [
+   0.2795031055900621,
+   0.5791925465838509
+  ],
+  "window_bal_acc": 0.4301242236024845,
+  "window_bal_acc_ci": [
+   0.27950310559006214,
+   0.579192546583851
+  ],
+  "window_auc": 0.40989930944022224,
+  "window_auc_ci": [
+   0.2343606535241696,
+   0.5896268951815129
+  ],
+  "window_f1": 0.48236953455571224,
+  "child_acc": 0.5714285714285714,
+  "child_acc_ci": [
+   0.2857142857142857,
+   0.7857142857142857
+  ],
+  "child_bal_acc": 0.5714285714285714,
+  "child_auc": 0.32653061224489793,
+  "child_auc_ci": [
+   0.061224489795918366,
+   0.6530612244897959
+  ],
+  "child_correct": 8,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 432.97,
+  "source": "results/stage1_eval/DS1_Music/knn_tableII__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "raw windows",
+  "model": "ShallowConvNet",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 682.7,
+  "source": "results/stage2/DS1_RestMusic/raw_shallow__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "MiniRocket 10k kernels (sktime)",
+  "model": "MiniRocket + ridge",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 205.3,
+  "source": "results/stage2b/DS1_RestMusic/minirocket_ridge__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Riemannian tangent space (OAS covariance)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 153.6,
+  "source": "results/stage2b/DS1_RestMusic/riemann_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Riemannian tangent space (OAS covariance)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9945652173913043,
+  "window_acc_ci": [
+   0.9883540372670807,
+   1.0
+  ],
+  "window_bal_acc": 0.9945652173913043,
+  "window_bal_acc_ci": [
+   0.9883540372670807,
+   1.0
+  ],
+  "window_auc": 0.9993200493808109,
+  "window_auc_ci": [
+   0.9969619227653254,
+   1.0
+  ],
+  "window_f1": 0.9945945945945946,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 171.7,
+  "source": "results/stage2b/DS1_RestMusic/riemann_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "connectivity",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9138198757763976,
+  "window_acc_ci": [
+   0.8291731366459627,
+   0.9805900621118012
+  ],
+  "window_bal_acc": 0.9138198757763976,
+  "window_bal_acc_ci": [
+   0.8291731366459628,
+   0.9805900621118012
+  ],
+  "window_auc": 0.9811615099726091,
+  "window_auc_ci": [
+   0.941202174395278,
+   0.9990648870606844
+  ],
+  "window_f1": 0.9105560032232071,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 9.4,
+  "source": "results/stage2/DS1_RestMusic/connectivity_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "raw windows",
+  "model": "EEGNet-8,2",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.90527950310559,
+  "window_acc_ci": [
+   0.781055900621118,
+   0.9891498447204967
+  ],
+  "window_bal_acc": 0.90527950310559,
+  "window_bal_acc_ci": [
+   0.781055900621118,
+   0.9891498447204967
+  ],
+  "window_auc": 0.9952548127001273,
+  "window_auc_ci": [
+   0.9844650572894563,
+   1.0
+  ],
+  "window_f1": 0.895368782161235,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 589.5,
+  "source": "results/stage2/DS1_RestMusic/raw_eegnet__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "connectivity",
+  "model": "SVM (RBF)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8858695652173914,
+  "window_acc_ci": [
+   0.7911490683229814,
+   0.9635093167701864
+  ],
+  "window_bal_acc": 0.8858695652173914,
+  "window_bal_acc_ci": [
+   0.7911490683229814,
+   0.9635093167701863
+  ],
+  "window_auc": 0.956758034026465,
+  "window_auc_ci": [
+   0.8845612027892443,
+   0.9958900360711392
+  ],
+  "window_f1": 0.8850664581704456,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 32.6,
+  "source": "results/stage2/DS1_RestMusic/connectivity_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "members fixed in advance",
+  "model": "Ensemble (mean probability)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8781055900621118,
+  "window_acc_ci": [
+   0.7693905279503106,
+   0.967391304347826
+  ],
+  "window_bal_acc": 0.8781055900621118,
+  "window_bal_acc_ci": [
+   0.7693905279503105,
+   0.967391304347826
+  ],
+  "window_auc": 0.9749623857104278,
+  "window_auc_ci": [
+   0.9219812724239035,
+   0.999758943038463
+  ],
+  "window_f1": 0.870355078447564,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 0.0,
+  "source": "results/stage2b/DS1_RestMusic/ensemble_prob_avg__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "connectivity",
+  "model": "Random forest",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8377329192546584,
+  "window_acc_ci": [
+   0.6731172360248447,
+   0.9580745341614907
+  ],
+  "window_bal_acc": 0.8377329192546583,
+  "window_bal_acc_ci": [
+   0.6731172360248447,
+   0.9580745341614907
+  ],
+  "window_auc": 0.9221480652752594,
+  "window_auc_ci": [
+   0.7849973235986266,
+   0.992463880637321
+  ],
+  "window_f1": 0.8337311058074781,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 0.9387755102040817,
+  "child_auc_ci": [
+   0.7551020408163265,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 297.6,
+  "source": "results/stage2/DS1_RestMusic/connectivity_rf__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "connectivity",
+  "model": "XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8237577639751553,
+  "window_acc_ci": [
+   0.652930900621118,
+   0.9487577639751553
+  ],
+  "window_bal_acc": 0.8237577639751552,
+  "window_bal_acc_ci": [
+   0.652930900621118,
+   0.9487577639751552
+  ],
+  "window_auc": 0.8579108155549554,
+  "window_auc_ci": [
+   0.6367803855946915,
+   0.9930658901084063
+  ],
+  "window_f1": 0.8182546036829463,
+  "child_acc": 0.8571428571428571,
+  "child_acc_ci": [
+   0.6428571428571429,
+   1.0
+  ],
+  "child_bal_acc": 0.8571428571428571,
+  "child_auc": 0.8979591836734694,
+  "child_auc_ci": [
+   0.6326530612244898,
+   1.0
+  ],
+  "child_correct": 12,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 226.1,
+  "source": "results/stage2/DS1_RestMusic/connectivity_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "wpt",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7942546583850931,
+  "window_acc_ci": [
+   0.6482725155279503,
+   0.9161490683229814
+  ],
+  "window_bal_acc": 0.7942546583850931,
+  "window_bal_acc_ci": [
+   0.6482725155279504,
+   0.9161490683229814
+  ],
+  "window_auc": 0.8944509278191428,
+  "window_auc_ci": [
+   0.7486314185409513,
+   0.9837555095289533
+  ],
+  "window_f1": 0.7818930041152262,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.9387755102040817,
+  "child_auc_ci": [
+   0.7954081632653062,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 8.0,
+  "source": "results/stage2b/DS1_RestMusic/wpt_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Euclidean-aligned raw windows",
+  "model": "EEGNet-8,2",
+  "protocol": "subject_loso",
+  "transductive": true,
+  "window_acc": 0.7888198757763976,
+  "window_acc_ci": [
+   0.6731172360248447,
+   0.8835597826086955
+  ],
+  "window_bal_acc": 0.7888198757763976,
+  "window_bal_acc_ci": [
+   0.6731172360248446,
+   0.8835597826086955
+  ],
+  "window_auc": 0.8382247984259866,
+  "window_auc_ci": [
+   0.6558536032560472,
+   0.9525247386289108
+  ],
+  "window_f1": 0.7691001697792869,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 0.9387755102040817,
+  "child_auc_ci": [
+   0.7551020408163265,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 589.2,
+  "source": "results/stage2b/DS1_RestMusic/raw_eegnet_ea__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "spectral mean+SD per child",
+  "model": "Logistic regression (child level)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7857142857142857,
+  "window_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "window_bal_acc": 0.7857142857142857,
+  "window_bal_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "window_auc": 0.7346938775510204,
+  "window_auc_ci": [
+   0.40816326530612246,
+   1.0
+  ],
+  "window_f1": 0.7692307692307692,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.7346938775510204,
+  "child_auc_ci": [
+   0.40816326530612246,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 1.7,
+  "source": "results/stage2b/DS1_RestMusic/childagg_spectral_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "fb_logvar",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7841614906832298,
+  "window_acc_ci": [
+   0.6521545031055901,
+   0.8982919254658385
+  ],
+  "window_bal_acc": 0.7841614906832298,
+  "window_bal_acc_ci": [
+   0.6521545031055901,
+   0.8982919254658386
+  ],
+  "window_auc": 0.88019125419544,
+  "window_auc_ci": [
+   0.733672866594653,
+   0.983363513174646
+  ],
+  "window_f1": 0.7687188019966722,
+  "child_acc": 0.8571428571428571,
+  "child_acc_ci": [
+   0.6428571428571429,
+   1.0
+  ],
+  "child_bal_acc": 0.8571428571428571,
+  "child_auc": 0.9183673469387755,
+  "child_auc_ci": [
+   0.7346938775510204,
+   1.0
+  ],
+  "child_correct": 12,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 5.4,
+  "source": "results/stage2b/DS1_RestMusic/fb_logvar_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "spectral",
+  "model": "XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7414596273291926,
+  "window_acc_ci": [
+   0.5822981366459627,
+   0.8843361801242234
+  ],
+  "window_bal_acc": 0.7414596273291926,
+  "window_bal_acc_ci": [
+   0.5822981366459627,
+   0.8843361801242235
+  ],
+  "window_auc": 0.8361077890513483,
+  "window_auc_ci": [
+   0.6637605609351491,
+   0.9604615948458778
+  ],
+  "window_f1": 0.7222685571309426,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.8571428571428571,
+  "child_auc_ci": [
+   0.6122448979591837,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 127.8,
+  "source": "results/stage2/DS1_RestMusic/spectral_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "spectral",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7243788819875776,
+  "window_acc_ci": [
+   0.5791925465838509,
+   0.861044254658385
+  ],
+  "window_bal_acc": 0.7243788819875776,
+  "window_bal_acc_ci": [
+   0.579192546583851,
+   0.861044254658385
+  ],
+  "window_auc": 0.7783650322132634,
+  "window_auc_ci": [
+   0.6020330402955133,
+   0.9283385695960804
+  ],
+  "window_f1": 0.7139403706688154,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.8775510204081632,
+  "child_auc_ci": [
+   0.673469387755102,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 9.8,
+  "source": "results/stage2/DS1_RestMusic/spectral_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "aperiodic",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.7166149068322981,
+  "window_acc_ci": [
+   0.560539596273292,
+   0.860267857142857
+  ],
+  "window_bal_acc": 0.7166149068322982,
+  "window_bal_acc_ci": [
+   0.5605395962732919,
+   0.860267857142857
+  ],
+  "window_auc": 0.7437839975309595,
+  "window_auc_ci": [
+   0.5219032709964894,
+   0.9306161027738128
+  ],
+  "window_f1": 0.7077662129703763,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.8367346938775511,
+  "child_auc_ci": [
+   0.5510204081632653,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 3.7,
+  "source": "results/stage2b/DS1_RestMusic/aperiodic_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "spectral",
+  "model": "Random forest",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6777950310559007,
+  "window_acc_ci": [
+   0.5030861801242236,
+   0.8346467391304346
+  ],
+  "window_bal_acc": 0.6777950310559007,
+  "window_bal_acc_ci": [
+   0.5030861801242236,
+   0.8346467391304346
+  ],
+  "window_auc": 0.7066893156128236,
+  "window_auc_ci": [
+   0.46297394607654024,
+   0.9198991647698775
+  ],
+  "window_f1": 0.6750195771339077,
+  "child_acc": 0.7142857142857143,
+  "child_acc_ci": [
+   0.42857142857142855,
+   0.9285714285714286
+  ],
+  "child_bal_acc": 0.7142857142857143,
+  "child_auc": 0.7551020408163265,
+  "child_auc_ci": [
+   0.4489795918367347,
+   1.0
+  ],
+  "child_correct": 10,
+  "n_children": 14,
+  "vote_ties": 1,
+  "runtime_sec": 249.1,
+  "source": "results/stage2/DS1_RestMusic/spectral_rf__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "aperiodic",
+  "model": "XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6420807453416149,
+  "window_acc_ci": [
+   0.4829192546583851,
+   0.8012422360248447
+  ],
+  "window_bal_acc": 0.6420807453416149,
+  "window_bal_acc_ci": [
+   0.48291925465838503,
+   0.8012422360248447
+  ],
+  "window_auc": 0.6583127579954478,
+  "window_auc_ci": [
+   0.4365170252883762,
+   0.8724353564677289
+  ],
+  "window_f1": 0.6478227654698243,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.673469387755102,
+  "child_auc_ci": [
+   0.3469387755102041,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 77.9,
+  "source": "results/stage2b/DS1_RestMusic/aperiodic_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD",
+  "model": "SMVMD+mRMR+KNN (paper Table II)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.6234472049689441,
+  "window_acc_ci": [
+   0.4355590062111801,
+   0.7950504658385091
+  ],
+  "window_bal_acc": 0.6234472049689441,
+  "window_bal_acc_ci": [
+   0.43555900621118016,
+   0.7950504658385091
+  ],
+  "window_auc": 0.6234472049689441,
+  "window_auc_ci": [
+   0.4355590062111801,
+   0.7950504658385091
+  ],
+  "window_f1": 0.5658012533572068,
+  "child_acc": 0.6428571428571429,
+  "child_acc_ci": [
+   0.42857142857142855,
+   0.8571428571428571
+  ],
+  "child_bal_acc": 0.6428571428571428,
+  "child_auc": 0.6836734693877551,
+  "child_auc_ci": [
+   0.35688775510204085,
+   0.9387755102040817
+  ],
+  "child_correct": 9,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 857.12,
+  "source": "results/stage1_eval/DS1_RestMusic/knn_tableII__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Euclidean-aligned covariance, tangent space",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": true,
+  "window_acc": 0.5644409937888198,
+  "window_acc_ci": [
+   0.4301242236024845,
+   0.6754658385093167
+  ],
+  "window_bal_acc": 0.56444099378882,
+  "window_bal_acc_ci": [
+   0.4301242236024845,
+   0.6754658385093169
+  ],
+  "window_auc": 0.5857557578797115,
+  "window_auc_ci": [
+   0.4127260474132942,
+   0.724003341884958
+  ],
+  "window_f1": 0.5835189309576838,
+  "child_acc": 0.7857142857142857,
+  "child_acc_ci": [
+   0.5714285714285714,
+   1.0
+  ],
+  "child_bal_acc": 0.7857142857142857,
+  "child_auc": 0.7346938775510204,
+  "child_auc_ci": [
+   0.40816326530612246,
+   1.0
+  ],
+  "child_correct": 11,
+  "n_children": 14,
+  "vote_ties": 2,
+  "runtime_sec": 179.6,
+  "source": "results/stage2b/DS1_RestMusic/ea_riemann_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD",
+  "model": "SMVMD+mRMR+KNN (nested-tuned)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.5582298136645962,
+  "window_acc_ci": [
+   0.38354037267080743,
+   0.717391304347826
+  ],
+  "window_bal_acc": 0.5582298136645962,
+  "window_bal_acc_ci": [
+   0.38354037267080743,
+   0.717391304347826
+  ],
+  "window_auc": 0.5640118051001118,
+  "window_auc_ci": [
+   0.3205122053547317,
+   0.7818175598452988
+  ],
+  "window_f1": 0.5222502099076406,
+  "child_acc": 0.5714285714285714,
+  "child_acc_ci": [
+   0.2857142857142857,
+   0.7857142857142857
+  ],
+  "child_bal_acc": 0.5714285714285714,
+  "child_auc": 0.5918367346938775,
+  "child_auc_ci": [
+   0.24489795918367346,
+   0.8775510204081632
+  ],
+  "child_correct": 8,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 48917.25,
+  "source": "results/stage1_eval/DS1_RestMusic/knn_tuned__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "spectral",
+  "model": "SVM (RBF)",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.5481366459627329,
+  "window_acc_ci": [
+   0.36642080745341615,
+   0.7337150621118012
+  ],
+  "window_bal_acc": 0.5481366459627329,
+  "window_bal_acc_ci": [
+   0.3664208074534161,
+   0.7337150621118012
+  ],
+  "window_auc": 0.5563804444272983,
+  "window_auc_ci": [
+   0.2858654662242969,
+   0.8174363329925542
+  ],
+  "window_f1": 0.5714285714285714,
+  "child_acc": 0.6428571428571429,
+  "child_acc_ci": [
+   0.42857142857142855,
+   0.8571428571428571
+  ],
+  "child_bal_acc": 0.6428571428571428,
+  "child_auc": 0.5102040816326531,
+  "child_auc_ci": [
+   0.16326530612244897,
+   0.8367346938775511
+  ],
+  "child_correct": 9,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 12.9,
+  "source": "results/stage2/DS1_RestMusic/spectral_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "spectral, z-scored within each child",
+  "model": "Logistic regression",
+  "protocol": "subject_loso",
+  "transductive": true,
+  "window_acc": 0.5,
+  "window_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_bal_acc": 0.5,
+  "window_bal_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_auc": 0.5,
+  "window_auc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_f1": 0.0,
+  "child_acc": 0.5,
+  "child_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "child_bal_acc": 0.5,
+  "child_auc": 0.5,
+  "child_auc_ci": [
+   0.5,
+   0.5
+  ],
+  "child_correct": 7,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 11.6,
+  "source": "results/stage2b/DS1_RestMusic/persubj_spectral_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Riemannian tangent space (OAS covariance)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7345173041894353,
+  "window_acc_ci": [
+   0.6868913245467125,
+   0.7784447781711822
+  ],
+  "window_bal_acc": 0.7258613794031457,
+  "window_bal_acc_ci": [
+   0.6743219385018856,
+   0.7724422978102339
+  ],
+  "window_auc": 0.803209194276658,
+  "window_auc_ci": [
+   0.7456110314875001,
+   0.8531008035279088
+  ],
+  "window_f1": 0.7709233791748525,
+  "child_acc": 0.7603305785123967,
+  "child_acc_ci": [
+   0.6859504132231405,
+   0.8264462809917356
+  ],
+  "child_bal_acc": 0.7591530054644808,
+  "child_auc": 0.8836065573770492,
+  "child_auc_ci": [
+   0.8202049180327868,
+   0.9357923497267759
+  ],
+  "child_correct": 92,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 927.3,
+  "source": "results/stage2b/DS2/riemann_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Riemannian tangent space (OAS covariance)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7153916211293261,
+  "window_acc_ci": [
+   0.6701834865701247,
+   0.7580957072251072
+  ],
+  "window_bal_acc": 0.7114831275043358,
+  "window_bal_acc_ci": [
+   0.6640312766787649,
+   0.7560921601209107
+  ],
+  "window_auc": 0.7858946085760421,
+  "window_auc_ci": [
+   0.7281670494964471,
+   0.8366544161551029
+  ],
+  "window_f1": 0.7451406823433464,
+  "child_acc": 0.7768595041322314,
+  "child_acc_ci": [
+   0.7024793388429752,
+   0.8429752066115702
+  ],
+  "child_bal_acc": 0.7760928961748634,
+  "child_auc": 0.8672131147540983,
+  "child_auc_ci": [
+   0.7975273224043715,
+   0.9215846994535519
+  ],
+  "child_correct": 94,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 826.5,
+  "source": "results/stage2b/DS2/riemann_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "connectivity",
+  "model": "XGBoost",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7037037037037037,
+  "window_acc_ci": [
+   0.6551991598273922,
+   0.7472532537365845
+  ],
+  "window_bal_acc": 0.6973059700376771,
+  "window_bal_acc_ci": [
+   0.6456704417505985,
+   0.7428372209203589
+  ],
+  "window_auc": 0.7571592234316129,
+  "window_auc_ci": [
+   0.6937729935019342,
+   0.811784517110069
+  ],
+  "window_f1": 0.7392465936414641,
+  "child_acc": 0.7851239669421488,
+  "child_acc_ci": [
+   0.7107438016528925,
+   0.8512396694214877
+  ],
+  "child_bal_acc": 0.7841530054644809,
+  "child_auc": 0.8289617486338798,
+  "child_auc_ci": [
+   0.7390642076502733,
+   0.901113387978142
+  ],
+  "child_correct": 95,
+  "n_children": 121,
+  "vote_ties": 3,
+  "runtime_sec": 1293.1,
+  "source": "results/stage2/DS2/connectivity_xgb__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "members fixed in advance",
+  "model": "Ensemble (mean probability)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.701578627808136,
+  "window_acc_ci": [
+   0.6491998797783539,
+   0.7535573138323427
+  ],
+  "window_bal_acc": 0.6951513067400275,
+  "window_bal_acc_ci": [
+   0.6399217768631678,
+   0.7487245131635147
+  ],
+  "window_auc": 0.7593233247114407,
+  "window_auc_ci": [
+   0.6923179649202077,
+   0.8218264108309171
+  ],
+  "window_f1": 0.7373764360138927,
+  "child_acc": 0.743801652892562,
+  "child_acc_ci": [
+   0.6694214876033058,
+   0.8181818181818182
+  ],
+  "child_bal_acc": 0.743032786885246,
+  "child_auc": 0.8153005464480875,
+  "child_auc_ci": [
+   0.7341461748633881,
+   0.8869193989071036
+  ],
+  "child_correct": 90,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 0.0,
+  "source": "results/stage2b/DS2/ensemble_prob_avg__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral mean+SD per child",
+  "model": "Logistic regression (child level)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6942148760330579,
+  "window_acc_ci": [
+   0.6115702479338843,
+   0.7768595041322314
+  ],
+  "window_bal_acc": 0.6943989071038251,
+  "window_bal_acc_ci": [
+   0.6114754098360655,
+   0.776912568306011
+  ],
+  "window_auc": 0.725136612021858,
+  "window_auc_ci": [
+   0.6303278688524591,
+   0.8142076502732241
+  ],
+  "window_f1": 0.6890756302521007,
+  "child_acc": 0.6942148760330579,
+  "child_acc_ci": [
+   0.6115702479338843,
+   0.7768595041322314
+  ],
+  "child_bal_acc": 0.6943989071038251,
+  "child_auc": 0.725136612021858,
+  "child_auc_ci": [
+   0.6303278688524591,
+   0.8142076502732241
+  ],
+  "child_correct": 84,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 1.5,
+  "source": "results/stage2b/DS2/childagg_spectral_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "connectivity",
+  "model": "SVM (RBF)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6870066788099575,
+  "window_acc_ci": [
+   0.6396657628536631,
+   0.7291061653894043
+  ],
+  "window_bal_acc": 0.679041885951797,
+  "window_bal_acc_ci": [
+   0.6281248079040357,
+   0.7243985453034366
+  ],
+  "window_auc": 0.7408397374558938,
+  "window_auc_ci": [
+   0.6768782190044722,
+   0.795620177721787
+  ],
+  "window_f1": 0.7272486772486774,
+  "child_acc": 0.7768595041322314,
+  "child_acc_ci": [
+   0.7024793388429752,
+   0.8429752066115702
+  ],
+  "child_bal_acc": 0.7758196721311476,
+  "child_auc": 0.8224043715846995,
+  "child_auc_ci": [
+   0.7327800546448088,
+   0.8948155737704918
+  ],
+  "child_correct": 94,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 2737.9,
+  "source": "results/stage2/DS2/connectivity_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "connectivity",
+  "model": "Logistic regression",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6791135397692775,
+  "window_acc_ci": [
+   0.6351488894675291,
+   0.718951331274279
+  ],
+  "window_bal_acc": 0.675908288977932,
+  "window_bal_acc_ci": [
+   0.6291449949068599,
+   0.7171186056760568
+  ],
+  "window_auc": 0.7301101533999163,
+  "window_auc_ci": [
+   0.6694350267410722,
+   0.7802777717047622
+  ],
+  "window_f1": 0.7100137174211247,
+  "child_acc": 0.8016528925619835,
+  "child_acc_ci": [
+   0.7272727272727273,
+   0.8677685950413223
+  ],
+  "child_bal_acc": 0.8009562841530055,
+  "child_auc": 0.8270491803278689,
+  "child_auc_ci": [
+   0.7409767759562842,
+   0.8991803278688525
+  ],
+  "child_correct": 97,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 87.8,
+  "source": "results/stage2/DS2/connectivity_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "connectivity",
+  "model": "Random forest",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6908014571948998,
+  "window_acc_ci": [
+   0.6434190903948641,
+   0.7344745754218398
+  ],
+  "window_bal_acc": 0.6738179160935351,
+  "window_bal_acc_ci": [
+   0.6240769047409063,
+   0.7217659300715379
+  ],
+  "window_auc": 0.7265983830213504,
+  "window_auc_ci": [
+   0.6612988416787541,
+   0.7836631219503584
+  ],
+  "window_f1": 0.747364504526851,
+  "child_acc": 0.7272727272727273,
+  "child_acc_ci": [
+   0.6528925619834711,
+   0.7933884297520661
+  ],
+  "child_bal_acc": 0.7255464480874317,
+  "child_auc": 0.8131147540983606,
+  "child_auc_ci": [
+   0.7297472677595628,
+   0.8836338797814206
+  ],
+  "child_correct": 88,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 4291.7,
+  "source": "results/stage2/DS2/connectivity_rf__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "raw windows",
+  "model": "ShallowConvNet",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6677292046144505,
+  "window_acc_ci": [
+   0.6179879730822726,
+   0.7151717135714938
+  ],
+  "window_bal_acc": 0.662363569762574,
+  "window_bal_acc_ci": [
+   0.6096800681297256,
+   0.7137923256426526
+  ],
+  "window_auc": 0.7080892851803122,
+  "window_auc_ci": [
+   0.6398235549835289,
+   0.7728434917733097
+  ],
+  "window_f1": 0.704229158221862,
+  "child_acc": 0.743801652892562,
+  "child_acc_ci": [
+   0.6611570247933884,
+   0.8181818181818182
+  ],
+  "child_bal_acc": 0.7431693989071038,
+  "child_auc": 0.7579234972677595,
+  "child_auc_ci": [
+   0.6636612021857924,
+   0.839918032786885
+  ],
+  "child_correct": 90,
+  "n_children": 121,
+  "vote_ties": 3,
+  "runtime_sec": 6371.4,
+  "source": "results/stage2/DS2/raw_shallow__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral",
+  "model": "XGBoost",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6489071038251366,
+  "window_acc_ci": [
+   0.5954740572724888,
+   0.7004788726869311
+  ],
+  "window_bal_acc": 0.6466699808623886,
+  "window_bal_acc_ci": [
+   0.5928033486707647,
+   0.6987701655116074
+  ],
+  "window_auc": 0.6946940785539142,
+  "window_auc_ci": [
+   0.6211479363111491,
+   0.7607963211286277
+  ],
+  "window_f1": 0.6793289893248302,
+  "child_acc": 0.7107438016528925,
+  "child_acc_ci": [
+   0.628099173553719,
+   0.7851239669421488
+  ],
+  "child_bal_acc": 0.7101092896174863,
+  "child_auc": 0.7734972677595628,
+  "child_auc_ci": [
+   0.6825136612021858,
+   0.8516666666666665
+  ],
+  "child_correct": 86,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 269.7,
+  "source": "results/stage2/DS2/spectral_xgb__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD",
+  "model": "SMVMD+mRMR+KNN (nested-tuned)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.653157255616272,
+  "window_acc_ci": [
+   0.607041523778156,
+   0.6962779386023966
+  ],
+  "window_bal_acc": 0.6457131002930447,
+  "window_bal_acc_ci": [
+   0.5972297501247109,
+   0.6925440815847149
+  ],
+  "window_auc": 0.682763861685904,
+  "window_auc_ci": [
+   0.619645684916321,
+   0.7422407625732553
+  ],
+  "window_f1": 0.6955363091272486,
+  "child_acc": 0.7272727272727273,
+  "child_acc_ci": [
+   0.6528925619834711,
+   0.8016528925619835
+  ],
+  "child_bal_acc": 0.7262295081967213,
+  "child_auc": 0.7573770491803279,
+  "child_auc_ci": [
+   0.6658401639344262,
+   0.8387978142076503
+  ],
+  "child_correct": 88,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 1238.48,
+  "source": "results/stage1_eval/DS2/knn_tuned__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral",
+  "model": "Random forest",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6561930783242259,
+  "window_acc_ci": [
+   0.6015016078317443,
+   0.7082793436375112
+  ],
+  "window_bal_acc": 0.6432003543448359,
+  "window_bal_acc_ci": [
+   0.5861108056612425,
+   0.6990711825040974
+  ],
+  "window_auc": 0.6902523398720172,
+  "window_auc_ci": [
+   0.6142038665415195,
+   0.7584804661687132
+  ],
+  "window_f1": 0.7101727447216891,
+  "child_acc": 0.6776859504132231,
+  "child_acc_ci": [
+   0.6033057851239669,
+   0.7520661157024794
+  ],
+  "child_bal_acc": 0.6762295081967213,
+  "child_auc": 0.7653005464480874,
+  "child_auc_ci": [
+   0.6740437158469945,
+   0.8464549180327868
+  ],
+  "child_correct": 82,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 1367.0,
+  "source": "results/stage2/DS2/spectral_rf__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "MiniRocket 10k kernels (sktime)",
+  "model": "MiniRocket + ridge",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6460230722525805,
+  "window_acc_ci": [
+   0.6019034845657809,
+   0.6882976983329747
+  ],
+  "window_bal_acc": 0.6411307263321572,
+  "window_bal_acc_ci": [
+   0.5959766637972532,
+   0.6853052030887652
+  ],
+  "window_auc": 0.6912250127085701,
+  "window_auc_ci": [
+   0.6315649540854158,
+   0.7486159668954179
+  ],
+  "window_f1": 0.6830660505572166,
+  "child_acc": 0.7520661157024794,
+  "child_acc_ci": [
+   0.6776859504132231,
+   0.8181818181818182
+  ],
+  "child_bal_acc": 0.7510928961748633,
+  "child_auc": 0.7778688524590164,
+  "child_auc_ci": [
+   0.6898838797814209,
+   0.8568306010928962
+  ],
+  "child_correct": 91,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 1907.4,
+  "source": "results/stage2b/DS2/minirocket_ridge__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "aperiodic",
+  "model": "Logistic regression",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6369156041287188,
+  "window_acc_ci": [
+   0.5825940249583719,
+   0.6920555697896348
+  ],
+  "window_bal_acc": 0.636441263979427,
+  "window_bal_acc_ci": [
+   0.5810160864271295,
+   0.6918229073863151
+  ],
+  "window_auc": 0.6720849717421207,
+  "window_auc_ci": [
+   0.5967277603421116,
+   0.7438112623148577
+  ],
+  "window_f1": 0.6633830565719111,
+  "child_acc": 0.6859504132231405,
+  "child_acc_ci": [
+   0.6033057851239669,
+   0.768595041322314
+  ],
+  "child_bal_acc": 0.6857923497267759,
+  "child_auc": 0.7210382513661202,
+  "child_auc_ci": [
+   0.6221243169398908,
+   0.8125751366120219
+  ],
+  "child_correct": 83,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 16.0,
+  "source": "results/stage2b/DS2/aperiodic_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "fb_logvar",
+  "model": "Logistic regression",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6338797814207651,
+  "window_acc_ci": [
+   0.5776080374511792,
+   0.6875580455977849
+  ],
+  "window_bal_acc": 0.6339042222355122,
+  "window_bal_acc_ci": [
+   0.5755938684318628,
+   0.6883810294188821
+  ],
+  "window_auc": 0.6817891797739369,
+  "window_auc_ci": [
+   0.6039274890827911,
+   0.7506675113739952
+  ],
+  "window_f1": 0.6591294516676087,
+  "child_acc": 0.71900826446281,
+  "child_acc_ci": [
+   0.6363636363636364,
+   0.8016528925619835
+  ],
+  "child_bal_acc": 0.7188524590163934,
+  "child_auc": 0.730327868852459,
+  "child_auc_ci": [
+   0.632233606557377,
+   0.8213183060109289
+  ],
+  "child_correct": 87,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 10.5,
+  "source": "results/stage2b/DS2/fb_logvar_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral",
+  "model": "SVM (RBF)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6399514268366727,
+  "window_acc_ci": [
+   0.5831281092285588,
+   0.6954706641225038
+  ],
+  "window_bal_acc": 0.6322332321631481,
+  "window_bal_acc_ci": [
+   0.574274216833037,
+   0.6874983100866903
+  ],
+  "window_auc": 0.673256215985886,
+  "window_auc_ci": [
+   0.597788542642695,
+   0.7435739797001826
+  ],
+  "window_f1": 0.6841544607190413,
+  "child_acc": 0.6942148760330579,
+  "child_acc_ci": [
+   0.6198347107438017,
+   0.768595041322314
+  ],
+  "child_bal_acc": 0.6930327868852459,
+  "child_auc": 0.7346994535519126,
+  "child_auc_ci": [
+   0.6371379781420765,
+   0.8218715846994534
+  ],
+  "child_correct": 84,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 704.6,
+  "source": "results/stage2/DS2/spectral_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "aperiodic",
+  "model": "XGBoost",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6282635094110504,
+  "window_acc_ci": [
+   0.5723278533785673,
+   0.6831919445234627
+  ],
+  "window_bal_acc": 0.6290934677949883,
+  "window_bal_acc_ci": [
+   0.574659246291005,
+   0.6834298270557678
+  ],
+  "window_auc": 0.6770579473416661,
+  "window_auc_ci": [
+   0.6022435658745694,
+   0.7463682319152186
+  ],
+  "window_f1": 0.651487121104312,
+  "child_acc": 0.6942148760330579,
+  "child_acc_ci": [
+   0.6115702479338843,
+   0.7768595041322314
+  ],
+  "child_bal_acc": 0.6943989071038251,
+  "child_auc": 0.7368852459016394,
+  "child_auc_ci": [
+   0.6415300546448087,
+   0.8226775956284152
+  ],
+  "child_correct": 84,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 80.8,
+  "source": "results/stage2b/DS2/aperiodic_xgb__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral",
+  "model": "Logistic regression",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6232544019429266,
+  "window_acc_ci": [
+   0.5675803444191513,
+   0.6764160392440411
+  ],
+  "window_bal_acc": 0.6226980668022247,
+  "window_bal_acc_ci": [
+   0.566763237960502,
+   0.6754785834630205
+  ],
+  "window_auc": 0.6721579525746068,
+  "window_auc_ci": [
+   0.5975963769966467,
+   0.7395804352311878
+  ],
+  "window_f1": 0.6504225352112676,
+  "child_acc": 0.6694214876033058,
+  "child_acc_ci": [
+   0.5867768595041323,
+   0.7520661157024794
+  ],
+  "child_bal_acc": 0.6691256830601093,
+  "child_auc": 0.7319672131147541,
+  "child_auc_ci": [
+   0.6360382513661202,
+   0.8188524590163935
+  ],
+  "child_correct": 81,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 99.0,
+  "source": "results/stage2/DS2/spectral_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "wpt",
+  "model": "Logistic regression",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6150576806314512,
+  "window_acc_ci": [
+   0.5624459117274146,
+   0.6672124193343768
+  ],
+  "window_bal_acc": 0.6137379642365888,
+  "window_bal_acc_ci": [
+   0.5597701661958975,
+   0.6666034318521729
+  ],
+  "window_auc": 0.6637880509538903,
+  "window_auc_ci": [
+   0.5923685692762329,
+   0.7323991408433921
+  ],
+  "window_f1": 0.6446188340807175,
+  "child_acc": 0.6198347107438017,
+  "child_acc_ci": [
+   0.5289256198347108,
+   0.7107438016528925
+  ],
+  "child_bal_acc": 0.6193989071038251,
+  "child_auc": 0.7193989071038251,
+  "child_auc_ci": [
+   0.6259494535519126,
+   0.8081967213114755
+  ],
+  "child_correct": 75,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 63.8,
+  "source": "results/stage2b/DS2/wpt_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "raw windows",
+  "model": "EEGNet-8,2",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6193078324225865,
+  "window_acc_ci": [
+   0.5694221928210154,
+   0.6682930141265537
+  ],
+  "window_bal_acc": 0.6022486693379583,
+  "window_bal_acc_ci": [
+   0.5526675895224596,
+   0.6500816117613506
+  ],
+  "window_auc": 0.6304063752167932,
+  "window_auc_ci": [
+   0.5649596427189101,
+   0.6941078485322086
+  ],
+  "window_f1": 0.6869695456814778,
+  "child_acc": 0.628099173553719,
+  "child_acc_ci": [
+   0.5535123966942149,
+   0.702685950413222
+  ],
+  "child_bal_acc": 0.6266393442622951,
+  "child_auc": 0.6699453551912569,
+  "child_auc_ci": [
+   0.5759562841530055,
+   0.7633948087431693
+  ],
+  "child_correct": 76,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 3928.5,
+  "source": "results/stage2/DS2/raw_eegnet__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD",
+  "model": "SMVMD+mRMR+KNN (paper Table II)",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.5930479659987856,
+  "window_acc_ci": [
+   0.5629884478688318,
+   0.6222162439368323
+  ],
+  "window_bal_acc": 0.5894559984450691,
+  "window_bal_acc_ci": [
+   0.5585152299726169,
+   0.6197659695266922
+  ],
+  "window_auc": 0.614577430700915,
+  "window_auc_ci": [
+   0.5748948011437365,
+   0.6529154595062883
+  ],
+  "window_f1": 0.6299516908212559,
+  "child_acc": 0.6446280991735537,
+  "child_acc_ci": [
+   0.5619834710743802,
+   0.7272727272727273
+  ],
+  "child_bal_acc": 0.6437158469945354,
+  "child_auc": 0.7316939890710382,
+  "child_auc_ci": [
+   0.6398907103825137,
+   0.813941256830601
+  ],
+  "child_correct": 78,
+  "n_children": 121,
+  "vote_ties": 4,
+  "runtime_sec": 3.67,
+  "source": "results/stage1_eval/DS2/knn_tableII__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD",
+  "model": "SMVMD+mRMR+KNN (paper Table II)",
+  "protocol": "subject_gkf",
+  "transductive": false,
+  "window_acc": 0.5754401942926534,
+  "window_acc_ci": [
+   0.5427852785636126,
+   0.6069722666252143
+  ],
+  "window_bal_acc": 0.5709177456491836,
+  "window_bal_acc_ci": [
+   0.5375714089096232,
+   0.6038464570765413
+  ],
+  "window_auc": 0.5915775820824113,
+  "window_auc_ci": [
+   0.5489132773805452,
+   0.6332288376874445
+  ],
+  "window_f1": 0.6159549636138955,
+  "child_acc": 0.6115702479338843,
+  "child_acc_ci": [
+   0.5289256198347108,
+   0.6942148760330579
+  ],
+  "child_bal_acc": 0.6102459016393442,
+  "child_auc": 0.6852459016393443,
+  "child_auc_ci": [
+   0.587698087431694,
+   0.7740846994535516
+  ],
+  "child_correct": 74,
+  "n_children": 121,
+  "vote_ties": 3,
+  "runtime_sec": 3.66,
+  "source": "results/stage1_eval/DS2/knn_tableII__subject_gkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Euclidean-aligned covariance, tangent space",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": true,
+  "window_acc": 0.5197328476017,
+  "window_acc_ci": [
+   0.4902076877509771,
+   0.5488067739511414
+  ],
+  "window_bal_acc": 0.5190337001375516,
+  "window_bal_acc_ci": [
+   0.48879152957534266,
+   0.5482753869306284
+  ],
+  "window_auc": 0.5236736364451887,
+  "window_auc_ci": [
+   0.4809176822546433,
+   0.5651025981875926
+  ],
+  "window_f1": 0.549800796812749,
+  "child_acc": 0.5537190082644629,
+  "child_acc_ci": [
+   0.4628099173553719,
+   0.6363636363636364
+  ],
+  "child_bal_acc": 0.5534153005464482,
+  "child_auc": 0.575136612021858,
+  "child_auc_ci": [
+   0.4726707650273224,
+   0.6762295081967213
+  ],
+  "child_correct": 67,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 730.2,
+  "source": "results/stage2b/DS2/ea_riemann_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Euclidean-aligned raw windows",
+  "model": "EEGNet-8,2",
+  "protocol": "subject_sgkf",
+  "transductive": true,
+  "window_acc": 0.5110807528840315,
+  "window_acc_ci": [
+   0.471673192904933,
+   0.5518472290847859
+  ],
+  "window_bal_acc": 0.5055900888104778,
+  "window_bal_acc_ci": [
+   0.4665844231341889,
+   0.5463880198106713
+  ],
+  "window_auc": 0.5072575279588541,
+  "window_auc_ci": [
+   0.4524275905928036,
+   0.5633256671732233
+  ],
+  "window_f1": 0.557979964320022,
+  "child_acc": 0.5041322314049587,
+  "child_acc_ci": [
+   0.4214876033057851,
+   0.5867768595041323
+  ],
+  "child_bal_acc": 0.5027322404371585,
+  "child_auc": 0.5166666666666667,
+  "child_auc_ci": [
+   0.4185655737704918,
+   0.6117896174863385
+  ],
+  "child_correct": 61,
+  "n_children": 121,
+  "vote_ties": 3,
+  "runtime_sec": 2621.9,
+  "source": "results/stage2b/DS2/raw_eegnet_ea__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "spectral, z-scored within each child",
+  "model": "Logistic regression",
+  "protocol": "subject_sgkf",
+  "transductive": true,
+  "window_acc": 0.4414086217364906,
+  "window_acc_ci": [
+   0.4129911776507827,
+   0.47049259442538066
+  ],
+  "window_bal_acc": 0.5,
+  "window_bal_acc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_auc": 0.5,
+  "window_auc_ci": [
+   0.5,
+   0.5
+  ],
+  "window_f1": 0.0,
+  "child_acc": 0.49586776859504134,
+  "child_acc_ci": [
+   0.49586776859504134,
+   0.49586776859504134
+  ],
+  "child_bal_acc": 0.5,
+  "child_auc": 0.5,
+  "child_auc_ci": [
+   0.5,
+   0.5
+  ],
+  "child_correct": 60,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 9.0,
+  "source": "results/stage2b/DS2/persubj_spectral_lr__subject_sgkf.json"
+ }
+]

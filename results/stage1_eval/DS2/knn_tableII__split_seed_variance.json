@@ -1,0 +1,210 @@
+{
+ "experiment": "DS2",
+ "model": {
+  "n_neighbors": 2,
+  "distance": "cosine",
+  "weights": "squared_inverse",
+  "standardize": false,
+  "n_features": 171
+ },
+ "split": "sgkf(10)",
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19
+ ],
+ "per_seed": [
+  {
+   "split_seed": 0,
+   "window_accuracy": 0.5895567698846388,
+   "window_balanced_accuracy": 0.5848882019616052,
+   "window_roc_auc": 0.6107021111177561,
+   "child_accuracy": 0.628099173553719,
+   "child_correct": 76
+  },
+  {
+   "split_seed": 1,
+   "window_accuracy": 0.5954766241651488,
+   "window_balanced_accuracy": 0.5904756743017763,
+   "window_roc_auc": 0.6169357581783386,
+   "child_accuracy": 0.6528925619834711,
+   "child_correct": 79
+  },
+  {
+   "split_seed": 2,
+   "window_accuracy": 0.5769581056466302,
+   "window_balanced_accuracy": 0.5714468333233658,
+   "window_roc_auc": 0.5932267993840081,
+   "child_accuracy": 0.6198347107438017,
+   "child_correct": 75
+  },
+  {
+   "split_seed": 3,
+   "window_accuracy": 0.590922890103218,
+   "window_balanced_accuracy": 0.5862553076969081,
+   "window_roc_auc": 0.6127352954368758,
+   "child_accuracy": 0.6363636363636364,
+   "child_correct": 77
+  },
+  {
+   "split_seed": 4,
+   "window_accuracy": 0.5918336369156041,
+   "window_balanced_accuracy": 0.586565546319,
+   "window_roc_auc": 0.6128053794629508,
+   "child_accuracy": 0.6446280991735537,
+   "child_correct": 78
+  },
+  {
+   "split_seed": 5,
+   "window_accuracy": 0.5853066180935034,
+   "window_balanced_accuracy": 0.5798214072124873,
+   "window_roc_auc": 0.6049186838406794,
+   "child_accuracy": 0.6528925619834711,
+   "child_correct": 79
+  },
+  {
+   "split_seed": 6,
+   "window_accuracy": 0.5939587128111719,
+   "window_balanced_accuracy": 0.5891169786496023,
+   "window_roc_auc": 0.6140574539501226,
+   "child_accuracy": 0.6446280991735537,
+   "child_correct": 78
+  },
+  {
+   "split_seed": 7,
+   "window_accuracy": 0.5924408014571949,
+   "window_balanced_accuracy": 0.5884075414149872,
+   "window_roc_auc": 0.6135112190508941,
+   "child_accuracy": 0.6528925619834711,
+   "child_correct": 79
+  },
+  {
+   "split_seed": 8,
+   "window_accuracy": 0.5859137826350941,
+   "window_balanced_accuracy": 0.5813387730996951,
+   "window_roc_auc": 0.6046636247084505,
+   "child_accuracy": 0.628099173553719,
+   "child_correct": 76
+  },
+  {
+   "split_seed": 9,
+   "window_accuracy": 0.5875834851244688,
+   "window_balanced_accuracy": 0.5837350861192512,
+   "window_roc_auc": 0.607649905059506,
+   "child_accuracy": 0.6611570247933884,
+   "child_correct": 80
+  },
+  {
+   "split_seed": 10,
+   "window_accuracy": 0.5919854280510018,
+   "window_balanced_accuracy": 0.5871703247413432,
+   "window_roc_auc": 0.6124945334459662,
+   "child_accuracy": 0.6611570247933884,
+   "child_correct": 80
+  },
+  {
+   "split_seed": 11,
+   "window_accuracy": 0.5891013964784456,
+   "window_balanced_accuracy": 0.5842641737934333,
+   "window_roc_auc": 0.6097738715537349,
+   "child_accuracy": 0.6859504132231405,
+   "child_correct": 83
+  },
+  {
+   "split_seed": 12,
+   "window_accuracy": 0.5941105039465695,
+   "window_balanced_accuracy": 0.5897938968961187,
+   "window_roc_auc": 0.616818390796005,
+   "child_accuracy": 0.6198347107438017,
+   "child_correct": 75
+  },
+  {
+   "split_seed": 13,
+   "window_accuracy": 0.5883424408014571,
+   "window_balanced_accuracy": 0.5828273578135279,
+   "window_roc_auc": 0.6081476418126907,
+   "child_accuracy": 0.6198347107438017,
+   "child_correct": 75
+  },
+  {
+   "split_seed": 14,
+   "window_accuracy": 0.6042805100182149,
+   "window_balanced_accuracy": 0.5996546259195024,
+   "window_roc_auc": 0.6252716456850667,
+   "child_accuracy": 0.6859504132231405,
+   "child_correct": 83
+  },
+  {
+   "split_seed": 15,
+   "window_accuracy": 0.589404978749241,
+   "window_balanced_accuracy": 0.5844277031876084,
+   "window_roc_auc": 0.6076507927905029,
+   "child_accuracy": 0.6198347107438017,
+   "child_correct": 75
+  },
+  {
+   "split_seed": 16,
+   "window_accuracy": 0.5866727383120826,
+   "window_balanced_accuracy": 0.5818738412774356,
+   "window_roc_auc": 0.6067970291848573,
+   "child_accuracy": 0.628099173553719,
+   "child_correct": 76
+  },
+  {
+   "split_seed": 17,
+   "window_accuracy": 0.5915300546448088,
+   "window_balanced_accuracy": 0.586762716045691,
+   "window_roc_auc": 0.6140712838646014,
+   "child_accuracy": 0.6446280991735537,
+   "child_correct": 78
+  },
+  {
+   "split_seed": 18,
+   "window_accuracy": 0.5868245294474803,
+   "window_balanced_accuracy": 0.5819736409305664,
+   "window_roc_auc": 0.6053573163985407,
+   "child_accuracy": 0.6446280991735537,
+   "child_correct": 78
+  },
+  {
+   "split_seed": 19,
+   "window_accuracy": 0.5883424408014571,
+   "window_balanced_accuracy": 0.5836930357036063,
+   "window_roc_auc": 0.6101775088212428,
+   "child_accuracy": 0.628099173553719,
+   "child_correct": 76
+  }
+ ],
+ "window_accuracy": {
+  "mean": 0.5900273224043715,
+  "std": 0.005259559671288182,
+  "min": 0.5769581056466302,
+  "max": 0.6042805100182149
+ },
+ "child_accuracy": {
+  "mean": 0.6429752066115704,
+  "std": 0.020172561242717532,
+  "min": 0.6198347107438017,
+  "max": 0.6859504132231405
+ },
+ "notes": [
+  "DS-2 confound: the ADHD children were taking methylphenidate and the controls were not, so ADHD cannot be separated from its treatment."
+ ]
+}

@@ -1,0 +1,53 @@
+{
+  "DS2": {
+    "window_wise_leaky": {
+      "window_acc": 0.930327868852459,
+      "window_bal_acc": 0.9267066862029782,
+      "window_auc": 0.9797522576400933,
+      "ci95_window_bal_acc": [
+        0.9065132610488104,
+        0.9459424284784819
+      ],
+      "people_correct": 120,
+      "n_people": 121
+    },
+    "subject_wise": {
+      "window_acc": 0.7217668488160291,
+      "window_bal_acc": 0.7132219589139406,
+      "window_auc": 0.7861357910711082,
+      "ci95_window_bal_acc": [
+        0.6597841260221503,
+        0.7633798192086493
+      ],
+      "people_correct": 93,
+      "n_people": 121
+    },
+    "gap_bal_acc_points": 21.348472728903765
+  },
+  "DS1_Rest": {
+    "window_wise_leaky": {
+      "window_acc": 1.0,
+      "window_bal_acc": 1.0,
+      "window_auc": 1.0,
+      "ci95_window_bal_acc": [
+        1.0,
+        1.0
+      ],
+      "people_correct": 14,
+      "n_people": 14
+    },
+    "subject_wise": {
+      "window_acc": 0.984472049689441,
+      "window_bal_acc": 0.984472049689441,
+      "window_auc": 0.9998456849658578,
+      "ci95_window_bal_acc": [
+        0.9565217391304348,
+        1.0
+      ],
+      "people_correct": 14,
+      "n_people": 14
+    },
+    "gap_bal_acc_points": 1.552795031055898
+  },
+  "pipeline": "SMVMD common modes (all four) + tangent space + LightGBM (depth 4, fixed)"
+}

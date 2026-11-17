@@ -1,0 +1,99 @@
+\chapter{Implementation Details of the Starting Method}
+\thispagestyle{empty}
+The published description of the SMVMD method~\cite{chandela2025} leaves some details open. The
+choices made in this project are listed here; the SMVMD settings are shared by the proposed
+pipeline. The full list, with reasons, is in \texttt{docs/reproducibility\_notes.md}.
+
+\begin{table}[H]
+\caption{Implementation choices where the published description is incomplete.}
+\label{tab:choices}\centering\small
+\begin{tabular}{p{4.2cm}p{9.6cm}}
+\hline
+Item & Choice in this project \\
+\hline
+DS-1 preprocessing & The cleaned recordings distributed with the dataset are used; the
+original EEGLAB processing (CleanLine, ICA, ADJUST) is MATLAB-only and was not re-run. \\
+DS-2 filters & Fourth-order Butterworth band-pass, zero-phase. \\
+DS-2 wavelet processing & Two Coiflet-3 level-6 steps (removal of the slowest component, then
+SURE shrinkage). \\
+SMVMD stopping rule & Stop when the residual energy is below 1\% of the window energy, with at
+most 20 modes; \R{DSoneModesCapPct}\% of DS-1 windows reach the limit. \\
+SMVMD initialisation & Centre frequencies initialised uniformly; at most 500 iterations per
+mode. \\
+Features of the starting method & Nine statistical features per mode and channel, integrated
+over modes with energy weights; mutual information for mRMR estimated with nearest-neighbour
+estimators. \\
+KNN settings & Taken from the reported optimised settings; the Bayesian optimisation that
+produced them was not re-run. A tuned variant is Step~2. \\
+\hline
+\end{tabular}
+\end{table}
+
+\chapter{Reproducing the Results}
+\thispagestyle{empty}
+All experiments are run from the root of the project repository with Python~3.13. Results are
+cached, so a repeated command skips completed work.
+
+The commands below produce every result in this report, in this order. Each line starting with
+\texttt{\#} describes the command that follows it; a trailing \texttt{\textbackslash} means that
+the command continues on the next line.
+
+\begin{footnotesize}
+\begin{verbatim}
+# dependencies
+pip install -r requirements.txt lightgbm
+
+# SMVMD features of the starting method (Step 1)
+python -m experiments.ds1_rest
+python -m experiments.ds1_music
+python -m experiments.ds1_rest_music
+python -m experiments.ds2_adhd
+
+# preliminary study (Chapter 5) and data properties (Chapter 3)
+python -m experiments.stage1_eval
+python -m experiments.stage2_baselines
+python -m experiments.stage2b_sweep
+python -m experiments.stage3_ablation
+python -m experiments.data_checks
+
+# SMVMD, common modes and covariance matrices of every window (cached)
+python experiments/stage2c_smvmd_riemann.py --part covs
+python experiments/stage2c_smvmd_riemann.py --part summary
+
+# LR and SVM variants, single modes and Butterworth control
+python experiments/stage2c_smvmd_riemann.py --part eval --clf lr svm
+
+# proposed pipeline (LightGBM, XGBoost) and undecomposed reference
+python experiments/stage2c_smvmd_riemann.py --part eval \
+       --clf xgb lgbm --variants all select raw
+
+# window-wise comparison, feature importance and run time
+python experiments/stage2d_main_pipeline.py --part gap
+python experiments/stage2d_main_pipeline.py --part importance
+python experiments/stage2d_main_pipeline.py --part runtime
+
+# automated leakage and metric tests
+python -m pytest tests
+
+# all numbers, tables and figures of this report
+python report/build_final.py
+python report/build_report2.py
+\end{verbatim}
+\end{footnotesize}
+
+\chapter{Results of Every Method of the Preliminary Study}
+\thispagestyle{empty}
+Tables~\ref{tab:models_rest}--\ref{tab:models_ds2} list every method of the preliminary study
+(Chapter~5) in each setting, subject-wise, on the same folds. Columns: features, classifier,
+window accuracy [95\% CI], balanced window accuracy, window AUC, and subjects classified correctly
+by majority vote [95\% CI]. $^\dagger$: uses unlabelled data of the test subject (transductive);
+$^\ddagger$: constant prediction.
+
+\begin{table}[H]\caption{DS-1 rest: all methods of the preliminary study.}\label{tab:models_rest}
+\centering\gentable{tab_models_DS1_Rest}\end{table}
+\begin{table}[H]\caption{DS-1 music: all methods of the preliminary study.}\label{tab:models_music}
+\centering\gentable{tab_models_DS1_Music}\end{table}
+\begin{table}[H]\caption{DS-1 rest+music: all methods of the preliminary study.}\label{tab:models_rm}
+\centering\gentable{tab_models_DS1_RestMusic}\end{table}
+\begin{table}[H]\caption{DS-2 ADHD: all methods of the preliminary study. \dstwonote}\label{tab:models_ds2}
+\centering\gentable{tab_models_DS2}\end{table}

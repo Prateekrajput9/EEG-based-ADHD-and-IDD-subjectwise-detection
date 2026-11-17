@@ -1,0 +1,86 @@
+\chapter{Introduction}
+\thispagestyle{empty}
+
+\section{Background}
+Neurodevelopmental disorders are conditions that begin in the developmental period and affect
+personal, social, academic or occupational functioning~\cite{apa2013}. Two of them are studied
+in this project. Attention-deficit/hyperactivity disorder (ADHD) is characterised by
+inattention, hyperactivity and impulsivity; a pooled estimate of its worldwide prevalence in
+children and adolescents is about 5\%~\cite{polanczyk2007}. Intellectual and developmental
+disorder (IDD), also called intellectual disability, combines significantly below-average
+intellectual functioning with limitations in adaptive behaviour; its prevalence is about
+1\%~\cite{maulik2011}.
+
+Both disorders are diagnosed from behaviour: clinical interviews, rating scales completed by
+parents and teachers, and standardised tests, interpreted by a specialist according to criteria
+such as DSM-5~\cite{apa2013}. The process is slow, depends on the availability of specialists
+and involves subjective judgement. An objective physiological measurement that supports the
+diagnosis would therefore be valuable.
+
+Electroencephalography (EEG) records the electrical activity of the brain from electrodes on
+the scalp. It is non-invasive, inexpensive compared with other brain-imaging methods, portable
+and has millisecond time resolution, and consumer-grade wireless headsets make recordings
+possible outside the hospital. These properties make EEG the most practical candidate for a
+physiological aid to the assessment of neurodevelopmental disorders.
+
+\section{Problem statement}
+The problem addressed is the \textbf{detection of multiple neurodevelopmental disorders from
+EEG}: given an EEG recording, decide whether it comes from a person with the disorder or from a
+control, for IDD and for ADHD, with one common processing and classification framework.
+
+Two requirements follow from the intended use. The framework should handle more than one
+disorder with the same processing, rather than a method tuned separately for each condition. And
+it must work on a person whose EEG it has never seen, because that is the only situation in
+which a detection system is used. The second requirement decides how every result in this
+report is obtained.
+
+\section{Motivation for the proposed pipeline}
+Published methods report accuracies of 95--100\% on the two public datasets used here
+(Chapter~2), but most of them divide the short windows of each person between the training and
+the test set, or do not report keeping people apart, so that the classifier may be tested on
+people it has already seen. When the
+method with the highest reported accuracy was re-evaluated on unseen people in this project, its
+accuracy fell to little above chance (Chapter~4). A broad comparison of alternatives under a
+strict protocol (Chapter~5) then showed that representing each window by the
+\emph{covariance matrix of its channels}, analysed with Riemannian geometry, carried the most
+information about ADHD. The proposed pipeline (Chapter~6) builds on this finding: it keeps the
+adaptive multichannel decomposition (SMVMD) of the starting method to split the signal into
+frequency-specific common modes, describes each mode by its channel covariance, and classifies
+the Riemannian tangent-space features with gradient-boosted trees.
+
+\section{Objectives}
+\begin{enumerate}
+\item to develop an EEG classification pipeline that applies unchanged to IDD and ADHD and is
+      light enough to run on an ordinary computer without a GPU;
+\item to evaluate it on people not seen during training, with a protocol that excludes every
+      form of information leakage;
+\item to analyse each component of the pipeline (decomposition, common modes, Riemannian
+      representation, classifier) by ablation, and to compare the result with published work;
+\item to establish what the pipeline relies on, which modes and electrodes carry the
+      information, and which properties of the data other than the disorder could explain the
+      results.
+\end{enumerate}
+
+\section{Contributions}
+\begin{itemize}
+\item \textbf{A pipeline combining SMVMD common modes, Riemannian geometry and gradient
+      boosting.} The window-specific SMVMD modes are mapped to four common modes by centre
+      frequency, so that a fixed set of covariance matrices describes every window. On unseen
+      ADHD children it reaches \R{MainDStwoBal}\% balanced accuracy and \R{MainDStwoSubj}
+      children correct; on IDD all participants are classified correctly.
+\item \textbf{A strict evaluation} with subject-wise cross-validation, nested tuning on
+      training subjects only, an automated leakage test and majority voting per person.
+\item \textbf{Ablations} of the classifier (LR, SVM, XGBoost, LightGBM), of the individual
+      modes, and of the decomposition itself against fixed band-pass filters and the undecomposed
+      signal.
+\item \textbf{A quantified comparison with the literature}, showing how window-level splitting
+      inflates reported accuracy, and that the proposed pipeline is comparable with the best
+      published subject-wise ADHD result without a deep network or a GPU.
+\end{itemize}
+
+\section{Organisation of the report}
+Chapter~2 reviews EEG-based detection of ADHD and IDD and the limitations of published
+evaluations. Chapter~3 describes the datasets and their preprocessing, and Chapter~4 the
+evaluation protocol. Chapter~5 summarises the preliminary study that led to the proposed
+pipeline. Chapter~6 describes the pipeline in detail, and Chapter~7 presents its results,
+ablations and analyses. Chapter~8 gives the conclusions, limitations and future work.

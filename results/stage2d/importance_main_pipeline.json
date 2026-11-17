@@ -1,0 +1,347 @@
+{
+  "DS2": {
+    "n_folds": 10,
+    "importance": "LightGBM gain, normalised to sum 1, mean over folds",
+    "per_mode": {
+      "delta": 0.4806453216344331,
+      "theta": 0.2916407895433053,
+      "alpha": 0.10930783478016394,
+      "beta": 0.11840605404209747
+    },
+    "per_channel": {
+      "Fp2": 0.0919391886819612,
+      "F3": 0.08975807265689803,
+      "Pz": 0.07493768729611995,
+      "O1": 0.0746684486806752,
+      "T5": 0.07428888353896515,
+      "T6": 0.05803875835967741,
+      "Fp1": 0.05490018173841052,
+      "Fz": 0.05087847216464048,
+      "F7": 0.05080904005294234,
+      "F8": 0.050633045864964484,
+      "P3": 0.042840197871762804,
+      "O2": 0.04264815004625034,
+      "C3": 0.04188433713297321,
+      "P4": 0.03868976850282874,
+      "T4": 0.038468066042691214,
+      "T3": 0.03354794122658166,
+      "C4": 0.031628449109903416,
+      "F4": 0.03096290624924448,
+      "Cz": 0.028478404782509303
+    },
+    "share_variance_terms": 0.2945521283554519,
+    "share_covariance_terms": 0.705447871644548,
+    "top20_features": [
+      {
+        "gain_share": 0.034719776298461166,
+        "mode": "theta",
+        "ch1": "Pz",
+        "ch2": "Pz",
+        "type": "variance"
+      },
+      {
+        "gain_share": 0.03304331240799452,
+        "mode": "delta",
+        "ch1": "Fp2",
+        "ch2": "Fp2",
+        "type": "variance"
+      },
+      {
+        "gain_share": 0.03289337040329531,
+        "mode": "delta",
+        "ch1": "O2",
+        "ch2": "T6",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.028113762664860053,
+        "mode": "delta",
+        "ch1": "T5",
+        "ch2": "T5",
+        "type": "variance"
+      },
+      {
+        "gain_share": 0.02800176122507789,
+        "mode": "delta",
+        "ch1": "F3",
+        "ch2": "C3",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.019500456565356337,
+        "mode": "delta",
+        "ch1": "F3",
+        "ch2": "Fz",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.019220649306010213,
+        "mode": "theta",
+        "ch1": "F4",
+        "ch2": "F8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.018490738900793217,
+        "mode": "theta",
+        "ch1": "O1",
+        "ch2": "T5",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.017851611861216293,
+        "mode": "delta",
+        "ch1": "O1",
+        "ch2": "T5",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.017642054911299547,
+        "mode": "beta",
+        "ch1": "C4",
+        "ch2": "P4",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.016994738731623278,
+        "mode": "delta",
+        "ch1": "P3",
+        "ch2": "T6",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.016974555243117324,
+        "mode": "theta",
+        "ch1": "Fp2",
+        "ch2": "Fp2",
+        "type": "variance"
+      },
+      {
+        "gain_share": 0.016301000891873755,
+        "mode": "theta",
+        "ch1": "Fp1",
+        "ch2": "F7",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.014705020141164746,
+        "mode": "delta",
+        "ch1": "O1",
+        "ch2": "T6",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.013719674440311452,
+        "mode": "alpha",
+        "ch1": "Fp1",
+        "ch2": "F7",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.013439634877213717,
+        "mode": "delta",
+        "ch1": "O1",
+        "ch2": "O1",
+        "type": "variance"
+      },
+      {
+        "gain_share": 0.01324241734009491,
+        "mode": "delta",
+        "ch1": "Pz",
+        "ch2": "Pz",
+        "type": "variance"
+      },
+      {
+        "gain_share": 0.012919539520022014,
+        "mode": "theta",
+        "ch1": "Fp1",
+        "ch2": "F3",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.012186624119699554,
+        "mode": "delta",
+        "ch1": "F3",
+        "ch2": "F7",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.010834253963156727,
+        "mode": "theta",
+        "ch1": "F3",
+        "ch2": "F7",
+        "type": "covariance"
+      }
+    ]
+  },
+  "DS1_Rest": {
+    "n_folds": 14,
+    "importance": "LightGBM gain, normalised to sum 1, mean over folds",
+    "per_mode": {
+      "delta": 0.045905722700135036,
+      "theta": 0.0030299549022687433,
+      "alpha": 0.8069535866514604,
+      "beta": 0.14411073574613564
+    },
+    "per_channel": {
+      "FC5": 0.2864748984640777,
+      "F7": 0.2549295192992305,
+      "P8": 0.1799976353841253,
+      "T8": 0.13806926500939298,
+      "O2": 0.04193585171640436,
+      "AF3": 0.033634161205485257,
+      "F4": 0.03350883910830256,
+      "AF4": 0.02781705135672092,
+      "F3": 0.0022362218344599565,
+      "F8": 0.00106500627893479,
+      "FC6": 0.00031871391193436703,
+      "P7": 5.250311004999239e-06,
+      "T7": 4.331602745466356e-06,
+      "O1": 3.254517180878399e-06
+    },
+    "share_variance_terms": 3.0573340908132644e-06,
+    "share_covariance_terms": 0.9999969426659092,
+    "top20_features": [
+      {
+        "gain_share": 0.38835793522146245,
+        "mode": "alpha",
+        "ch1": "F7",
+        "ch2": "FC5",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.26924538890915484,
+        "mode": "alpha",
+        "ch1": "P8",
+        "ch2": "T8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.1208903530377781,
+        "mode": "beta",
+        "ch1": "F7",
+        "ch2": "FC5",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.06308164612271343,
+        "mode": "alpha",
+        "ch1": "AF3",
+        "ch2": "FC5",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.04860676606798547,
+        "mode": "alpha",
+        "ch1": "F4",
+        "ch2": "AF4",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.0452716840959905,
+        "mode": "delta",
+        "ch1": "O2",
+        "ch2": "P8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.026327759357549312,
+        "mode": "alpha",
+        "ch1": "O2",
+        "ch2": "P8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.012263472192158724,
+        "mode": "beta",
+        "ch1": "O2",
+        "ch2": "P8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.007019181536343032,
+        "mode": "beta",
+        "ch1": "F4",
+        "ch2": "AF4",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.004457742264097917,
+        "mode": "alpha",
+        "ch1": "F3",
+        "ch2": "F4",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.004163958688404808,
+        "mode": "alpha",
+        "ch1": "AF3",
+        "ch2": "F4",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.0038618469062982512,
+        "mode": "beta",
+        "ch1": "P8",
+        "ch2": "T8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.003021458371859262,
+        "mode": "theta",
+        "ch1": "P8",
+        "ch2": "T8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.002062112238922507,
+        "mode": "alpha",
+        "ch1": "F4",
+        "ch2": "F8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.0006322140298796509,
+        "mode": "alpha",
+        "ch1": "FC6",
+        "ch2": "F4",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 0.0006042828033642257,
+        "mode": "delta",
+        "ch1": "F7",
+        "ch2": "FC5",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 5.513093919249509e-05,
+        "mode": "beta",
+        "ch1": "F4",
+        "ch2": "F8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 4.874122624852434e-06,
+        "mode": "delta",
+        "ch1": "AF3",
+        "ch2": "F8",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 4.609156975715553e-06,
+        "mode": "delta",
+        "ch1": "AF3",
+        "ch2": "P7",
+        "type": "covariance"
+      },
+      {
+        "gain_share": 3.233995117599277e-06,
+        "mode": "beta",
+        "ch1": "O2",
+        "ch2": "F4",
+        "type": "covariance"
+      }
+    ]
+  }
+}

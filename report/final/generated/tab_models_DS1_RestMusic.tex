@@ -1,0 +1,31 @@
+\scriptsize
+\begin{tabular}{llrrrr}
+\hline
+Features & Model & Win.\ acc.\ [CI] & Win.\ bal. & Win.\ AUC & Subjects [CI] \\
+\hline
+raw windows & ShallowConvNet & 100.0 [100.0--100.0] & 100.0 & 1.000 & 14/14 [100.0--100.0] \\
+MiniRocket & ridge classifier & 100.0 [100.0--100.0] & 100.0 & 1.000 & 14/14 [100.0--100.0] \\
+Riemannian tangent space (OAS covariance) & Tangent space + LR & 100.0 [100.0--100.0] & 100.0 & 1.000 & 14/14 [100.0--100.0] \\
+Riemannian tangent space (OAS covariance) & Tangent space + SVM & 99.5 [98.8--100.0] & 99.5 & 0.999 & 14/14 [100.0--100.0] \\
+connectivity & Logistic regression & 91.4 [82.9--98.1] & 91.4 & 0.981 & 14/14 [100.0--100.0] \\
+raw windows & EEGNet-8,2 & 90.5 [78.1--98.9] & 90.5 & 0.995 & 13/14 [78.6--100.0] \\
+connectivity & SVM (RBF) & 88.6 [79.1--96.4] & 88.6 & 0.957 & 14/14 [100.0--100.0] \\
+members fixed in advance & Ensemble (mean probability) & 87.8 [76.9--96.7] & 87.8 & 0.975 & 13/14 [78.6--100.0] \\
+connectivity & Random forest & 83.8 [67.3--95.8] & 83.8 & 0.922 & 13/14 [78.6--100.0] \\
+connectivity & XGBoost & 82.4 [65.3--94.9] & 82.4 & 0.858 & 12/14 [64.3--100.0] \\
+wavelet-packet energies & Logistic regression & 79.4 [64.8--91.6] & 79.4 & 0.894 & 11/14 [57.1--100.0] \\
+Euclidean-aligned raw windows & EEGNet-8,2$^\dagger$ & 78.9 [67.3--88.4] & 78.9 & 0.838 & 13/14 [78.6--100.0] \\
+spectral mean+SD per child & Logistic regression (child level) & 78.6 [57.1--100.0] & 78.6 & 0.735 & 11/14 [57.1--100.0] \\
+filter-bank log-variance & Logistic regression & 78.4 [65.2--89.8] & 78.4 & 0.880 & 12/14 [64.3--100.0] \\
+spectral & XGBoost & 74.1 [58.2--88.4] & 74.1 & 0.836 & 11/14 [57.1--100.0] \\
+spectral & Logistic regression & 72.4 [57.9--86.1] & 72.4 & 0.778 & 11/14 [57.1--100.0] \\
+aperiodic 1/f + entropies & Logistic regression & 71.7 [56.1--86.0] & 71.7 & 0.744 & 11/14 [57.1--100.0] \\
+spectral & Random forest & 67.8 [50.3--83.5] & 67.8 & 0.707 & 10/14 [42.9--92.9] \\
+aperiodic 1/f + entropies & XGBoost & 64.2 [48.3--80.1] & 64.2 & 0.658 & 11/14 [57.1--100.0] \\
+SMVMD features & mRMR + KNN (literature settings) & 62.3 [43.6--79.5] & 62.3 & 0.623 & 9/14 [42.9--85.7] \\
+Euclidean-aligned covariance, tangent space & Tangent space + LR$^\dagger$ & 56.4 [43.0--67.5] & 56.4 & 0.586 & 11/14 [57.1--100.0] \\
+SMVMD features & mRMR + KNN (tuned) & 55.8 [38.4--71.7] & 55.8 & 0.564 & 8/14 [28.6--78.6] \\
+spectral & SVM (RBF) & 54.8 [36.6--73.4] & 54.8 & 0.556 & 9/14 [42.9--85.7] \\
+spectral, z-scored within each child & Logistic regression$^\dagger$$^\ddagger$ & 50.0 [50.0--50.0] & 50.0 & 0.500 & 7/14 [50.0--50.0] \\
+\hline
+\end{tabular}

@@ -1,0 +1,162 @@
+{
+  "DS1_Rest": {
+    "n_windows": 644,
+    "modes_per_window_mean": 10.777950310559007,
+    "modes_per_window_min": 4,
+    "modes_per_window_max": 20,
+    "pct_windows_without_mode": {
+      "delta": 0.0,
+      "theta": 2.018633540372671,
+      "alpha": 0.15527950310559005,
+      "beta": 0.0
+    },
+    "energy_share_pct_mean": {
+      "delta": 39.445830866845974,
+      "theta": 9.422653905901074,
+      "alpha": 37.953210565038944,
+      "beta": 13.165110622448232,
+      "above30": 0.013194039765771015
+    },
+    "centre_hz_hist_edges": [
+      0,
+      1,
+      4,
+      8,
+      13,
+      20,
+      30,
+      45,
+      64.1
+    ],
+    "centre_hz_hist_counts": [
+      0,
+      691,
+      697,
+      986,
+      1319,
+      2434,
+      459,
+      355
+    ]
+  },
+  "DS1_Music": {
+    "n_windows": 644,
+    "modes_per_window_mean": 10.75,
+    "modes_per_window_min": 5,
+    "modes_per_window_max": 20,
+    "pct_windows_without_mode": {
+      "delta": 0.0,
+      "theta": 3.7267080745341614,
+      "alpha": 0.15527950310559005,
+      "beta": 0.0
+    },
+    "energy_share_pct_mean": {
+      "delta": 37.44318514923226,
+      "theta": 10.14013386509318,
+      "alpha": 38.974382926612996,
+      "beta": 13.428454700011756,
+      "above30": 0.013843359049815391
+    },
+    "centre_hz_hist_edges": [
+      0,
+      1,
+      4,
+      8,
+      13,
+      20,
+      30,
+      45,
+      64.1
+    ],
+    "centre_hz_hist_counts": [
+      0,
+      699,
+      690,
+      973,
+      1370,
+      2408,
+      463,
+      320
+    ]
+  },
+  "DS1_RestMusic": {
+    "n_windows": 1288,
+    "modes_per_window_mean": 10.763975155279503,
+    "modes_per_window_min": 4,
+    "modes_per_window_max": 20,
+    "pct_windows_without_mode": {
+      "delta": 0.0,
+      "theta": 2.872670807453416,
+      "alpha": 0.15527950310559005,
+      "beta": 0.0
+    },
+    "energy_share_pct_mean": {
+      "delta": 38.44450800803912,
+      "theta": 9.781393885497126,
+      "alpha": 38.463796745825974,
+      "beta": 13.296782661229992,
+      "above30": 0.013518699407793204
+    },
+    "centre_hz_hist_edges": [
+      0,
+      1,
+      4,
+      8,
+      13,
+      20,
+      30,
+      45,
+      64.1
+    ],
+    "centre_hz_hist_counts": [
+      0,
+      1390,
+      1387,
+      1959,
+      2689,
+      4842,
+      922,
+      675
+    ]
+  },
+  "DS2": {
+    "n_windows": 6588,
+    "modes_per_window_mean": 4.551153612629022,
+    "modes_per_window_min": 1,
+    "modes_per_window_max": 19,
+    "pct_windows_without_mode": {
+      "delta": 0.0,
+      "theta": 3.0054644808743167,
+      "alpha": 20.051608986035216,
+      "beta": 33.78870673952641
+    },
+    "energy_share_pct_mean": {
+      "delta": 93.4808759149855,
+      "theta": 4.256917134672413,
+      "alpha": 1.003791778116244,
+      "beta": 1.0983260547865703,
+      "above30": 0.16008911743926912
+    },
+    "centre_hz_hist_edges": [
+      0,
+      1,
+      4,
+      8,
+      13,
+      20,
+      30,
+      45,
+      64.1
+    ],
+    "centre_hz_hist_counts": [
+      554,
+      6745,
+      6526,
+      5501,
+      4744,
+      4128,
+      1577,
+      208
+    ]
+  }
+}

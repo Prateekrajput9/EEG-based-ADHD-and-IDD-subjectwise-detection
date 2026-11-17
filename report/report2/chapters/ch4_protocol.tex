@@ -1,0 +1,109 @@
+\chapter{Evaluation Protocol}
+\thispagestyle{empty}
+
+The proposed pipeline and every method of the preliminary study (Chapters~5--7) are evaluated in
+exactly the same way, described in this chapter. The
+protocol is designed to measure what a detection system needs: how well it classifies a
+person whose EEG it has never seen.
+
+\section{Subject-wise cross-validation}
+\label{sec:protocol}
+All windows of a person are kept in the same fold, so the people in a test fold are unknown to
+the model trained on the other folds. For DS-1, leave-one-subject-out (LOSO) cross-validation
+is used: 14 folds, each with one participant as the test set and the other 13 for training.
+For DS-2, stratified grouped 10-fold cross-validation is used: the 121 children are divided
+into 10 folds with the classes balanced in each, using a fixed random seed, and each fold
+serves once as the test set. After all folds, every person has been tested exactly once by a
+model that never saw them, and all methods use the same folds, so their results can be
+compared directly.
+
+\section{No information from the test subjects}
+Every step that learns from data is fitted on the training subjects of the fold only: feature
+standardisation, feature selection, the reference point of the tangent space, the selection of
+channels, the choice of hyperparameters and the early stopping of the networks. The only
+exceptions are three methods of the preliminary study that by design use unlabelled windows of
+the test subject; they are marked $^\dagger$ in its tables (Appendix~C) and are not used in the
+proposed pipeline.
+
+Hyperparameters are chosen by \emph{nested} cross-validation. Inside each outer training set,
+an inner stratified grouped 4-fold cross-validation, again by subject, evaluates every point of
+a small grid; the point with the highest pooled balanced accuracy is used to train on the whole
+outer training set. The outer test subjects take no part in this choice.
+
+An automated test suite checks these properties. It asserts that no subject appears in both the
+training and the test part of any outer or inner fold, and it runs the nested procedure with a
+classifier that records the subjects it is given, to confirm that no fit ever receives a window
+of a test subject.
+
+\section{Subject-level decisions}
+A person is assigned the class predicted for the majority of their windows. Ties are broken by
+the mean predicted probability and counted. Results are reported at both levels: the window
+level shows how reliable a single 5~s decision is, and the subject level is the decision that
+would be given for a person.
+
+\section{Performance measures}
+With TP, TN, FP and FN the numbers of true positives, true negatives, false positives and false
+negatives, where the disorder is the positive class:
+\begin{align}
+\text{accuracy} &= \frac{TP+TN}{TP+TN+FP+FN}, &
+\text{sensitivity} &= \frac{TP}{TP+FN}, \nonumber\\
+\text{specificity} &= \frac{TN}{TN+FP}, &
+\text{balanced accuracy} &= \frac{\text{sensitivity}+\text{specificity}}{2}, \\
+\text{F1} &= \frac{2\,TP}{2\,TP+FP+FN}. \nonumber
+\end{align}
+Balanced accuracy is the main measure, because the classes of DS-2 have different numbers of
+windows; a classifier that always predicts one class has a balanced accuracy of 50\%. The area
+under the ROC curve (AUC) is the probability that a randomly chosen positive example receives a
+higher score than a randomly chosen negative one; 0.5 is chance, and a value below 0.5 means
+that the score is related to the class in the opposite direction.
+
+\section{Confidence intervals and statistical checks}
+\textbf{Bootstrap over subjects.} All intervals are 95\% percentile bootstrap
+intervals~\cite{efron1993} over \emph{subjects}: subjects are resampled with replacement, within
+each class, 2000 times, each resampled subject bringing all of their windows, and the measure is
+recomputed for each resample. Resampling windows instead would treat the windows of one person
+as independent and give intervals that are far too narrow.
+
+If every subject is classified correctly, every resample is also entirely correct and the
+bootstrap interval collapses to 100--100\%. In that case the exact binomial (Clopper--Pearson)
+interval~\cite{clopper1934} is the appropriate statement of uncertainty; for 14 correct out of
+14 it is \R{DSoneExactAllCorrectLow}--100\%.
+
+\textbf{Selection among many variants.} When several variants are compared on the same test
+folds, the best of them is slightly optimistic. Decisions that are part of the proposed pipeline,
+such as which common modes to use, are therefore made by the inner cross-validation on the
+training subjects, and the per-variant results of the ablations are reported as analyses, not as
+the result of the pipeline.
+
+\section{Why the windows of a person must not be split}
+\label{sec:whysubject}
+Many published results on these datasets, including the accuracies that made the SMVMD method
+the starting point of this project, were obtained by shuffling all windows into folds
+(\emph{window-wise} cross-validation). The windows of each person then appear in both the
+training and the test set. To show how much this matters, the starting method was evaluated
+both ways (Table~\ref{tab:gap}, Fig.~\ref{fig:gap}). Window-wise, it classifies
+\R{DSoneRestSegWinAcc}\% of DS-1 rest windows and \R{DStwoSegWinAcc}\% of DS-2 windows
+correctly; subject-wise, \R{DSoneRestSubjWinAcc}\% and \R{DStwoSubjWinAcc}\%.
+
+The reason is that the features describe the individual more than the disorder. A
+1-nearest-neighbour classifier trained to recognise \emph{which participant} a DS-1 rest window
+comes from is correct for \R{DSoneRestProbeAcc}\% of windows (chance \R{DSoneRestProbeChance}\%).
+Under window-wise cross-validation the nearest training window of a test window is therefore
+almost always a window of the same person, and the classifier copies that person's label.
+Window-wise accuracy measures how well new windows of \emph{known} people are recognised, which
+is not the task of a detection system. All results in the rest of this report are subject-wise.
+
+\begin{table}[H]
+\caption{The starting method (SMVMD features + mRMR + KNN) under window-wise and subject-wise
+cross-validation. Window accuracy (\%); brackets: 95\% CI over subjects.}
+\label{tab:gap}\centering
+\gentable{tab_gap}\\[2pt]
+{\footnotesize \dstwonote}
+\end{table}
+
+\begin{figure}[H]\centering
+\genfig[0.85\textwidth]{segment_vs_subject_gap}
+\caption{Window-level (left) and subject-level (right) accuracy of the starting method,
+window-wise versus subject-wise. Error bars: 95\% CI over subjects; dashed line: chance.}
+\label{fig:gap}
+\end{figure}

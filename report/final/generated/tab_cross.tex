@@ -1,0 +1,20 @@
+\scriptsize
+\begin{tabular}{lrrr}
+\hline
+Train $\rightarrow$ test & Win.\ acc. & Win.\ bal. & Win.\ AUC [CI] \\
+\hline
+DS-1 rest $\rightarrow$ DS-2 (training-set scaling) & 51.5 & 51.3 & 0.519 [0.460--0.581] \\
+DS-1 rest $\rightarrow$ DS-2 (test-set scaling) & 52.6 & 52.4 & 0.536 [0.480--0.595] \\
+DS-1 music $\rightarrow$ DS-2 (training-set scaling) & 54.3 & 52.1 & 0.548 [0.486--0.609] \\
+DS-1 music $\rightarrow$ DS-2 (test-set scaling) & 55.2 & 54.7 & 0.571 [0.515--0.628] \\
+DS-2 $\rightarrow$ DS-1 rest (training-set scaling) & 77.6 & 77.6 & 0.850 [0.710--0.952] \\
+DS-2 $\rightarrow$ DS-1 rest (test-set scaling) & 70.8 & 70.8 & 0.805 [0.670--0.909] \\
+DS-2 $\rightarrow$ DS-1 music (training-set scaling) & 77.2 & 77.2 & 0.864 [0.733--0.965] \\
+DS-2 $\rightarrow$ DS-1 music (test-set scaling) & 73.9 & 73.9 & 0.829 [0.714--0.919] \\
+Within DS-1 rest (subject-wise) & 73.3 & 73.3 & 0.775 [0.576--0.930] \\
+Within DS-1 music (subject-wise) & 64.3 & 64.3 & 0.707 [0.493--0.894] \\
+Within DS-2 (subject-wise) & 55.1 & 55.3 & 0.577 [0.511--0.642] \\
+Dataset identity: DS-1 rest vs DS-2 & 99.9 & 99.8 & 1.000 [0.999--1.000] \\
+Dataset identity: DS-1 music vs DS-2 & 99.8 & 99.1 & 1.000 [1.000--1.000] \\
+\hline
+\end{tabular}

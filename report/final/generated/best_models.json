@@ -1,0 +1,158 @@
+{
+ "DS1_Rest": {
+  "experiment": "DS1_Rest",
+  "features": "MiniRocket 10k kernels (sktime)",
+  "model": "ridge classifier",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9984472049689441,
+  "window_acc_ci": [
+   0.9953416149068323,
+   1.0
+  ],
+  "window_bal_acc": 0.9984472049689441,
+  "window_bal_acc_ci": [
+   0.9953416149068324,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9984496124031007,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 108.3,
+  "source": "C:/Users/Prateek/OneDrive/Desktop/btpnew/results/stage2b/DS1_Rest/minirocket_ridge__subject_loso.json"
+ },
+ "DS1_Music": {
+  "experiment": "DS1_Music",
+  "features": "MiniRocket 10k kernels (sktime)",
+  "model": "ridge classifier",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 94.8,
+  "source": "C:/Users/Prateek/OneDrive/Desktop/btpnew/results/stage2b/DS1_Music/minirocket_ridge__subject_loso.json"
+ },
+ "DS1_RestMusic": {
+  "experiment": "DS1_RestMusic",
+  "features": "raw windows",
+  "model": "ShallowConvNet",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 682.7,
+  "source": "C:/Users/Prateek/OneDrive/Desktop/btpnew/results/stage2/DS1_RestMusic/raw_shallow__subject_loso.json"
+ },
+ "DS2": {
+  "experiment": "DS2",
+  "features": "Riemannian tangent space (OAS covariance)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7345173041894353,
+  "window_acc_ci": [
+   0.6868913245467125,
+   0.7784447781711822
+  ],
+  "window_bal_acc": 0.7258613794031457,
+  "window_bal_acc_ci": [
+   0.6743219385018856,
+   0.7724422978102339
+  ],
+  "window_auc": 0.803209194276658,
+  "window_auc_ci": [
+   0.7456110314875001,
+   0.8531008035279088
+  ],
+  "window_f1": 0.7709233791748525,
+  "child_acc": 0.7603305785123967,
+  "child_acc_ci": [
+   0.6859504132231405,
+   0.8264462809917356
+  ],
+  "child_bal_acc": 0.7591530054644808,
+  "child_auc": 0.8836065573770492,
+  "child_auc_ci": [
+   0.8202049180327868,
+   0.9357923497267759
+  ],
+  "child_correct": 92,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 927.3,
+  "source": "C:/Users/Prateek/OneDrive/Desktop/btpnew/results/stage2b/DS2/riemann_ts_svm__subject_sgkf.json"
+ }
+}

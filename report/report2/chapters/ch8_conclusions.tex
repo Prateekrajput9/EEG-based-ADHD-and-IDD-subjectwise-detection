@@ -1,0 +1,72 @@
+\chapter{Conclusions, Limitations and Future Work}
+\thispagestyle{empty}
+
+\section{Conclusions}
+This project developed an EEG pipeline for the detection of two neurodevelopmental disorders,
+IDD and ADHD, with one common processing chain, and evaluated it strictly on people the model had
+never seen. The main conclusions are as follows.
+
+\begin{enumerate}
+\item \textbf{The proposed pipeline detects both disorders on unseen people.} SMVMD common
+      modes, their channel covariances in the Riemannian tangent space and LightGBM reach
+      \R{MainDStwoBal}\% balanced accuracy and
+      \R{MainDStwoSubj} children correct on ADHD, and classify all 14 participants correctly
+      in all three IDD settings.
+\item \textbf{It improves substantially on the best-reported method and matches the best
+      published subject-wise result.} The starting method reaches \R{StepADStwoBal}\% on unseen
+      ADHD children. The proposed pipeline is comparable with the best published subject-wise
+      result on the same data, a deep convolutional network, while needing no GPU, about
+      \R{RtTotal}~ms per window on one CPU core and about \R{RtTrain}~s of training.
+\item \textbf{The channel covariance carries the information.} Representations that describe
+      how channels co-vary (connectivity, Riemannian tangent space) outperform per-channel
+      features, and most of the pipeline's importance lies in channel pairs.
+\item \textbf{Gradient-boosted trees suit the tangent-space features.} LightGBM gives the highest
+      score for the proposed configuration and for the undecomposed covariance, and both
+      boosting libraries are ahead of logistic regression on every representation, although the
+      differences between classifiers are small.
+\item \textbf{The two disorders use different modes.} The inner cross-validation chose all four
+      modes, dominated by $\delta$ and $\theta$, for ADHD, and mainly the $\alpha$ mode for IDD.
+\item \textbf{The adaptive decomposition does not add accuracy by itself.} Fixed band-pass
+      filters and the undecomposed signal perform as well or one to two points better; SMVMD's
+      role is to provide an interpretable, data-driven split of
+      each window into the oscillations it contains.
+\item \textbf{Evaluation on new people is essential.} The proposed pipeline itself would be
+      reported at \R{GapDStwoLeaky}\% on ADHD under window-level cross-validation, against
+      \R{GapDStwoSubj}\% on unseen children; accuracies of 95--100\% in the literature are
+      not comparable with subject-wise results.
+\end{enumerate}
+
+\section{Limitations}
+\begin{itemize}
+\item \textbf{Medication confound.} The ADHD children were medicated and the controls were not,
+      so the ADHD results cannot be attributed to ADHD alone.
+\item \textbf{Small IDD sample.} DS-1 has 14 adult participants; one participant changes the
+      subject accuracy by about 7 points, so even 14/14 is a weak estimate, and the groups may
+      differ in recording conditions, artefacts and age as well as in the disorder.
+\item \textbf{One dataset per disorder.} Each disorder is represented by a single dataset with its
+      own device, task and population, so a single model distinguishing the two disorders could
+      not be evaluated meaningfully.
+\item \textbf{No external validation.} No independent cohort was available, and nothing here
+      supports clinical use.
+\item \textbf{Fixed band edges.} The common modes use the conventional EEG bands; edges adapted to
+      the data were not explored.
+\end{itemize}
+
+\section{Future work}
+\begin{itemize}
+\item \textbf{Better data}: both groups recorded under the same protocol and device, matched in
+      age, with medication status recorded and ideally a washout period; for IDD, a cohort of
+      children.
+\item \textbf{External validation} of the frozen pipeline on an independent ADHD cohort.
+\item \textbf{Data-driven common modes}: band edges learned from the distribution of SMVMD
+      centre frequencies in the training data, or a weighting of the modes instead of a hard
+      assignment.
+\item \textbf{Subject-invariant representations}: Riemannian re-centring or other alignment of
+      each person's covariances, which address the differences between individuals that limit
+      all methods.
+\item \textbf{Faster decomposition}: SMVMD accounts for almost all of the computation; a
+      filter bank derived from the training-set mode frequencies would make the pipeline
+      suitable for real-time use on a headset.
+\item \textbf{More disorders}: extending the pipeline to autism spectrum disorder under the same
+      protocol.
+\end{itemize}

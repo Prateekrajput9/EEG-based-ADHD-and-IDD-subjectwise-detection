@@ -1,0 +1,15 @@
+\small
+\begin{tabular}{lllrr}
+\hline
+Model & Train & Test & Win.\ acc.\ [CI] & Subjects \\
+\hline
+Spectral + LR & rest & music & 73.3 [57.8--87.7] & 10/14 \\
+Spectral + LR & music & rest & 73.8 [56.7--89.3] & 11/14 \\
+Spectral + LR & rest & rest & 68.0 [49.1--85.7] & 10/14 \\
+Spectral + LR & music & music & 70.3 [52.8--87.6] & 9/14 \\
+SMVMD + mRMR + KNN & rest & music & 63.0 [42.5--81.8] & 10/14 \\
+SMVMD + mRMR + KNN & music & rest & 45.7 [31.1--60.4] & 6/14 \\
+SMVMD + mRMR + KNN & rest & rest & 62.7 [44.1--79.7] & 10/14 \\
+SMVMD + mRMR + KNN & music & music & 43.0 [28.0--57.9] & 8/14 \\
+\hline
+\end{tabular}

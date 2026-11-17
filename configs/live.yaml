@@ -1,0 +1,40 @@
+# Live demo configuration (src/live). Research demo, NOT a clinical tool.
+#
+# source: replay  -> streams a recorded DS-1 file at real-time rate (default; works offline)
+# source: lsl     -> reads a Lab Streaming Layer EEG stream from a headset
+#
+# ASSUMED headset (edit if yours differs): EMOTIV EPOC+/EPOC X, 14 channels,
+# streamed to LSL by EmotivPRO ("Data Streams" -> LSL outlet, EEG, 128 Hz).
+# Any LSL EEG stream with these channel labels works; other sampling rates are
+# resampled to 128 Hz per window.
+
+source: replay
+
+replay:
+  subject: TDC_001          # any DS-1 child: IDD_001..IDD_007, TDC_001..TDC_007
+  condition: rest           # rest | music
+  speed: 1.0                # 1.0 = real time
+  loop: true
+
+lsl:
+  stream_type: EEG
+  stream_name: null         # null = first EEG stream found; e.g. "EmotivDataStream-EEG"
+  resolve_timeout_sec: 10
+  channels: [AF3, F7, F3, FC5, T7, P7, O1, O2, P8, T8, FC6, F4, F8, AF4]
+  # The model was trained on the dataset authors' CLEANED recordings (1-30 Hz,
+  # line-noise removal, ICA). A live headset gives raw EEG, so the closest
+  # reproducible match is applied causally: 1-30 Hz band-pass + 50 Hz notch.
+  # ICA artefact removal is NOT reproduced live (documented mismatch).
+  bandpass_hz: [1.0, 30.0]
+  notch_hz: 50.0
+  remove_dc: true
+
+window_sec: 5.0             # same as training
+hop_sec: 2.5                # 50% overlap, same as training
+fs: 128                     # model sampling rate
+smoothing_windows: 4        # moving average of P(IDD) over the last N windows
+model: models/demo_ds1_rest_spectral_lr.joblib
+
+quality:
+  flat_sd_uv: 0.5           # channel SD below this -> flat / disconnected
+  max_abs_uv: 150.0         # |amplitude| above this after filtering -> artefact

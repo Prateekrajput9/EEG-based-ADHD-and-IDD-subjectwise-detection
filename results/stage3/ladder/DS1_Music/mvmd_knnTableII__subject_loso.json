@@ -1,0 +1,316 @@
+{
+ "schema_version": 1,
+ "name": "mvmd_knnTableII__subject_loso",
+ "created_at": "2026-11-06T09:42:47",
+ "seed": 42,
+ "config": {
+  "dataset": "DS1",
+  "experiment": "DS1_Music",
+  "data": {},
+  "model": {
+   "name": "KNN (paper Table II) + mRMR",
+   "features": "mvmd + 9 feats + Eq.7",
+   "n_neighbors": 2,
+   "distance": "cityblock",
+   "weights": "squared_inverse",
+   "standardize": false,
+   "n_features": 47
+  },
+  "protocol": {
+   "name": "subject_loso",
+   "split": "loso",
+   "n_splits": "n_subjects",
+   "leaky": false,
+   "seed": 42,
+   "nested": false
+  },
+  "n_boot": 2000,
+  "grid": null
+ },
+ "config_hash": "2c4a8e95671a",
+ "git": {
+  "commit": "01b23707ddcadd6f4b1d2d4ec56b9d8bf0d4a464",
+  "src_or_experiments_dirty": true
+ },
+ "environment": {
+  "python": "3.13.3",
+  "numpy": "2.4.5",
+  "platform": "Windows-11-10.0.26300-SP0"
+ },
+ "experiment": "DS1_Music",
+ "model": {
+  "name": "KNN (paper Table II) + mRMR",
+  "features": "mvmd + 9 feats + Eq.7",
+  "n_neighbors": 2,
+  "distance": "cityblock",
+  "weights": "squared_inverse",
+  "standardize": false,
+  "n_features": 47
+ },
+ "protocol": {
+  "name": "subject_loso",
+  "split": "loso",
+  "n_splits": "n_subjects",
+  "leaky": false,
+  "seed": 42,
+  "nested": false
+ },
+ "n_folds": 14,
+ "runtime_sec": 203.5,
+ "metrics": {
+  "window": {
+   "accuracy": 0.5201863354037267,
+   "balanced_accuracy": 0.5201863354037267,
+   "sensitivity": 0.6055900621118012,
+   "specificity": 0.43478260869565216,
+   "f1": 0.5579399141630901,
+   "f1_macro": 0.5166609587793379,
+   "confusion_matrix": [
+    [
+     140,
+     182
+    ],
+    [
+     127,
+     195
+    ]
+   ],
+   "roc_auc": 0.5184599359592609,
+   "n": 644
+  },
+  "child": {
+   "accuracy": 0.5714285714285714,
+   "balanced_accuracy": 0.5714285714285714,
+   "sensitivity": 0.7142857142857143,
+   "specificity": 0.42857142857142855,
+   "f1": 0.6250000000000001,
+   "f1_macro": 0.5625,
+   "confusion_matrix": [
+    [
+     3,
+     4
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "roc_auc": 0.5306122448979592,
+   "n": 14,
+   "n_correct": 8,
+   "n_vote_ties": 0
+  }
+ },
+ "ci95": {
+  "method": "percentile bootstrap over children, stratified by class, 2000 resamples, seed 42",
+  "level": 0.95,
+  "window": {
+   "accuracy": [
+    0.3524068322981367,
+    0.6754658385093167
+   ],
+   "balanced_accuracy": [
+    0.35240683229813663,
+    0.6754658385093169
+   ],
+   "f1": [
+    0.36238310708898946,
+    0.703917561203896
+   ],
+   "roc_auc": [
+    0.3291259982253771,
+    0.6988292552370665
+   ],
+   "sensitivity": [
+    0.35403726708074534,
+    0.8167701863354038
+   ],
+   "specificity": [
+    0.2111801242236025,
+    0.6677018633540373
+   ]
+  },
+  "child": {
+   "accuracy": [
+    0.2857142857142857,
+    0.7857142857142857
+   ],
+   "balanced_accuracy": [
+    0.2857142857142857,
+    0.7857142857142857
+   ],
+   "f1": [
+    0.375,
+    0.8235294117647058
+   ],
+   "roc_auc": [
+    0.20408163265306123,
+    0.8571428571428571
+   ],
+   "sensitivity": [
+    0.42857142857142855,
+    1.0
+   ],
+   "specificity": [
+    0.14285714285714285,
+    0.8571428571428571
+   ]
+  }
+ },
+ "per_child": [
+  {
+   "subject": "IDD_001",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.30434782608695654,
+   "fraction_predicted_disorder": 0.30434782608695654,
+   "mean_score": 0.30434782608695654,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "IDD_002",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.8043478260869565,
+   "fraction_predicted_disorder": 0.8043478260869565,
+   "mean_score": 0.8088667768633017,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_003",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.782608695652174,
+   "fraction_predicted_disorder": 0.782608695652174,
+   "mean_score": 0.8139868127884173,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_004",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.9565217391304348,
+   "fraction_predicted_disorder": 0.9565217391304348,
+   "mean_score": 0.9565217391304348,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_005",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.0,
+   "fraction_predicted_disorder": 0.0,
+   "mean_score": 0.0,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "IDD_006",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.6086956521739131,
+   "fraction_predicted_disorder": 0.6086956521739131,
+   "mean_score": 0.5949658853703944,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "IDD_007",
+   "label": 1,
+   "n_windows": 46,
+   "window_accuracy": 0.782608695652174,
+   "fraction_predicted_disorder": 0.782608695652174,
+   "mean_score": 0.8032435772504859,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_001",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 0.2608695652173913,
+   "fraction_predicted_disorder": 0.7391304347826086,
+   "mean_score": 0.728913467436239,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "TDC_002",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 0.3695652173913043,
+   "fraction_predicted_disorder": 0.6304347826086957,
+   "mean_score": 0.7343361306663191,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "TDC_003",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 0.7608695652173914,
+   "fraction_predicted_disorder": 0.2391304347826087,
+   "mean_score": 0.23985224856784665,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_004",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 0.6521739130434783,
+   "fraction_predicted_disorder": 0.34782608695652173,
+   "mean_score": 0.361639395240754,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_005",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 0.8478260869565217,
+   "fraction_predicted_disorder": 0.15217391304347827,
+   "mean_score": 0.17095684840662126,
+   "vote": 0,
+   "vote_tie": false,
+   "correct": 1
+  },
+  {
+   "subject": "TDC_006",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 0.15217391304347827,
+   "fraction_predicted_disorder": 0.8478260869565217,
+   "mean_score": 0.8386608805529516,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 0
+  },
+  {
+   "subject": "TDC_007",
+   "label": 0,
+   "n_windows": 46,
+   "window_accuracy": 0.0,
+   "fraction_predicted_disorder": 1.0,
+   "mean_score": 1.0,
+   "vote": 1,
+   "vote_tie": false,
+   "correct": 0
+  }
+ ]
+}

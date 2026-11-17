@@ -1,0 +1,4994 @@
+[
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth bands (all four), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 74.1,
+  "source": "results/stage2c/DS1_Rest/fbbw_all_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth band (alpha), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 22.2,
+  "source": "results/stage2c/DS1_Rest/fbbw_alpha_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth band (beta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 19.4,
+  "source": "results/stage2c/DS1_Rest/fbbw_beta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 71.5,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_all_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode (alpha)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 35.5,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_alpha_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode (beta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 22.3,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_beta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "broadband covariance, no decomposition (Step G input)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9984472049689441,
+  "window_acc_ci": [
+   0.9953416149068323,
+   1.0
+  ],
+  "window_bal_acc": 0.9984472049689441,
+  "window_bal_acc_ci": [
+   0.9953416149068324,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9984496124031007,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 32.0,
+  "source": "results/stage2c/DS1_Rest/raw_ts_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "broadband covariance, no decomposition (Step G input)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 0.9996335017939123,
+  "window_auc_ci": [
+   0.9982639558659002,
+   1.0
+  ],
+  "window_f1": 0.9969040247678018,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 13.5,
+  "source": "results/stage2c/DS1_Rest/raw_ts_lgbm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9969040247678018,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 109.8,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_all_ts_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 0.9999807106207322,
+  "window_auc_ci": [
+   0.9998842637243933,
+   1.0
+  ],
+  "window_f1": 0.9969040247678018,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 153.4,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_select_ts_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth band (alpha), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9891304347826086,
+  "window_acc_ci": [
+   0.9736024844720497,
+   1.0
+  ],
+  "window_bal_acc": 0.9891304347826086,
+  "window_bal_acc_ci": [
+   0.9736024844720497,
+   1.0
+  ],
+  "window_auc": 0.9984857837274796,
+  "window_auc_ci": [
+   0.9920141969831411,
+   1.0
+  ],
+  "window_f1": 0.989247311827957,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 21.1,
+  "source": "results/stage2c/DS1_Rest/fbbw_alpha_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth band (theta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9891304347826086,
+  "window_acc_ci": [
+   0.967391304347826,
+   1.0
+  ],
+  "window_bal_acc": 0.9891304347826086,
+  "window_bal_acc_ci": [
+   0.9673913043478262,
+   1.0
+  ],
+  "window_auc": 0.9998649743451256,
+  "window_auc_ci": [
+   0.9991898460707535,
+   1.0
+  ],
+  "window_f1": 0.989247311827957,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 22.9,
+  "source": "results/stage2c/DS1_Rest/fbbw_theta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9860248447204969,
+  "window_acc_ci": [
+   0.9596273291925466,
+   1.0
+  ],
+  "window_bal_acc": 0.9860248447204969,
+  "window_bal_acc_ci": [
+   0.9596273291925466,
+   1.0
+  ],
+  "window_auc": 0.9995370548975734,
+  "window_auc_ci": [
+   0.9981482195902935,
+   1.0
+  ],
+  "window_f1": 0.9858712715855573,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 91.7,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_select_ts_lgbm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.984472049689441,
+  "window_acc_ci": [
+   0.9565217391304348,
+   1.0
+  ],
+  "window_bal_acc": 0.984472049689441,
+  "window_bal_acc_ci": [
+   0.9565217391304348,
+   1.0
+  ],
+  "window_auc": 0.9998456849658578,
+  "window_auc_ci": [
+   0.9990741097951468,
+   1.0
+  ],
+  "window_f1": 0.9843260188087773,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 54.4,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_all_ts_lgbm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD reconstruction (all modes)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9798136645962733,
+  "window_acc_ci": [
+   0.9394409937888198,
+   1.0
+  ],
+  "window_bal_acc": 0.9798136645962733,
+  "window_bal_acc_ci": [
+   0.93944099378882,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.980213089802131,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 20.2,
+  "source": "results/stage2c/DS1_Rest/smvmd_recon_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "broadband covariance (Step G reference)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9798136645962733,
+  "window_acc_ci": [
+   0.9394409937888198,
+   1.0
+  ],
+  "window_bal_acc": 0.9798136645962733,
+  "window_bal_acc_ci": [
+   0.93944099378882,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.980213089802131,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 1134.8,
+  "source": "results/stage2b/DS1_Rest/riemann_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode (alpha)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9782608695652174,
+  "window_acc_ci": [
+   0.9440993788819876,
+   1.0
+  ],
+  "window_bal_acc": 0.9782608695652174,
+  "window_bal_acc_ci": [
+   0.9440993788819876,
+   1.0
+  ],
+  "window_auc": 0.9987558350372285,
+  "window_auc_ci": [
+   0.993229427877011,
+   1.0
+  ],
+  "window_f1": 0.9787234042553191,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 21.3,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_alpha_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode (delta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9736024844720497,
+  "window_acc_ci": [
+   0.9332298136645962,
+   1.0
+  ],
+  "window_bal_acc": 0.9736024844720497,
+  "window_bal_acc_ci": [
+   0.9332298136645962,
+   1.0
+  ],
+  "window_auc": 0.9958624281470623,
+  "window_auc_ci": [
+   0.9830446356236257,
+   1.0
+  ],
+  "window_f1": 0.9742033383915022,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 19.1,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_delta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9736024844720497,
+  "window_acc_ci": [
+   0.9332298136645962,
+   1.0
+  ],
+  "window_bal_acc": 0.9736024844720497,
+  "window_bal_acc_ci": [
+   0.9332298136645962,
+   1.0
+  ],
+  "window_auc": 0.9958624281470623,
+  "window_auc_ci": [
+   0.9830446356236257,
+   1.0
+  ],
+  "window_f1": 0.9742033383915022,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 129.4,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_select_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode (theta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9736024844720497,
+  "window_acc_ci": [
+   0.9440993788819876,
+   0.9953416149068323
+  ],
+  "window_bal_acc": 0.9736024844720497,
+  "window_bal_acc_ci": [
+   0.9440993788819876,
+   0.9953416149068324
+  ],
+  "window_auc": 0.9983218240037035,
+  "window_auc_ci": [
+   0.994338567184908,
+   0.9999421318621967
+  ],
+  "window_f1": 0.9734789391575663,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 19.5,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_theta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9720496894409938,
+  "window_acc_ci": [
+   0.9161490683229814,
+   1.0
+  ],
+  "window_bal_acc": 0.9720496894409938,
+  "window_bal_acc_ci": [
+   0.9161490683229814,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9712460063897763,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 149.9,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_select_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode (delta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9580745341614907,
+  "window_acc_ci": [
+   0.8881987577639752,
+   1.0
+  ],
+  "window_bal_acc": 0.9580745341614907,
+  "window_bal_acc_ci": [
+   0.8881987577639752,
+   1.0
+  ],
+  "window_auc": 0.9968558311793526,
+  "window_auc_ci": [
+   0.9811349870761159,
+   1.0
+  ],
+  "window_f1": 0.9574803149606299,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 44.3,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_delta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth band (delta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9503105590062112,
+  "window_acc_ci": [
+   0.8695652173913043,
+   1.0
+  ],
+  "window_bal_acc": 0.9503105590062112,
+  "window_bal_acc_ci": [
+   0.8695652173913043,
+   1.0
+  ],
+  "window_auc": 0.9947629335287991,
+  "window_auc_ci": [
+   0.971181667373944,
+   1.0
+  ],
+  "window_f1": 0.9495268138801263,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 21.0,
+  "source": "results/stage2c/DS1_Rest/fbbw_delta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth band (theta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9487577639751553,
+  "window_acc_ci": [
+   0.8555900621118012,
+   1.0
+  ],
+  "window_bal_acc": 0.9487577639751552,
+  "window_bal_acc_ci": [
+   0.8555900621118012,
+   1.0
+  ],
+  "window_auc": 0.9972319740750742,
+  "window_auc_ci": [
+   0.98980532193974,
+   1.0
+  ],
+  "window_f1": 0.9512555391432791,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 19.8,
+  "source": "results/stage2c/DS1_Rest/fbbw_theta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9425465838509317,
+  "window_acc_ci": [
+   0.8462732919254659,
+   1.0
+  ],
+  "window_bal_acc": 0.9425465838509317,
+  "window_bal_acc_ci": [
+   0.8462732919254659,
+   1.0
+  ],
+  "window_auc": 0.9985050731067474,
+  "window_auc_ci": [
+   0.9920141969831411,
+   1.0
+  ],
+  "window_f1": 0.9456681350954479,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 62.7,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_all_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth bands (all four), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.937888198757764,
+  "window_acc_ci": [
+   0.8229813664596274,
+   1.0
+  ],
+  "window_bal_acc": 0.937888198757764,
+  "window_bal_acc_ci": [
+   0.8229813664596273,
+   1.0
+  ],
+  "window_auc": 0.9983604027622391,
+  "window_auc_ci": [
+   0.9919266714247136,
+   1.0
+  ],
+  "window_f1": 0.9415204678362573,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 69.4,
+  "source": "results/stage2c/DS1_Rest/fbbw_all_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode (theta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9316770186335404,
+  "window_acc_ci": [
+   0.8462732919254659,
+   0.9860248447204969
+  ],
+  "window_bal_acc": 0.9316770186335404,
+  "window_bal_acc_ci": [
+   0.8462732919254659,
+   0.9860248447204969
+  ],
+  "window_auc": 0.9773639134292659,
+  "window_auc_ci": [
+   0.9548230681686664,
+   0.9962291674703908
+  ],
+  "window_f1": 0.9351032448377582,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 20.2,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_theta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD reconstruction (all modes)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9239130434782609,
+  "window_acc_ci": [
+   0.781055900621118,
+   1.0
+  ],
+  "window_bal_acc": 0.9239130434782609,
+  "window_bal_acc_ci": [
+   0.781055900621118,
+   1.0
+  ],
+  "window_auc": 0.9956116662165811,
+  "window_auc_ci": [
+   0.9827360055553412,
+   1.0
+  ],
+  "window_f1": 0.9292929292929293,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 18.1,
+  "source": "results/stage2c/DS1_Rest/smvmd_recon_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "broadband covariance (Step G reference)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9239130434782609,
+  "window_acc_ci": [
+   0.781055900621118,
+   1.0
+  ],
+  "window_bal_acc": 0.9239130434782609,
+  "window_bal_acc_ci": [
+   0.781055900621118,
+   1.0
+  ],
+  "window_auc": 0.9950812082867173,
+  "window_auc_ci": [
+   0.9796882836310328,
+   1.0
+  ],
+  "window_f1": 0.9292929292929293,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 69.0,
+  "source": "results/stage2b/DS1_Rest/riemann_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth band (delta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9208074534161491,
+  "window_acc_ci": [
+   0.8105590062111802,
+   0.9968944099378882
+  ],
+  "window_bal_acc": 0.9208074534161491,
+  "window_bal_acc_ci": [
+   0.81055900621118,
+   0.9968944099378882
+  ],
+  "window_auc": 0.9899598780911231,
+  "window_auc_ci": [
+   0.9500019289379268,
+   1.0
+  ],
+  "window_f1": 0.9196850393700787,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 21.5,
+  "source": "results/stage2c/DS1_Rest/fbbw_delta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "Butterworth band (beta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8571428571428571,
+  "window_acc_ci": [
+   0.7142857142857143,
+   1.0
+  ],
+  "window_bal_acc": 0.8571428571428572,
+  "window_bal_acc_ci": [
+   0.7142857142857143,
+   1.0
+  ],
+  "window_auc": 0.9947822229080668,
+  "window_auc_ci": [
+   0.9820218162879518,
+   1.0
+  ],
+  "window_f1": 0.8750000000000001,
+  "child_acc": 0.8571428571428571,
+  "child_acc_ci": [
+   0.7142857142857143,
+   1.0
+  ],
+  "child_bal_acc": 0.8571428571428572,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 12,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 18.5,
+  "source": "results/stage2c/DS1_Rest/fbbw_beta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Rest",
+  "features": "SMVMD common mode (beta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.8571428571428571,
+  "window_acc_ci": [
+   0.7142857142857143,
+   1.0
+  ],
+  "window_bal_acc": 0.8571428571428572,
+  "window_bal_acc_ci": [
+   0.7142857142857143,
+   1.0
+  ],
+  "window_auc": 0.9950136954592801,
+  "window_auc_ci": [
+   0.9831864125612437,
+   1.0
+  ],
+  "window_f1": 0.8750000000000001,
+  "child_acc": 0.8571428571428571,
+  "child_acc_ci": [
+   0.7142857142857143,
+   1.0
+  ],
+  "child_bal_acc": 0.8571428571428572,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 12,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 18.2,
+  "source": "results/stage2c/DS1_Rest/smvmdcm_beta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth bands (all four), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 64.7,
+  "source": "results/stage2c/DS1_Music/fbbw_all_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth band (alpha), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 21.3,
+  "source": "results/stage2c/DS1_Music/fbbw_alpha_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth band (alpha), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 21.9,
+  "source": "results/stage2c/DS1_Music/fbbw_alpha_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth band (beta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 17.2,
+  "source": "results/stage2c/DS1_Music/fbbw_beta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth band (delta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 17.8,
+  "source": "results/stage2c/DS1_Music/fbbw_delta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth band (theta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 19.0,
+  "source": "results/stage2c/DS1_Music/fbbw_theta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD reconstruction (all modes)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 19.7,
+  "source": "results/stage2c/DS1_Music/smvmd_recon_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 71.6,
+  "source": "results/stage2c/DS1_Music/smvmdcm_all_ts_lgbm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 66.2,
+  "source": "results/stage2c/DS1_Music/smvmdcm_all_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode (alpha)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 18.8,
+  "source": "results/stage2c/DS1_Music/smvmdcm_alpha_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode (alpha)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 21.5,
+  "source": "results/stage2c/DS1_Music/smvmdcm_alpha_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode (beta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 16.6,
+  "source": "results/stage2c/DS1_Music/smvmdcm_beta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode (delta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 18.6,
+  "source": "results/stage2c/DS1_Music/smvmdcm_delta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 129.8,
+  "source": "results/stage2c/DS1_Music/smvmdcm_select_ts_lgbm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 116.5,
+  "source": "results/stage2c/DS1_Music/smvmdcm_select_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 117.9,
+  "source": "results/stage2c/DS1_Music/smvmdcm_select_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "broadband covariance (Step G reference)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 252.8,
+  "source": "results/stage2b/DS1_Music/riemann_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth bands (all four), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9969040247678018,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 62.5,
+  "source": "results/stage2c/DS1_Music/fbbw_all_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth band (theta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 0.9999903553103661,
+  "window_auc_ci": [
+   0.9999421318621967,
+   1.0
+  ],
+  "window_f1": 0.9969040247678018,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 19.7,
+  "source": "results/stage2c/DS1_Music/fbbw_theta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "broadband covariance, no decomposition (Step G input)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9968847352024921,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 35.1,
+  "source": "results/stage2c/DS1_Music/raw_ts_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD reconstruction (all modes)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9953416149068323,
+  "window_acc_ci": [
+   0.9860248447204969,
+   1.0
+  ],
+  "window_bal_acc": 0.9953416149068324,
+  "window_bal_acc_ci": [
+   0.9860248447204969,
+   1.0
+  ],
+  "window_auc": 0.9989969522780757,
+  "window_auc_ci": [
+   0.9953319702171984,
+   1.0
+  ],
+  "window_f1": 0.9953632148377125,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 25.2,
+  "source": "results/stage2c/DS1_Music/smvmd_recon_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "broadband covariance (Step G reference)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9953416149068323,
+  "window_acc_ci": [
+   0.9860248447204969,
+   1.0
+  ],
+  "window_bal_acc": 0.9953416149068324,
+  "window_bal_acc_ci": [
+   0.9860248447204969,
+   1.0
+  ],
+  "window_auc": 0.9992573588981907,
+  "window_auc_ci": [
+   0.9959492303537673,
+   1.0
+  ],
+  "window_f1": 0.9953632148377125,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 373.7,
+  "source": "results/stage2b/DS1_Music/riemann_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9937888198757764,
+  "window_acc_ci": [
+   0.984472049689441,
+   1.0
+  ],
+  "window_bal_acc": 0.9937888198757764,
+  "window_bal_acc_ci": [
+   0.984472049689441,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9938271604938271,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 101.1,
+  "source": "results/stage2c/DS1_Music/smvmdcm_all_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth band (delta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9922360248447205,
+  "window_acc_ci": [
+   0.9829192546583851,
+   1.0
+  ],
+  "window_bal_acc": 0.9922360248447205,
+  "window_bal_acc_ci": [
+   0.9829192546583851,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9922958397534669,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 19.2,
+  "source": "results/stage2c/DS1_Music/fbbw_delta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode (delta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9782608695652174,
+  "window_acc_ci": [
+   0.9565217391304348,
+   0.9953416149068323
+  ],
+  "window_bal_acc": 0.9782608695652174,
+  "window_bal_acc_ci": [
+   0.9565217391304348,
+   0.9953416149068324
+  ],
+  "window_auc": 0.9999807106207322,
+  "window_auc_ci": [
+   0.9998842637243933,
+   1.0
+  ],
+  "window_f1": 0.9787234042553191,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 18.7,
+  "source": "results/stage2c/DS1_Music/smvmdcm_delta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "broadband covariance, no decomposition (Step G input)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9767080745341615,
+  "window_acc_ci": [
+   0.9301242236024845,
+   1.0
+  ],
+  "window_bal_acc": 0.9767080745341614,
+  "window_bal_acc_ci": [
+   0.9301242236024845,
+   1.0
+  ],
+  "window_auc": 0.9992573588981907,
+  "window_auc_ci": [
+   0.9955441533891439,
+   1.0
+  ],
+  "window_f1": 0.9772382397572079,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 18.3,
+  "source": "results/stage2c/DS1_Music/raw_ts_lgbm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9751552795031055,
+  "window_acc_ci": [
+   0.9254658385093167,
+   1.0
+  ],
+  "window_bal_acc": 0.9751552795031055,
+  "window_bal_acc_ci": [
+   0.9254658385093169,
+   1.0
+  ],
+  "window_auc": 0.9996142124146445,
+  "window_auc_ci": [
+   0.997685274487867,
+   1.0
+  ],
+  "window_f1": 0.9757575757575757,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 86.5,
+  "source": "results/stage2c/DS1_Music/smvmdcm_all_ts_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode (theta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9658385093167702,
+  "window_acc_ci": [
+   0.9347826086956522,
+   0.9922360248447205
+  ],
+  "window_bal_acc": 0.9658385093167702,
+  "window_bal_acc_ci": [
+   0.9347826086956522,
+   0.9922360248447205
+  ],
+  "window_auc": 0.9772964006018287,
+  "window_auc_ci": [
+   0.9396138748505073,
+   0.9999614212414645
+  ],
+  "window_f1": 0.9664634146341464,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 18.5,
+  "source": "results/stage2c/DS1_Music/smvmdcm_theta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9518633540372671,
+  "window_acc_ci": [
+   0.8804347826086957,
+   1.0
+  ],
+  "window_bal_acc": 0.9518633540372671,
+  "window_bal_acc_ci": [
+   0.8804347826086957,
+   1.0
+  ],
+  "window_auc": 0.9948690251147718,
+  "window_auc_ci": [
+   0.9695613595154507,
+   1.0
+  ],
+  "window_f1": 0.9519379844961241,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 195.0,
+  "source": "results/stage2c/DS1_Music/smvmdcm_select_ts_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode (theta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9518633540372671,
+  "window_acc_ci": [
+   0.9114906832298136,
+   0.9860248447204969
+  ],
+  "window_bal_acc": 0.9518633540372671,
+  "window_bal_acc_ci": [
+   0.9114906832298136,
+   0.9860248447204969
+  ],
+  "window_auc": 0.9957081131129201,
+  "window_auc_ci": [
+   0.9869873847459589,
+   0.9997685274487867
+  ],
+  "window_f1": 0.951638065522621,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 16.6,
+  "source": "results/stage2c/DS1_Music/smvmdcm_theta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "Butterworth band (beta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9316770186335404,
+  "window_acc_ci": [
+   0.8074534161490683,
+   1.0
+  ],
+  "window_bal_acc": 0.9316770186335404,
+  "window_bal_acc_ci": [
+   0.8074534161490683,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.936046511627907,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 17.7,
+  "source": "results/stage2c/DS1_Music/fbbw_beta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_Music",
+  "features": "SMVMD common mode (beta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9285714285714286,
+  "window_acc_ci": [
+   0.7888198757763976,
+   1.0
+  ],
+  "window_bal_acc": 0.9285714285714286,
+  "window_bal_acc_ci": [
+   0.7888198757763976,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9333333333333333,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 19.1,
+  "source": "results/stage2c/DS1_Music/smvmdcm_beta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth bands (all four), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 141.0,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_all_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth band (alpha), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 42.0,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_alpha_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth band (beta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 36.9,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_beta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth band (theta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 36.7,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_theta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD reconstruction (all modes)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 36.6,
+  "source": "results/stage2c/DS1_RestMusic/smvmd_recon_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 129.2,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_all_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 166.7,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_all_ts_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode (alpha)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 39.9,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_alpha_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode (beta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 35.1,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_beta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "broadband covariance (Step G reference)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 1.0,
+  "window_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_bal_acc": 1.0,
+  "window_bal_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 1.0,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 153.6,
+  "source": "results/stage2b/DS1_RestMusic/riemann_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth bands (all four), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 0.9994333744840092,
+  "window_auc_ci": [
+   0.997424867867752,
+   1.0
+  ],
+  "window_f1": 0.9969040247678018,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 137.2,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_all_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth band (alpha), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 0.9994526638632769,
+  "window_auc_ci": [
+   0.9977045638671348,
+   1.0
+  ],
+  "window_f1": 0.9969040247678018,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 43.6,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_alpha_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth band (theta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9968944099378882,
+  "window_acc_ci": [
+   0.9922360248447205,
+   1.0
+  ],
+  "window_bal_acc": 0.9968944099378882,
+  "window_bal_acc_ci": [
+   0.9922360248447205,
+   1.0
+  ],
+  "window_auc": 0.9994478415184599,
+  "window_auc_ci": [
+   0.9970125573859033,
+   1.0
+  ],
+  "window_f1": 0.9969040247678018,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 39.3,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_theta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode (alpha)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9961180124223602,
+  "window_acc_ci": [
+   0.9883540372670807,
+   1.0
+  ],
+  "window_bal_acc": 0.9961180124223603,
+  "window_bal_acc_ci": [
+   0.9883540372670807,
+   1.0
+  ],
+  "window_auc": 0.9996624358628139,
+  "window_auc_ci": [
+   0.9985605300721423,
+   1.0
+  ],
+  "window_f1": 0.9961330239752514,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 40.6,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_alpha_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "broadband covariance, no decomposition (Step G input)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9953416149068323,
+  "window_acc_ci": [
+   0.9860248447204969,
+   1.0
+  ],
+  "window_bal_acc": 0.9953416149068324,
+  "window_bal_acc_ci": [
+   0.9860248447204969,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9953632148377125,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 35.7,
+  "source": "results/stage2c/DS1_RestMusic/raw_ts_lgbm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD reconstruction (all modes)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9953416149068323,
+  "window_acc_ci": [
+   0.9906832298136646,
+   1.0
+  ],
+  "window_bal_acc": 0.9953416149068324,
+  "window_bal_acc_ci": [
+   0.9906832298136645,
+   1.0
+  ],
+  "window_auc": 0.9993779175186143,
+  "window_auc_ci": [
+   0.997164461247637,
+   1.0
+  ],
+  "window_f1": 0.9953632148377125,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 38.1,
+  "source": "results/stage2c/DS1_RestMusic/smvmd_recon_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode (delta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9953416149068323,
+  "window_acc_ci": [
+   0.9875776397515528,
+   1.0
+  ],
+  "window_bal_acc": 0.9953416149068324,
+  "window_bal_acc_ci": [
+   0.9875776397515528,
+   1.0
+  ],
+  "window_auc": 0.9999638324138729,
+  "window_auc_ci": [
+   0.9997829944832375,
+   1.0
+  ],
+  "window_f1": 0.9953560371517027,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 36.0,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_delta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9953416149068323,
+  "window_acc_ci": [
+   0.9875776397515528,
+   1.0
+  ],
+  "window_bal_acc": 0.9953416149068324,
+  "window_bal_acc_ci": [
+   0.9875776397515528,
+   1.0
+  ],
+  "window_auc": 0.9999638324138729,
+  "window_auc_ci": [
+   0.9997829944832375,
+   1.0
+  ],
+  "window_f1": 0.9953560371517027,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 229.7,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_select_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "broadband covariance (Step G reference)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9945652173913043,
+  "window_acc_ci": [
+   0.9883540372670807,
+   1.0
+  ],
+  "window_bal_acc": 0.9945652173913043,
+  "window_bal_acc_ci": [
+   0.9883540372670807,
+   1.0
+  ],
+  "window_auc": 0.9993200493808109,
+  "window_auc_ci": [
+   0.9969619227653254,
+   1.0
+  ],
+  "window_f1": 0.9945945945945946,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 171.7,
+  "source": "results/stage2b/DS1_RestMusic/riemann_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth band (delta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9930124223602484,
+  "window_acc_ci": [
+   0.9805900621118012,
+   1.0
+  ],
+  "window_bal_acc": 0.9930124223602484,
+  "window_bal_acc_ci": [
+   0.9805900621118013,
+   1.0
+  ],
+  "window_auc": 0.9998505073106747,
+  "window_auc_ci": [
+   0.9991030438640485,
+   1.0
+  ],
+  "window_f1": 0.993050193050193,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 37.3,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_delta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9930124223602484,
+  "window_acc_ci": [
+   0.9790372670807453,
+   1.0
+  ],
+  "window_bal_acc": 0.9930124223602484,
+  "window_bal_acc_ci": [
+   0.9790372670807453,
+   1.0
+  ],
+  "window_auc": 0.9992187801396551,
+  "window_auc_ci": [
+   0.9966966938003935,
+   1.0
+  ],
+  "window_f1": 0.9930609097918273,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 160.1,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_all_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9930124223602484,
+  "window_acc_ci": [
+   0.9790372670807453,
+   1.0
+  ],
+  "window_bal_acc": 0.9930124223602484,
+  "window_bal_acc_ci": [
+   0.9790372670807453,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9929632525410477,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 349.4,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_select_ts_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "broadband covariance, no decomposition (Step G input)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9883540372670807,
+  "window_acc_ci": [
+   0.9696622670807454,
+   1.0
+  ],
+  "window_bal_acc": 0.9883540372670807,
+  "window_bal_acc_ci": [
+   0.9696622670807454,
+   1.0
+  ],
+  "window_auc": 0.9986039311754947,
+  "window_auc_ci": [
+   0.9916235870529686,
+   1.0
+  ],
+  "window_f1": 0.9884348496530455,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 57.4,
+  "source": "results/stage2c/DS1_RestMusic/raw_ts_xgb__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9860248447204969,
+  "window_acc_ci": [
+   0.9658385093167702,
+   1.0
+  ],
+  "window_bal_acc": 0.9860248447204969,
+  "window_bal_acc_ci": [
+   0.9658385093167702,
+   1.0
+  ],
+  "window_auc": 0.9994815979321785,
+  "window_auc_ci": [
+   0.9976925080050923,
+   1.0
+  ],
+  "window_f1": 0.9862174578866768,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 235.7,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_select_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode (delta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.984472049689441,
+  "window_acc_ci": [
+   0.9642857142857143,
+   1.0
+  ],
+  "window_bal_acc": 0.984472049689441,
+  "window_bal_acc_ci": [
+   0.9642857142857143,
+   1.0
+  ],
+  "window_auc": 0.9996937811041241,
+  "window_auc_ci": [
+   0.9986979668994251,
+   1.0
+  ],
+  "window_f1": 0.9847094801223241,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 37.7,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_delta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9821428571428571,
+  "window_acc_ci": [
+   0.9565217391304348,
+   1.0
+  ],
+  "window_bal_acc": 0.9821428571428572,
+  "window_bal_acc_ci": [
+   0.9565217391304348,
+   1.0
+  ],
+  "window_auc": 0.9993224605532194,
+  "window_auc_ci": [
+   0.9963364646425678,
+   1.0
+  ],
+  "window_f1": 0.9822119102861562,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 255.0,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_select_ts_lgbm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode (theta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9798136645962733,
+  "window_acc_ci": [
+   0.952639751552795,
+   0.9953416149068323
+  ],
+  "window_bal_acc": 0.9798136645962734,
+  "window_bal_acc_ci": [
+   0.952639751552795,
+   0.9953416149068324
+  ],
+  "window_auc": 0.9930076000154315,
+  "window_auc_ci": [
+   0.9805522669842984,
+   0.999932547451873
+  ],
+  "window_f1": 0.9801526717557253,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 36.5,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_theta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth band (delta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9798136645962733,
+  "window_acc_ci": [
+   0.953416149068323,
+   1.0
+  ],
+  "window_bal_acc": 0.9798136645962733,
+  "window_bal_acc_ci": [
+   0.953416149068323,
+   1.0
+  ],
+  "window_auc": 0.9986328652443964,
+  "window_auc_ci": [
+   0.9933451641526175,
+   1.0
+  ],
+  "window_f1": 0.98,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 39.1,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_delta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode (theta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9728260869565217,
+  "window_acc_ci": [
+   0.9565217391304348,
+   0.9875776397515528
+  ],
+  "window_bal_acc": 0.9728260869565217,
+  "window_bal_acc_ci": [
+   0.9565217391304348,
+   0.9875776397515528
+  ],
+  "window_auc": 0.9989535511747232,
+  "window_auc_ci": [
+   0.9977623114463177,
+   0.9998026455383666
+  ],
+  "window_f1": 0.972972972972973,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 33.9,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_theta_ts_lr__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9658385093167702,
+  "window_acc_ci": [
+   0.8975155279503105,
+   1.0
+  ],
+  "window_bal_acc": 0.9658385093167702,
+  "window_bal_acc_ci": [
+   0.8975155279503105,
+   1.0
+  ],
+  "window_auc": 1.0,
+  "window_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "window_f1": 0.9646302250803859,
+  "child_acc": 1.0,
+  "child_acc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_bal_acc": 1.0,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 14,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 146.8,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_all_ts_lgbm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "Butterworth band (beta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9503105590062112,
+  "window_acc_ci": [
+   0.8524844720496895,
+   1.0
+  ],
+  "window_bal_acc": 0.9503105590062112,
+  "window_bal_acc_ci": [
+   0.8524844720496895,
+   1.0
+  ],
+  "window_auc": 0.9978275336599668,
+  "window_auc_ci": [
+   0.9922237881447475,
+   1.0
+  ],
+  "window_f1": 0.9526627218934911,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 37.4,
+  "source": "results/stage2c/DS1_RestMusic/fbbw_beta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS1_RestMusic",
+  "features": "SMVMD common mode (beta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_loso",
+  "transductive": false,
+  "window_acc": 0.9479813664596274,
+  "window_acc_ci": [
+   0.843944099378882,
+   1.0
+  ],
+  "window_bal_acc": 0.9479813664596273,
+  "window_bal_acc_ci": [
+   0.843944099378882,
+   1.0
+  ],
+  "window_auc": 0.9978516453840516,
+  "window_auc_ci": [
+   0.9924406731028895,
+   1.0
+  ],
+  "window_f1": 0.9505535055350554,
+  "child_acc": 0.9285714285714286,
+  "child_acc_ci": [
+   0.7857142857142857,
+   1.0
+  ],
+  "child_bal_acc": 0.9285714285714286,
+  "child_auc": 1.0,
+  "child_auc_ci": [
+   1.0,
+   1.0
+  ],
+  "child_correct": 13,
+  "n_children": 14,
+  "vote_ties": 0,
+  "runtime_sec": 34.3,
+  "source": "results/stage2c/DS1_RestMusic/smvmdcm_beta_ts_svm__subject_loso.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "broadband covariance, no decomposition (Step G input)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7378567091681846,
+  "window_acc_ci": [
+   0.6935889570552147,
+   0.7798955010901784
+  ],
+  "window_bal_acc": 0.7307261452664314,
+  "window_bal_acc_ci": [
+   0.6839753930314028,
+   0.7750766248373875
+  ],
+  "window_auc": 0.814696994049399,
+  "window_auc_ci": [
+   0.7623902715784615,
+   0.8627036617617299
+  ],
+  "window_f1": 0.7713491327949158,
+  "child_acc": 0.7603305785123967,
+  "child_acc_ci": [
+   0.6859504132231405,
+   0.8264462809917356
+  ],
+  "child_bal_acc": 0.759016393442623,
+  "child_auc": 0.8942622950819672,
+  "child_auc_ci": [
+   0.8327732240437158,
+   0.9426366120218579
+  ],
+  "child_correct": 92,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 162.2,
+  "source": "results/stage2c/DS2/raw_ts_lgbm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth bands (all four), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7414996964177292,
+  "window_acc_ci": [
+   0.6893419658450626,
+   0.7928372949447605
+  ],
+  "window_bal_acc": 0.7284683182823994,
+  "window_bal_acc_ci": [
+   0.6733259977689885,
+   0.7833563322947289
+  ],
+  "window_auc": 0.7880175004485378,
+  "window_auc_ci": [
+   0.7230667337012747,
+   0.8476034758533979
+  ],
+  "window_f1": 0.7839654953697831,
+  "child_acc": 0.743801652892562,
+  "child_acc_ci": [
+   0.6694214876033058,
+   0.8181818181818182
+  ],
+  "child_bal_acc": 0.7426229508196721,
+  "child_auc": 0.8327868852459016,
+  "child_auc_ci": [
+   0.7576434426229509,
+   0.8980874316939891
+  ],
+  "child_correct": 90,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 1790.2,
+  "source": "results/stage2c/DS2/fbbw_all_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD reconstruction (all modes)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7351244687310261,
+  "window_acc_ci": [
+   0.6882765438022991,
+   0.7778486765717106
+  ],
+  "window_bal_acc": 0.7264048576640153,
+  "window_bal_acc_ci": [
+   0.6762076530515491,
+   0.7724141268525614
+  ],
+  "window_auc": 0.8039423666347707,
+  "window_auc_ci": [
+   0.7463473053319987,
+   0.8535656083956624
+  ],
+  "window_f1": 0.7715669590260505,
+  "child_acc": 0.7603305785123967,
+  "child_acc_ci": [
+   0.6859504132231405,
+   0.8264462809917356
+  ],
+  "child_bal_acc": 0.759016393442623,
+  "child_auc": 0.8882513661202186,
+  "child_auc_ci": [
+   0.8262226775956285,
+   0.9390710382513662
+  ],
+  "child_correct": 92,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 449.2,
+  "source": "results/stage2c/DS2/smvmd_recon_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "broadband covariance (Step G reference)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7345173041894353,
+  "window_acc_ci": [
+   0.6868913245467125,
+   0.7784447781711822
+  ],
+  "window_bal_acc": 0.7258613794031457,
+  "window_bal_acc_ci": [
+   0.6743219385018856,
+   0.7724422978102339
+  ],
+  "window_auc": 0.803209194276658,
+  "window_auc_ci": [
+   0.7456110314875001,
+   0.8531008035279088
+  ],
+  "window_f1": 0.7709233791748525,
+  "child_acc": 0.7603305785123967,
+  "child_acc_ci": [
+   0.6859504132231405,
+   0.8264462809917356
+  ],
+  "child_bal_acc": 0.7591530054644808,
+  "child_auc": 0.8836065573770492,
+  "child_auc_ci": [
+   0.8202049180327868,
+   0.9357923497267759
+  ],
+  "child_correct": 92,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 927.3,
+  "source": "results/stage2b/DS2/riemann_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "broadband covariance, no decomposition (Step G input)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7295081967213115,
+  "window_acc_ci": [
+   0.6848555190108394,
+   0.7720756896345585
+  ],
+  "window_bal_acc": 0.7220990819927038,
+  "window_bal_acc_ci": [
+   0.6750168637215131,
+   0.7672268605678806
+  ],
+  "window_auc": 0.8034154282040548,
+  "window_auc_ci": [
+   0.7494361269107237,
+   0.8529842094681443
+  ],
+  "window_f1": 0.7643480560698228,
+  "child_acc": 0.7520661157024794,
+  "child_acc_ci": [
+   0.6859504132231405,
+   0.8181818181818182
+  ],
+  "child_bal_acc": 0.7506830601092896,
+  "child_auc": 0.8734972677595628,
+  "child_auc_ci": [
+   0.8060109289617486,
+   0.9278825136612021
+  ],
+  "child_correct": 91,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 251.8,
+  "source": "results/stage2c/DS2/raw_ts_xgb__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7223740133576199,
+  "window_acc_ci": [
+   0.6714785777389035,
+   0.7693780374792876
+  ],
+  "window_bal_acc": 0.7140539964715029,
+  "window_bal_acc_ci": [
+   0.6602370896758775,
+   0.763508536926942
+  ],
+  "window_auc": 0.7853401037617367,
+  "window_auc_ci": [
+   0.7222006535891684,
+   0.8414975938153768
+  ],
+  "window_f1": 0.7595635598790588,
+  "child_acc": 0.7520661157024794,
+  "child_acc_ci": [
+   0.6776859504132231,
+   0.8264462809917356
+  ],
+  "child_bal_acc": 0.7510928961748633,
+  "child_auc": 0.8366120218579235,
+  "child_auc_ci": [
+   0.7584562841530055,
+   0.8986407103825136
+  ],
+  "child_correct": 91,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 933.7,
+  "source": "results/stage2c/DS2/smvmdcm_all_ts_xgb__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7217668488160291,
+  "window_acc_ci": [
+   0.6713145475530347,
+   0.7684231479613217
+  ],
+  "window_bal_acc": 0.7132219589139406,
+  "window_bal_acc_ci": [
+   0.6597841260221503,
+   0.7633798192086493
+  ],
+  "window_auc": 0.7861357910711082,
+  "window_auc_ci": [
+   0.7238805377939841,
+   0.8425918508636064
+  ],
+  "window_f1": 0.7594172463577897,
+  "child_acc": 0.768595041322314,
+  "child_acc_ci": [
+   0.6942148760330579,
+   0.8347107438016529
+  ],
+  "child_bal_acc": 0.7674863387978141,
+  "child_auc": 0.8327868852459016,
+  "child_auc_ci": [
+   0.7527322404371585,
+   0.8956284153005465
+  ],
+  "child_correct": 93,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 620.5,
+  "source": "results/stage2c/DS2/smvmdcm_all_ts_lgbm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + LightGBM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7217668488160291,
+  "window_acc_ci": [
+   0.6713145475530347,
+   0.7684231479613217
+  ],
+  "window_bal_acc": 0.7132219589139406,
+  "window_bal_acc_ci": [
+   0.6597841260221503,
+   0.7633798192086493
+  ],
+  "window_auc": 0.7861357910711082,
+  "window_auc_ci": [
+   0.7238805377939841,
+   0.8425918508636064
+  ],
+  "window_f1": 0.7594172463577897,
+  "child_acc": 0.768595041322314,
+  "child_acc_ci": [
+   0.6942148760330579,
+   0.8347107438016529
+  ],
+  "child_bal_acc": 0.7674863387978141,
+  "child_auc": 0.8327868852459016,
+  "child_auc_ci": [
+   0.7527322404371585,
+   0.8956284153005465
+  ],
+  "child_correct": 93,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 1126.0,
+  "source": "results/stage2c/DS2/smvmdcm_select_ts_lgbm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "broadband covariance (Step G reference)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7153916211293261,
+  "window_acc_ci": [
+   0.6701834865701247,
+   0.7580957072251072
+  ],
+  "window_bal_acc": 0.7114831275043358,
+  "window_bal_acc_ci": [
+   0.6640312766787649,
+   0.7560921601209107
+  ],
+  "window_auc": 0.7858946085760421,
+  "window_auc_ci": [
+   0.7281670494964471,
+   0.8366544161551029
+  ],
+  "window_f1": 0.7451406823433464,
+  "child_acc": 0.7768595041322314,
+  "child_acc_ci": [
+   0.7024793388429752,
+   0.8429752066115702
+  ],
+  "child_bal_acc": 0.7760928961748634,
+  "child_auc": 0.8672131147540983,
+  "child_auc_ci": [
+   0.7975273224043715,
+   0.9215846994535519
+  ],
+  "child_correct": 94,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 826.5,
+  "source": "results/stage2b/DS2/riemann_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD reconstruction (all modes)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7134183363691561,
+  "window_acc_ci": [
+   0.6692870039362793,
+   0.7552495764780236
+  ],
+  "window_bal_acc": 0.7098250328927695,
+  "window_bal_acc_ci": [
+   0.6625573518923736,
+   0.7538955391983537
+  ],
+  "window_auc": 0.784865681627893,
+  "window_auc_ci": [
+   0.72749871427181,
+   0.8354212122855813
+  ],
+  "window_f1": 0.7427091850640503,
+  "child_acc": 0.768595041322314,
+  "child_acc_ci": [
+   0.6942148760330579,
+   0.8347107438016529
+  ],
+  "child_bal_acc": 0.76775956284153,
+  "child_auc": 0.8688524590163934,
+  "child_auc_ci": [
+   0.7994467213114754,
+   0.923224043715847
+  ],
+  "child_correct": 93,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 160.8,
+  "source": "results/stage2c/DS2/smvmd_recon_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth band (beta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7159987856709168,
+  "window_acc_ci": [
+   0.6651963843477702,
+   0.7642235609065662
+  ],
+  "window_bal_acc": 0.7097542013037498,
+  "window_bal_acc_ci": [
+   0.6570018398519303,
+   0.7591260048483488
+  ],
+  "window_auc": 0.7707744938998864,
+  "window_auc_ci": [
+   0.7068228948808533,
+   0.8283251429145154
+  ],
+  "window_f1": 0.7501001736342995,
+  "child_acc": 0.7768595041322314,
+  "child_acc_ci": [
+   0.7024793388429752,
+   0.8429752066115702
+  ],
+  "child_bal_acc": 0.7760928961748634,
+  "child_auc": 0.8368852459016394,
+  "child_auc_ci": [
+   0.7622882513661202,
+   0.903285519125683
+  ],
+  "child_correct": 94,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 394.9,
+  "source": "results/stage2c/DS2/fbbw_beta_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode (delta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7196417729204615,
+  "window_acc_ci": [
+   0.6724418362850181,
+   0.7622153339091642
+  ],
+  "window_bal_acc": 0.7092998699240476,
+  "window_bal_acc_ci": [
+   0.6596761616007617,
+   0.7552894851163316
+  ],
+  "window_auc": 0.7800039994617547,
+  "window_auc_ci": [
+   0.7185550865700908,
+   0.833139815739358
+  ],
+  "window_f1": 0.7606582868990539,
+  "child_acc": 0.743801652892562,
+  "child_acc_ci": [
+   0.6694214876033058,
+   0.8099173553719008
+  ],
+  "child_bal_acc": 0.7423497267759562,
+  "child_auc": 0.8628415300546448,
+  "child_auc_ci": [
+   0.787691256830601,
+   0.9204986338797814
+  ],
+  "child_correct": 90,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 499.1,
+  "source": "results/stage2c/DS2/smvmdcm_delta_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + XGBoost",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7182756527018822,
+  "window_acc_ci": [
+   0.6679986784825137,
+   0.7656835169099305
+  ],
+  "window_bal_acc": 0.7088705819029962,
+  "window_bal_acc_ci": [
+   0.655608650521974,
+   0.760041805412049
+  ],
+  "window_auc": 0.7806184962023802,
+  "window_auc_ci": [
+   0.7181528691975346,
+   0.8382699512124786
+  ],
+  "window_f1": 0.7578288100208769,
+  "child_acc": 0.7520661157024794,
+  "child_acc_ci": [
+   0.6776859504132231,
+   0.8264462809917356
+  ],
+  "child_bal_acc": 0.7508196721311475,
+  "child_auc": 0.8330601092896175,
+  "child_auc_ci": [
+   0.7529986338797815,
+   0.896181693989071
+  ],
+  "child_correct": 91,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 1726.0,
+  "source": "results/stage2c/DS2/smvmdcm_select_ts_xgb__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7159987856709168,
+  "window_acc_ci": [
+   0.664093851132686,
+   0.7642090960366782
+  ],
+  "window_bal_acc": 0.7038387357215476,
+  "window_bal_acc_ci": [
+   0.6487288634310221,
+   0.7545502837937532
+  ],
+  "window_auc": 0.7720770288858322,
+  "window_auc_ci": [
+   0.7074111286390105,
+   0.8287355348248338
+  ],
+  "window_f1": 0.7605886116442739,
+  "child_acc": 0.743801652892562,
+  "child_acc_ci": [
+   0.6694214876033058,
+   0.8099173553719008
+  ],
+  "child_bal_acc": 0.7424863387978142,
+  "child_auc": 0.8180327868852459,
+  "child_auc_ci": [
+   0.7390573770491803,
+   0.8841598360655737
+  ],
+  "child_correct": 90,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 1886.9,
+  "source": "results/stage2c/DS2/smvmdcm_all_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7159987856709168,
+  "window_acc_ci": [
+   0.664093851132686,
+   0.7642090960366782
+  ],
+  "window_bal_acc": 0.7038387357215476,
+  "window_bal_acc_ci": [
+   0.6487288634310221,
+   0.7545502837937532
+  ],
+  "window_auc": 0.7720770288858322,
+  "window_auc_ci": [
+   0.7074111286390105,
+   0.8287355348248338
+  ],
+  "window_f1": 0.7605886116442739,
+  "child_acc": 0.743801652892562,
+  "child_acc_ci": [
+   0.6694214876033058,
+   0.8099173553719008
+  ],
+  "child_bal_acc": 0.7424863387978142,
+  "child_auc": 0.8180327868852459,
+  "child_auc_ci": [
+   0.7390573770491803,
+   0.8841598360655737
+  ],
+  "child_correct": 90,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 3256.2,
+  "source": "results/stage2c/DS2/smvmdcm_select_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth band (alpha), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7099271402550091,
+  "window_acc_ci": [
+   0.6588982887188128,
+   0.7579407946799053
+  ],
+  "window_bal_acc": 0.7008567071347407,
+  "window_bal_acc_ci": [
+   0.6484006639007973,
+   0.7516418619505567
+  ],
+  "window_auc": 0.7590018726451767,
+  "window_auc_ci": [
+   0.6928507028462604,
+   0.8186565802849307
+  ],
+  "window_f1": 0.7498363660164943,
+  "child_acc": 0.743801652892562,
+  "child_acc_ci": [
+   0.6694214876033058,
+   0.8181818181818182
+  ],
+  "child_bal_acc": 0.7424863387978142,
+  "child_auc": 0.8,
+  "child_auc_ci": [
+   0.7139207650273224,
+   0.8776024590163934
+  ],
+  "child_correct": 90,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 441.0,
+  "source": "results/stage2c/DS2/fbbw_alpha_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth bands (all four), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7032483302975107,
+  "window_acc_ci": [
+   0.6546052133475724,
+   0.7497178819444444
+  ],
+  "window_bal_acc": 0.7000725136056456,
+  "window_bal_acc_ci": [
+   0.6488717285283052,
+   0.7480033251123499
+  ],
+  "window_auc": 0.7744549331678727,
+  "window_auc_ci": [
+   0.712827902963298,
+   0.8314786406847486
+  ],
+  "window_f1": 0.7324483372108938,
+  "child_acc": 0.743801652892562,
+  "child_acc_ci": [
+   0.6694214876033058,
+   0.8181818181818182
+  ],
+  "child_bal_acc": 0.7433060109289618,
+  "child_auc": 0.8262295081967214,
+  "child_auc_ci": [
+   0.7486338797814208,
+   0.8923497267759563
+  ],
+  "child_correct": 90,
+  "n_children": 121,
+  "vote_ties": 3,
+  "runtime_sec": 627.6,
+  "source": "results/stage2c/DS2/fbbw_all_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode (delta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.699605343047966,
+  "window_acc_ci": [
+   0.6543432619024462,
+   0.740862736988676
+  ],
+  "window_bal_acc": 0.6968477139525149,
+  "window_bal_acc_ci": [
+   0.651405523779854,
+   0.7403764527094815
+  ],
+  "window_auc": 0.7661945495185695,
+  "window_auc_ci": [
+   0.7075049193237796,
+   0.8184414965660957
+  ],
+  "window_f1": 0.7281966762807307,
+  "child_acc": 0.7851239669421488,
+  "child_acc_ci": [
+   0.7107438016528925,
+   0.8512396694214877
+  ],
+  "child_bal_acc": 0.7844262295081967,
+  "child_auc": 0.8543715846994535,
+  "child_auc_ci": [
+   0.7786680327868852,
+   0.9131147540983606
+  ],
+  "child_correct": 95,
+  "n_children": 121,
+  "vote_ties": 3,
+  "runtime_sec": 182.1,
+  "source": "results/stage2c/DS2/smvmdcm_delta_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth band (beta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.696114146933819,
+  "window_acc_ci": [
+   0.6481510368663594,
+   0.7410492257236818
+  ],
+  "window_bal_acc": 0.6941194829854673,
+  "window_bal_acc_ci": [
+   0.6446995758485866,
+   0.7401783237925077
+  ],
+  "window_auc": 0.7591276501106393,
+  "window_auc_ci": [
+   0.6972273313375864,
+   0.8154352693931537
+  ],
+  "window_f1": 0.7233278054173576,
+  "child_acc": 0.7520661157024794,
+  "child_acc_ci": [
+   0.6776859504132231,
+   0.8264462809917356
+  ],
+  "child_bal_acc": 0.7515027322404372,
+  "child_auc": 0.8352459016393443,
+  "child_auc_ci": [
+   0.757370218579235,
+   0.9046516393442623
+  ],
+  "child_correct": 91,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 152.6,
+  "source": "results/stage2c/DS2/fbbw_beta_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode (theta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.7012750455373407,
+  "window_acc_ci": [
+   0.6507248407646974,
+   0.7507092077578736
+  ],
+  "window_bal_acc": 0.6893608710603433,
+  "window_bal_acc_ci": [
+   0.6339719987455353,
+   0.7414524467484505
+  ],
+  "window_auc": 0.7353434677949884,
+  "window_auc_ci": [
+   0.6695427537914758,
+   0.7977449751813734
+  ],
+  "window_f1": 0.7473684210526316,
+  "child_acc": 0.7272727272727273,
+  "child_acc_ci": [
+   0.6528925619834711,
+   0.8016528925619835
+  ],
+  "child_bal_acc": 0.7260928961748634,
+  "child_auc": 0.7672131147540984,
+  "child_auc_ci": [
+   0.6773155737704919,
+   0.8478142076502733
+  ],
+  "child_correct": 88,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 520.7,
+  "source": "results/stage2c/DS2/smvmdcm_theta_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth band (theta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6914086217364905,
+  "window_acc_ci": [
+   0.637001266361904,
+   0.7443766378192872
+  ],
+  "window_bal_acc": 0.6819721458046768,
+  "window_bal_acc_ci": [
+   0.624251957373344,
+   0.7378394222680724
+  ],
+  "window_auc": 0.7382745686561808,
+  "window_auc_ci": [
+   0.6695594584235389,
+   0.8017769419870417
+  ],
+  "window_f1": 0.7340745585349903,
+  "child_acc": 0.7272727272727273,
+  "child_acc_ci": [
+   0.6528925619834711,
+   0.8016528925619835
+  ],
+  "child_bal_acc": 0.7262295081967213,
+  "child_auc": 0.7666666666666667,
+  "child_auc_ci": [
+   0.6748497267759562,
+   0.8456420765027322
+  ],
+  "child_correct": 88,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 434.4,
+  "source": "results/stage2c/DS2/fbbw_theta_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common modes (all four)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6830601092896175,
+  "window_acc_ci": [
+   0.6336631792148069,
+   0.7297816875831367
+  ],
+  "window_bal_acc": 0.6795851773219306,
+  "window_bal_acc_ci": [
+   0.6287538560210175,
+   0.7286127539564892
+  ],
+  "window_auc": 0.750409290712278,
+  "window_auc_ci": [
+   0.6892771649184446,
+   0.808343727973758
+  ],
+  "window_f1": 0.7142857142857143,
+  "child_acc": 0.71900826446281,
+  "child_acc_ci": [
+   0.6363636363636364,
+   0.7933884297520661
+  ],
+  "child_bal_acc": 0.7184426229508196,
+  "child_auc": 0.8131147540983606,
+  "child_auc_ci": [
+   0.7327800546448088,
+   0.8814207650273224
+  ],
+  "child_correct": 87,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 668.3,
+  "source": "results/stage2c/DS2/smvmdcm_all_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth band (alpha), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6813904068002429,
+  "window_acc_ci": [
+   0.6321836382573484,
+   0.7265871024501446
+  ],
+  "window_bal_acc": 0.6793169891154835,
+  "window_bal_acc_ci": [
+   0.6281067350978142,
+   0.7263363955926997
+  ],
+  "window_auc": 0.7419842563243825,
+  "window_auc_ci": [
+   0.6780438183381505,
+   0.7996200407064176
+  ],
+  "window_f1": 0.70964172084659,
+  "child_acc": 0.7107438016528925,
+  "child_acc_ci": [
+   0.628099173553719,
+   0.7933884297520661
+  ],
+  "child_bal_acc": 0.7105191256830601,
+  "child_auc": 0.7939890710382513,
+  "child_auc_ci": [
+   0.7051912568306011,
+   0.872957650273224
+  ],
+  "child_correct": 86,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 160.7,
+  "source": "results/stage2c/DS2/fbbw_alpha_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth band (theta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6824529447480268,
+  "window_acc_ci": [
+   0.629367716436645,
+   0.7321923241815514
+  ],
+  "window_bal_acc": 0.6791499087973207,
+  "window_bal_acc_ci": [
+   0.625564670852617,
+   0.7314409698863418
+  ],
+  "window_auc": 0.7474896836313618,
+  "window_auc_ci": [
+   0.6834122446864656,
+   0.8081470716897629
+  ],
+  "window_f1": 0.7133461222252672,
+  "child_acc": 0.7024793388429752,
+  "child_acc_ci": [
+   0.6198347107438017,
+   0.7768595041322314
+  ],
+  "child_bal_acc": 0.7019125683060109,
+  "child_auc": 0.7841530054644809,
+  "child_auc_ci": [
+   0.6983469945355191,
+   0.8612021857923498
+  ],
+  "child_correct": 85,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 175.6,
+  "source": "results/stage2c/DS2/fbbw_theta_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode (theta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.678354584092289,
+  "window_acc_ci": [
+   0.6290441901524594,
+   0.7269561261020497
+  ],
+  "window_bal_acc": 0.6740386340529873,
+  "window_bal_acc_ci": [
+   0.6217219607781632,
+   0.7252690343237373
+  ],
+  "window_auc": 0.7443980436277735,
+  "window_auc_ci": [
+   0.6823708750279035,
+   0.8046447547814229
+  ],
+  "window_f1": 0.7117398993334241,
+  "child_acc": 0.7024793388429752,
+  "child_acc_ci": [
+   0.6198347107438017,
+   0.7768595041322314
+  ],
+  "child_bal_acc": 0.701775956284153,
+  "child_auc": 0.7825136612021858,
+  "child_auc_ci": [
+   0.6958879781420765,
+   0.8587568306010929
+  ],
+  "child_correct": 85,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 159.7,
+  "source": "results/stage2c/DS2/smvmdcm_theta_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode chosen by inner CV (training subjects only)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6777474195506983,
+  "window_acc_ci": [
+   0.6270962320495772,
+   0.7256880346864734
+  ],
+  "window_bal_acc": 0.6736755053525507,
+  "window_bal_acc_ci": [
+   0.6211831173981639,
+   0.7241237757804664
+  ],
+  "window_auc": 0.7407478806590515,
+  "window_auc_ci": [
+   0.6767483938916865,
+   0.8003476320734868
+  ],
+  "window_f1": 0.7106446776611696,
+  "child_acc": 0.7355371900826446,
+  "child_acc_ci": [
+   0.6528925619834711,
+   0.8099173553719008
+  ],
+  "child_bal_acc": 0.7348360655737705,
+  "child_auc": 0.8065573770491803,
+  "child_auc_ci": [
+   0.7248292349726776,
+   0.8762295081967213
+  ],
+  "child_correct": 89,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 1100.5,
+  "source": "results/stage2c/DS2/smvmdcm_select_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth band (delta), control",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6678809957498482,
+  "window_acc_ci": [
+   0.622207343469374,
+   0.712459247440172
+  ],
+  "window_bal_acc": 0.6662867800968841,
+  "window_bal_acc_ci": [
+   0.6177205248990953,
+   0.7116945929325983
+  ],
+  "window_auc": 0.7323253692960947,
+  "window_auc_ci": [
+   0.6704229131348568,
+   0.7885372225921043
+  ],
+  "window_f1": 0.6957730812013347,
+  "child_acc": 0.743801652892562,
+  "child_acc_ci": [
+   0.6694214876033058,
+   0.8181818181818182
+  ],
+  "child_bal_acc": 0.7431693989071038,
+  "child_auc": 0.7961748633879782,
+  "child_auc_ci": [
+   0.7103756830601093,
+   0.8669467213114753
+  ],
+  "child_correct": 90,
+  "n_children": 121,
+  "vote_ties": 3,
+  "runtime_sec": 193.4,
+  "source": "results/stage2c/DS2/fbbw_delta_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "Butterworth band (delta), control",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6698542805100182,
+  "window_acc_ci": [
+   0.6219660772432597,
+   0.714124622284478
+  ],
+  "window_bal_acc": 0.6623901082471144,
+  "window_bal_acc_ci": [
+   0.6129667888982826,
+   0.709025269437545
+  ],
+  "window_auc": 0.7290637521679325,
+  "window_auc_ci": [
+   0.6663408601989179,
+   0.7852128611943163
+  ],
+  "window_f1": 0.7107328102141243,
+  "child_acc": 0.6694214876033058,
+  "child_acc_ci": [
+   0.5867768595041323,
+   0.743801652892562
+  ],
+  "child_bal_acc": 0.6681693989071038,
+  "child_auc": 0.796448087431694,
+  "child_auc_ci": [
+   0.714474043715847,
+   0.8688661202185791
+  ],
+  "child_correct": 81,
+  "n_children": 121,
+  "vote_ties": 0,
+  "runtime_sec": 454.6,
+  "source": "results/stage2c/DS2/fbbw_delta_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode (beta)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6221918639951427,
+  "window_acc_ci": [
+   0.577706277697421,
+   0.668403459621934
+  ],
+  "window_bal_acc": 0.6351649871419174,
+  "window_bal_acc_ci": [
+   0.5918092251137017,
+   0.6795756060648094
+  ],
+  "window_auc": 0.6433215529872616,
+  "window_auc_ci": [
+   0.587362551486318,
+   0.6999407703566555
+  ],
+  "window_f1": 0.607969759017168,
+  "child_acc": 0.6611570247933884,
+  "child_acc_ci": [
+   0.5867768595041323,
+   0.7355371900826446
+  ],
+  "child_bal_acc": 0.6622950819672131,
+  "child_auc": 0.7898907103825137,
+  "child_auc_ci": [
+   0.70900956284153,
+   0.8644877049180327
+  ],
+  "child_correct": 80,
+  "n_children": 121,
+  "vote_ties": 3,
+  "runtime_sec": 571.1,
+  "source": "results/stage2c/DS2/smvmdcm_beta_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode (alpha)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6261384335154827,
+  "window_acc_ci": [
+   0.582063466385439,
+   0.6684341555559761
+  ],
+  "window_bal_acc": 0.6254599381017882,
+  "window_bal_acc_ci": [
+   0.5810220914415427,
+   0.6696386404190907
+  ],
+  "window_auc": 0.6912280964057174,
+  "window_auc_ci": [
+   0.6322130367530061,
+   0.7460861467367671
+  ],
+  "window_f1": 0.6535377690251795,
+  "child_acc": 0.7272727272727273,
+  "child_acc_ci": [
+   0.6446280991735537,
+   0.8016528925619835
+  ],
+  "child_bal_acc": 0.7269125683060109,
+  "child_auc": 0.7718579234972678,
+  "child_auc_ci": [
+   0.6795013661202186,
+   0.851639344262295
+  ],
+  "child_correct": 88,
+  "n_children": 121,
+  "vote_ties": 2,
+  "runtime_sec": 140.2,
+  "source": "results/stage2c/DS2/smvmdcm_alpha_ts_lr__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode (alpha)",
+  "model": "Tangent space + SVM",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.6335761991499697,
+  "window_acc_ci": [
+   0.5885800462574957,
+   0.6758596633610936
+  ],
+  "window_bal_acc": 0.6251560537647269,
+  "window_bal_acc_ci": [
+   0.5801946513023174,
+   0.6697783385105845
+  ],
+  "window_auc": 0.6489255651575863,
+  "window_auc_ci": [
+   0.5909049793522209,
+   0.7053805989029794
+  ],
+  "window_f1": 0.6800106044538706,
+  "child_acc": 0.6859504132231405,
+  "child_acc_ci": [
+   0.6033057851239669,
+   0.7603305785123967
+  ],
+  "child_bal_acc": 0.6845628415300546,
+  "child_auc": 0.7256830601092896,
+  "child_auc_ci": [
+   0.6297745901639344,
+   0.8142076502732241
+  ],
+  "child_correct": 83,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 551.5,
+  "source": "results/stage2c/DS2/smvmdcm_alpha_ts_svm__subject_sgkf.json"
+ },
+ {
+  "experiment": "DS2",
+  "features": "SMVMD common mode (beta)",
+  "model": "Tangent space + LR",
+  "protocol": "subject_sgkf",
+  "transductive": false,
+  "window_acc": 0.5891013964784456,
+  "window_acc_ci": [
+   0.5480548028948631,
+   0.6309821146747231
+  ],
+  "window_bal_acc": 0.6000267253752766,
+  "window_bal_acc_ci": [
+   0.559408484891425,
+   0.640998563189191
+  ],
+  "window_auc": 0.659177830273309,
+  "window_auc_ci": [
+   0.6045049661005262,
+   0.7096536538023777
+  ],
+  "window_f1": 0.5794624825229143,
+  "child_acc": 0.628099173553719,
+  "child_acc_ci": [
+   0.5537190082644629,
+   0.7107438016528925
+  ],
+  "child_bal_acc": 0.6292349726775956,
+  "child_auc": 0.7816939890710383,
+  "child_auc_ci": [
+   0.6934426229508197,
+   0.8614822404371584
+  ],
+  "child_correct": 76,
+  "n_children": 121,
+  "vote_ties": 1,
+  "runtime_sec": 148.3,
+  "source": "results/stage2c/DS2/smvmdcm_beta_ts_lr__subject_sgkf.json"
+ }
+]
